@@ -1,13 +1,45 @@
 {# ---------- KONTAKT ---------- #}
-<section class="contact">
+{% set c = contact %}
+{% set useForm = c.form_show and settings.feedback_key %}
+<section class="contact{% if useForm %} contact-has-form{% endif %}">
   <div class="wrap narrow contact-inner">
-    <p class="eyebrow">{{ contact.eyebrow }}</p>
-    <h1 class="h2">{{ contact.title | lines | safe }}</h1>
-    {{ contact.text | paras | safe }}
+    <p class="eyebrow">{{ c.eyebrow }}</p>
+    <h1 class="h2">{{ c.title | lines | safe }}</h1>
+    {{ c.text | paras | safe }}
+
+    {% if useForm %}
+    <form class="feedback-form contact-form" data-feedback action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="{{ settings.feedback_key }}">
+      <input type="hidden" name="subject" value="{{ c.mail_subject or 'Neue Anfrage über deine Website' }}">
+      <input type="hidden" name="from_name" value="Website-Kontakt">
+      <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
+      <div class="form-row">
+        <label>{{ c.form_name_label }} *<input name="Name" required autocomplete="name"></label>
+        <label>{{ c.form_email_label }} *<input type="email" name="email" required autocomplete="email"></label>
+      </div>
+      {% if c.form_phone_show %}<label>{{ c.form_phone_label }}<input type="tel" name="Telefon" autocomplete="tel"></label>{% endif %}
+      <label>{{ c.form_message_label }} *<textarea name="Nachricht" rows="6" required placeholder="{{ c.form_message_placeholder }}"></textarea></label>
+      <label class="check"><input type="checkbox" name="Datenschutz akzeptiert" value="Ja" required><span>{{ c.form_privacy_text }} <a href="/datenschutz/">Datenschutzerklärung</a></span></label>
+      <button class="btn" type="submit">{{ c.form_button }} {% include "arrow.njk" %}</button>
+      <p class="form-error" hidden>{{ c.form_error }}</p>
+    </form>
+    <div class="feedback-success" hidden>
+      <h2>{{ c.form_success_title }}</h2>
+      {{ c.form_success_text | paras | safe }}
+    </div>
+    {% if settings.contact_email or settings.phone %}
+    <p class="contact-alt">{{ c.form_alt_text }}
+      {% if settings.contact_email %}<a href="mailto:{{ settings.contact_email }}">{{ settings.contact_email }}</a>{% endif %}
+      {% if settings.contact_email and settings.phone %} · {% endif %}
+      {% if settings.phone %}<a href="tel:{{ settings.phone | replace(' ', '') }}">{{ settings.phone }}</a>{% endif %}
+    </p>
+    {% endif %}
+    {% else %}
     <div class="contact-actions">
-      {% if settings.contact_email %}<a class="btn" href="mailto:{{ settings.contact_email }}?subject={{ contact.mail_subject | urlencode }}">{{ contact.button_text }} {% include "arrow.njk" %}</a>{% endif %}
+      {% if settings.contact_email %}<a class="btn" href="mailto:{{ settings.contact_email }}?subject={{ c.mail_subject | urlencode }}">{{ c.button_text }} {% include "arrow.njk" %}</a>{% endif %}
       {% if settings.phone %}<a class="btn btn-outline" href="tel:{{ settings.phone | replace(' ', '') }}">{{ settings.phone }}</a>{% endif %}
     </div>
     {% if settings.contact_email %}<p class="contact-mail">{{ settings.contact_email }}</p>{% endif %}
+    {% endif %}
   </div>
 </section>

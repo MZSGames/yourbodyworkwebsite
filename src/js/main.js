@@ -52,11 +52,10 @@ if (track && dotsBox) {
 }
 
 // Feedback-Formular: ohne Seitenwechsel absenden
-const fbForm = document.querySelector("[data-feedback]");
-if (fbForm) {
+document.querySelectorAll("[data-feedback]").forEach((fbForm) => {
   const btn = fbForm.querySelector("button[type=submit]");
   const err = fbForm.querySelector(".form-error");
-  const ok = document.querySelector(".feedback-success");
+  const ok = fbForm.parentElement.querySelector(".feedback-success");
   fbForm.addEventListener("submit", async (e) => {
     e.preventDefault();
     err.hidden = true;
@@ -77,7 +76,7 @@ if (fbForm) {
       btn.disabled = false;
     }
   });
-}
+});
 
 // Video-Erfahrungen: YouTube erst nach Klick laden (Datenschutz)
 document.querySelectorAll(".video-frame[data-yt]").forEach((btn) => {

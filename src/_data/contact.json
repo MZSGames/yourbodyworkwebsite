@@ -5,5 +5,18 @@
   "title": "Schreib mir.",
   "text": "Erzähl mir gern ein wenig, was dich gerade bewegt. Ich melde mich innerhalb von zwei Tagen bei dir – für ein unverbindliches Kennenlernen.",
   "button_text": "E-Mail schreiben",
-  "mail_subject": "Anfrage 1:1 Session"
+  "mail_subject": "Anfrage 1:1 Session",
+  "form_show": true,
+  "form_name_label": "Dein Name",
+  "form_email_label": "Deine E-Mail-Adresse",
+  "form_phone_show": true,
+  "form_phone_label": "Telefon (optional)",
+  "form_message_label": "Deine Nachricht",
+  "form_message_placeholder": "Was bewegt dich gerade? Worum geht es dir?",
+  "form_privacy_text": "Ich bin einverstanden, dass meine Angaben zur Beantwortung meiner Anfrage verwendet werden. Mehr dazu in der",
+  "form_button": "Nachricht senden",
+  "form_success_title": "Danke für deine Nachricht.",
+  "form_success_text": "Sie ist bei mir angekommen. Ich melde mich innerhalb von zwei Tagen bei dir.",
+  "form_error": "Leider hat das Senden nicht geklappt. Bitte versuche es in ein paar Minuten noch einmal oder schreib mir direkt eine E-Mail.",
+  "form_alt_text": "Lieber direkt?"
 }

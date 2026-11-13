@@ -54,6 +54,6 @@ src/
 - **Zusatzfunktionen (per Häkchen im Editor):** Preise, FAQ, Online-Kalender-Button, „Erfahrungen zuerst“ (Sessions); zweites Bild und Bildergalerie mit Lightbox (Über mich, Workshops); Seite Workshops (`src/workshops.11tydata.js` baut sie nur bei `show: true`); Video-Erfahrungen (YouTube erst nach Klick über youtube-nocookie). Schriften für Überschrift und Text getrennt wählbar.
 - **Seite Erfahrungen** (`/erfahrungen/`): alle Zitate, Videos, Einladung zum Feedback; Zitate per Häkchen zusätzlich auf Start/Sessions (`show_on_start`, `show_on_sessions`).
 - **Seiten ein-/ausblenden:** `show` in about/sessions/testimonials/core/contact/feedback.json (Workshops: `show: true` nötig). `*.11tydata.js` setzen den Permalink auf `false`; Filter `link` leitet Links auf ausgeblendete Seiten zur Kontaktseite bzw. per `mailto:` um.
-- Kontakt läuft per `mailto:`-Button. Alternativ kann in den Einstellungen ein Buchungslink für alle Anfrage-Buttons eingetragen werden.
+- Kontakt: Formular über Web3Forms (`contact.form_show` + `settings.feedback_key`, Feld `email` setzt Reply-To), sonst `mailto:`-Button. Alternativ kann in den Einstellungen ein Buchungslink für alle Anfrage-Buttons eingetragen werden.
 
 **Hinweis:** Prüfen, ob „CORE®“ so verwendet werden darf. Das ist ein Markenzeichen des Ausbildungsanbieters.

@@ -112,7 +112,7 @@ Deine Website ist jetzt online unter **`https://DEIN-BENUTZERNAME.github.io/webs
 - [ ] E-Mail-Adresse unter **Einstellungen** eintragen
 - [ ] Bei **1:1 Sessions** den Standort „[deiner Region]“ ersetzen
 - [ ] **Impressum** und **Datenschutzerklärung** vollständig ausfüllen
-- [ ] Feedback-Schlüssel eintragen ([Kapitel 4](#4-feedback-von-kundinnen))
+- [ ] Formular-Schlüssel eintragen ([Kapitel 4](#4-feedback-von-kundinnen))
 - [ ] Klären, ob du „CORE®“ so auf deiner Website verwenden darfst (Markenzeichen deines Ausbildungsanbieters)
 
 ---
@@ -138,7 +138,7 @@ Im Editor siehst du links:
 | **Design (Farben & Schrift)** | Farbpalette, Schrift, Feinschliff (Textgröße, Buttons, Abstände …) und eigene Farben ([Kapitel 6](#6-farben-und-design-selbst-ändern)) |
 | **Feedback-Seite** | Texte der Seite, auf der Kundinnen Feedback schreiben |
 | **Impressum** / **Datenschutzerklärung** | die rechtlichen Seiten |
-| **Einstellungen** | Name, E-Mail, Telefon, Instagram, Google-Text, Feedback-Schlüssel |
+| **Einstellungen** | Name, E-Mail, Telefon, Instagram, Google-Text, Formular-Schlüssel |
 
 ### Texte ändern
 1. Klicke in ein Feld und schreibe.
@@ -262,6 +262,7 @@ Diese Bereiche sind schon fertig eingebaut. Du schaltest sie mit einem **Häkche
 | **Zweites Bild**: neben dem Zusatzbereich | Seite: Über mich (auch Workshops) | „Zweites Bild: anzeigen“ |
 | **Bildergalerie**: beliebig viele Fotos, mit Klick groß ansehen | Seite: Über mich (auch Workshops) | „Bildergalerie: anzeigen“ |
 | **Seite Workshops**: eigene Seite mit Menüpunkt und Kachel auf der Startseite | Seite: Workshops | „Seite anzeigen“ |
+| **Kontaktformular**: Besucher schreiben dir direkt auf der Website, du bekommst eine E-Mail ([Kapitel 4](#4-feedback-von-kundinnen)) | Seite: Kontakt | „Kontaktformular anzeigen“ |
 | **Video-Erfahrungen**: Videos von YouTube auf der Seite Erfahrungen ([Kapitel 4](#4-feedback-von-kundinnen)) | Seite: Erfahrungen & Feedbacks | „Videos: anzeigen“ |
 
 💡 Die Bereiche sind schon mit **Beispieltexten** gefüllt, z. B. Preise mit „[Preis] €“ und Fragen mit „Hier steht deine Antwort.“ Ersetze sie, **bevor** du das Häkchen setzt.
@@ -304,9 +305,19 @@ Auf deiner Website gibt es die Seite **`/feedback/`**. Dort können Kundinnen **
 1. Öffne **https://web3forms.com** und klicke auf **„Create your Access Key“**.
 2. Gib die E-Mail-Adresse ein, an die das Feedback geschickt werden soll.
 3. Du bekommst per E-Mail einen **Schlüssel**, eine lange Buchstaben-Zahlen-Kombination. Kopiere ihn.
-4. Füge ihn in Pages CMS unter **Einstellungen → Feedback-Schlüssel** ein und klicke auf **Speichern**.
+4. Füge ihn in Pages CMS unter **Einstellungen → Formular-Schlüssel** ein und klicke auf **Speichern**.
 
 Solange kein Schlüssel eingetragen ist, zeigt die Seite einen freundlichen Hinweis statt des Formulars.
+
+Der Schlüssel gilt für **beide** Formulare: das Feedback-Formular und das Kontaktformular.
+
+### Das Kontaktformular
+Auf der Kontaktseite können Besucher dir direkt schreiben: Name, E-Mail, freiwillig Telefon und eine Nachricht. Du bekommst alles **per E-Mail**. Klick in der E-Mail auf **Antworten**, dann geht deine Antwort automatisch an die Person.
+
+- **Ein-/ausschalten:** Seite: Kontakt → „Kontaktformular anzeigen“. Ohne Formular gibt es nur den Button „E-Mail schreiben“.
+- **Kein Telefonfeld:** Häkchen bei „Formular: Telefonfeld anzeigen“ entfernen.
+- **Texte ändern:** alle Felder, die mit „Formular:“ beginnen.
+- Ohne Formular-Schlüssel zeigt die Kontaktseite automatisch den E-Mail-Button.
 
 ### So läuft es danach
 - Schick Kundinnen nach der Session den Link: `https://DEINE-ADRESSE/feedback/`
@@ -506,7 +517,7 @@ Vieles ist schon eingebaut und nur per Häkchen einzuschalten (siehe [Kapitel 3]
 | **Sie ist nach 5 Minuten immer noch nicht da.** | Auf GitHub im Repository auf **Actions** klicken. Hat der oberste Eintrag ein rotes ❌? Dann siehe nächste Zeile. |
 | **Bei „Actions“ steht ein rotes ❌.** | Den Eintrag anklicken und rechts oben **„Re-run all jobs“** klicken. Klappt es wieder nicht, hat die letzte Änderung einen Fehler. Mach sie rückgängig ([Kapitel 9](#9-etwas-rückgängig-machen)) oder lass Claude den Fehler beheben: „Der Build in meinem Repository schlägt fehl, bitte prüfen und beheben.“ |
 | **Bilder oder Design fehlen nach einem Domain-Wechsel.** | **Actions → „Website veröffentlichen“ → „Run workflow“** |
-| **Das Feedback-Formular wird nicht angezeigt.** | Unter **Einstellungen** den Feedback-Schlüssel prüfen. Er muss ganz und ohne Leerzeichen eingefügt sein. |
+| **Das Feedback-Formular wird nicht angezeigt.** | Unter **Einstellungen** den Formular-Schlüssel prüfen. Er muss ganz und ohne Leerzeichen eingefügt sein. |
 | **Es kommt kein Feedback per E-Mail an.** | Im Spam-Ordner nachsehen. Die E-Mails kommen von Web3Forms. |
 | **Manche Seiten zeigen noch die alten Farben oder Texte, andere schon die neuen.** | Dein Browser zeigt noch eine gespeicherte Kopie (bis zu ca. 10 Minuten). **Strg + F5** drücken (am Mac **Cmd + Shift + R**) oder kurz warten. |
 | **Ich kann mich bei Pages CMS nicht anmelden.** | Auf **github.com** einloggen, dann erneut auf app.pagescms.org „Sign in with GitHub“. Passwort vergessen? Auf github.com **„Forgot password?“** nutzen. |

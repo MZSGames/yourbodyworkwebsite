@@ -20,6 +20,10 @@ Wenn du mir eine E-Mail schreibst, werden deine Angaben (Name, E-Mail-Adresse, N
 
 Wenn du über das Feedback-Formular eine Rückmeldung sendest, wird diese über den Dienst Web3Forms per E-Mail an mich weitergeleitet. Du musst dafür keine Kontaktdaten angeben; ein Name ist freiwillig. Dein Feedback wird nur dann (anonym) auf dieser Website veröffentlicht, wenn du dem ausdrücklich zustimmst.
 
+## Kontaktformular
+
+Wenn du mir über das Kontaktformular schreibst, werden deine Angaben (Name, E-Mail-Adresse, freiwillig Telefonnummer und deine Nachricht) über den Dienst Web3Forms per E-Mail an mich weitergeleitet. Ich verwende sie ausschließlich, um deine Anfrage zu beantworten, und gebe sie nicht weiter. Rechtsgrundlage ist deine Einwilligung bzw. die Anbahnung eines Vertrags (Art. 6 Abs. 1 lit. a und b DSGVO). Du kannst jederzeit verlangen, dass ich deine Nachricht lösche.
+
 ## Videos von YouTube
 
 Falls auf dieser Website Videos gezeigt werden, sind diese über YouTube (Google Ireland Limited) eingebunden. Beim Aufruf der Seite werden **keine Daten an YouTube übertragen**. Erst wenn du auf ein Video klickst, wird es über den erweiterten Datenschutzmodus (youtube-nocookie.com) geladen. Dabei werden Daten wie deine IP-Adresse an YouTube übermittelt.

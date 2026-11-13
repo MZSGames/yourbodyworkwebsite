@@ -519,8 +519,21 @@ content:
       - { name: eyebrow, label: Kleine Überzeile, type: string }
       - { name: title, label: Überschrift, type: string }
       - { name: text, label: Text, type: text }
-      - { name: button_text, label: Button-Text, type: string }
-      - { name: mail_subject, label: Betreff der E-Mail, type: string, description: "Wird automatisch in die E-Mail eingesetzt, wenn jemand auf den Button klickt." }
+      - { name: button_text, label: "Button-Text (nur ohne Formular)", type: string }
+      - { name: mail_subject, label: Betreff der E-Mail, type: string, description: "Betreff der E-Mail, die du bekommst (beim Formular und beim E-Mail-Button)." }
+      - { name: form_show, label: "Kontaktformular anzeigen", type: boolean, description: "Angehakt = Besucher füllen ein Formular aus und du bekommst eine E-Mail. Braucht den Feedback-Schlüssel unter Einstellungen. Nicht angehakt = es gibt nur den E-Mail-Button." }
+      - { name: form_name_label, label: "Formular: Beschriftung Name", type: string }
+      - { name: form_email_label, label: "Formular: Beschriftung E-Mail", type: string }
+      - { name: form_phone_show, label: "Formular: Telefonfeld anzeigen", type: boolean }
+      - { name: form_phone_label, label: "Formular: Beschriftung Telefon", type: string }
+      - { name: form_message_label, label: "Formular: Beschriftung Nachricht", type: string }
+      - { name: form_message_placeholder, label: "Formular: grauer Beispieltext im Nachrichtenfeld", type: string }
+      - { name: form_privacy_text, label: "Formular: Text beim Datenschutz-Häkchen", type: text, description: "Danach folgt automatisch der Link „Datenschutzerklärung“." }
+      - { name: form_button, label: "Formular: Button-Text", type: string }
+      - { name: form_success_title, label: "Formular: Überschrift nach dem Senden", type: string }
+      - { name: form_success_text, label: "Formular: Text nach dem Senden", type: text }
+      - { name: form_error, label: "Formular: Text, wenn das Senden nicht klappt", type: text }
+      - { name: form_alt_text, label: "Formular: Text vor E-Mail und Telefon darunter", type: string }
 
   # ================= BEREICHE AUF MEHREREN SEITEN =================
   - name: abschluss
@@ -766,7 +779,7 @@ content:
       - { name: contact_link, label: "Wohin führen die Anfrage-Buttons?", type: string, description: "/kontakt/ = zur Kontaktseite. Alternativ z. B. ein Buchungslink (Calendly o. Ä.)." }
       - { name: contact_email, label: E-Mail-Adresse, type: string }
       - { name: phone, label: Telefon (optional), type: string, description: "Leer lassen, wenn keine Nummer angezeigt werden soll." }
-      - { name: feedback_key, label: Feedback-Schlüssel (Web3Forms), type: string, description: "Kostenlos auf web3forms.com anfordern – der Schlüssel kommt per E-Mail. Hier einfügen, dann ist das Feedback-Formular aktiv." }
+      - { name: feedback_key, label: Formular-Schlüssel (Web3Forms), type: string, description: "Kostenlos auf web3forms.com anfordern – der Schlüssel kommt per E-Mail. Hier einfügen, dann funktionieren das Feedback-Formular und das Kontaktformular." }
       - { name: instagram_handle, label: Instagram-Name, type: string, description: "z. B. @ronja.sereinig" }
       - { name: instagram_url, label: Instagram-Link, type: string, description: "Leer lassen blendet Instagram aus." }
       - { name: instagram_label, label: Instagram-Beschriftung, type: string }

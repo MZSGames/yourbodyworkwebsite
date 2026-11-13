@@ -65,3 +65,37 @@ if (fbForm) {
     }
   });
 }
+
+// Video-Erfahrungen: YouTube erst nach Klick laden (Datenschutz)
+document.querySelectorAll(".video-frame[data-yt]").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const id = btn.dataset.yt;
+    const iframe = document.createElement("iframe");
+    iframe.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`;
+    iframe.title = btn.getAttribute("aria-label") || "Video";
+    iframe.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+    iframe.allowFullscreen = true;
+    btn.replaceChildren(iframe);
+    btn.removeAttribute("data-yt");
+    btn.style.cursor = "default";
+  }, { once: true });
+});
+
+// Bildergalerie: Großansicht mit Weiter/Zurück
+document.querySelectorAll(".gallery").forEach((gal) => {
+  const items = [...gal.querySelectorAll(".gallery-item img")];
+  const dlg = gal.querySelector(".lightbox");
+  if (!items.length || !dlg || typeof dlg.showModal !== "function") return;
+  const big = dlg.querySelector("img");
+  let i = 0;
+  const show = (n) => { i = (n + items.length) % items.length; big.src = items[i].src; big.alt = items[i].alt; };
+  items.forEach((img, n) => img.parentElement.addEventListener("click", () => { show(n); dlg.showModal(); }));
+  dlg.querySelector(".lb-close").addEventListener("click", () => dlg.close());
+  dlg.querySelector(".lb-prev").addEventListener("click", () => show(i - 1));
+  dlg.querySelector(".lb-next").addEventListener("click", () => show(i + 1));
+  dlg.addEventListener("click", (e) => { if (e.target === dlg) dlg.close(); });
+  dlg.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowLeft") show(i - 1);
+    if (e.key === "ArrowRight") show(i + 1);
+  });
+});

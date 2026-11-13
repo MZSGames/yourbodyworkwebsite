@@ -31,5 +31,55 @@
   "testimonials_image_focus": "",
   "cta_image": "",
   "cta_image_alt": "",
-  "cta_image_focus": ""
+  "cta_image_focus": "",
+  "booking_show": false,
+  "booking_text": "Termin online buchen",
+  "booking_link": "",
+  "testimonials_first": false,
+  "prices_show": false,
+  "prices_eyebrow": "Angebote",
+  "prices_title": "Preise",
+  "prices_text": "",
+  "prices": [
+    {
+      "title": "Kennenlernen",
+      "price": "[Preis] €",
+      "text": "Ein erstes Gespräch, in dem wir schauen, was du dir wünschst und ob CORE® Emotional Bodywork für dich passt.",
+      "highlight": false
+    },
+    {
+      "title": "1:1 Session",
+      "price": "[Preis] €",
+      "text": "Eine Session mit ca. 90 Minuten, ganz in deinem Tempo und in einem geschützten Raum.",
+      "highlight": true
+    },
+    {
+      "title": "3er-Paket",
+      "price": "[Preis] €",
+      "text": "Drei Sessions für eine tiefere Begleitung über mehrere Wochen.",
+      "highlight": false
+    }
+  ],
+  "prices_note": "",
+  "faq_show": false,
+  "faq_eyebrow": "Fragen & Antworten",
+  "faq_title": "Häufige Fragen",
+  "faq": [
+    {
+      "question": "Wie läuft eine Session ab?",
+      "answer": "Hier steht deine Antwort."
+    },
+    {
+      "question": "Was ziehe ich am besten an?",
+      "answer": "Hier steht deine Antwort."
+    },
+    {
+      "question": "Brauche ich Vorerfahrung?",
+      "answer": "Hier steht deine Antwort."
+    },
+    {
+      "question": "Kann ich eine Session absagen oder verschieben?",
+      "answer": "Hier steht deine Antwort."
+    }
+  ]
 }

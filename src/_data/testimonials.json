@@ -17,5 +17,16 @@
       "name": ""
     }
   ],
-  "feedback_link_text": "Du warst schon bei mir? Teile deine Erfahrung"
+  "feedback_link_text": "Du warst schon bei mir? Teile deine Erfahrung",
+  "videos_show": false,
+  "videos_title": "Erfahrungen im Video",
+  "videos_note": "Beim Abspielen wird das Video von YouTube geladen. Dabei werden Daten an YouTube (Google) übertragen.",
+  "videos": [
+    {
+      "youtube": "",
+      "title": "",
+      "image": "",
+      "image_alt": ""
+    }
+  ]
 }

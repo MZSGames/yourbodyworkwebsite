@@ -75,7 +75,8 @@ h2 { font-size: clamp(32px, 3.6vw, 50px); }
 .logo { text-decoration: none; display: flex; flex-direction: column; line-height: 1.1; }
 .logo-name { font: 400 22px var(--serif); letter-spacing: .2em; text-transform: uppercase; }
 .logo-sub { font: 400 11.5px var(--sans); letter-spacing: .08em; margin-top: 4px; color: var(--ink-soft); }
-.main-nav { display: flex; align-items: center; gap: clamp(18px, 2.6vw, 40px); }
+.main-nav { display: flex; align-items: center; gap: clamp(14px, 2vw, 34px); }
+.main-nav a, .logo-name, .logo-sub { white-space: nowrap; }
 .main-nav a:not(.btn) { font-size: 14.5px; text-decoration: none; padding: 6px 0; position: relative; }
 .main-nav a:not(.btn)::after {
   content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 1px;
@@ -208,7 +209,7 @@ h1.h2 { font-size: clamp(32px, 3.6vw, 50px); }
 
 /* Kacheln auf der Startseite */
 .teasers { padding: calc(clamp(56px, 7vw, 90px) * var(--space, 1)) 0; background: var(--cream); }
-.teaser-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(20px, 3vw, 36px); }
+.teaser-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: clamp(20px, 3vw, 36px); }
 .teaser { display: block; text-decoration: none; color: inherit; }
 .teaser-img { aspect-ratio: 4 / 3; overflow: hidden; border-radius: var(--radius, 18px); margin-bottom: 18px; }
 .teaser-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
@@ -226,6 +227,62 @@ h1.h2 { font-size: clamp(32px, 3.6vw, 50px); }
 
 /* Option „Bildverlauf: ohne“ */
 body.fade-off .split-media img, body.fade-off .testimonials-media img { -webkit-mask-image: none !important; mask-image: none !important; }
+
+/* ---------- Kalender-Button bei den Sessions ---------- */
+.feature-cta { flex-direction: column; gap: 12px; align-items: stretch; }
+.feature-cta .btn { justify-content: center; }
+
+/* ---------- Preise ---------- */
+.prices { padding: calc(clamp(56px, 7vw, 90px) * var(--space, 1)) 0; background: var(--cream-2); text-align: center; }
+.prices-intro { max-width: 640px; margin: 0 auto; color: var(--ink-soft); }
+.price-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: clamp(16px, 2.4vw, 28px); margin-top: 32px; text-align: left; }
+.price-card { display: flex; flex-direction: column; background: var(--cream); border: 1px solid var(--line); border-radius: var(--radius, 18px); padding: 30px 28px; }
+.price-card.is-highlight { border: 2px solid var(--clay); box-shadow: 0 10px 30px color-mix(in srgb, var(--clay) 14%, transparent); }
+.price-title { font: 500 12px/1.4 var(--sans); letter-spacing: .28em; text-transform: uppercase; color: var(--clay); margin-bottom: .8em; }
+.price-value { font: 400 clamp(32px, 3vw, 42px)/1.1 var(--serif); color: var(--ink); margin-bottom: .5em; }
+.price-text { color: var(--ink-soft); font-size: calc(15.5px * var(--fs, 1)); flex: 1; }
+.price-link { align-self: flex-start; display: inline-flex; align-items: center; gap: .5em; margin-top: 10px; color: var(--clay); text-decoration: none; border-bottom: 1px solid var(--line); padding-bottom: 2px; font-size: 14.5px; }
+.price-link:hover { border-color: var(--clay); }
+.prices-note { margin-top: 24px; font-size: 14px; color: var(--ink-soft); }
+
+/* ---------- Häufige Fragen ---------- */
+.faq { padding: calc(clamp(56px, 7vw, 90px) * var(--space, 1)) 0; background: var(--cream); }
+.faq-list { margin-top: 24px; border-top: 1px solid var(--line); }
+.faq-item { border-bottom: 1px solid var(--line); }
+.faq-item summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 20px 0; font: 400 clamp(20px, 1.8vw, 24px)/1.3 var(--serif); color: var(--ink); }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: "+"; flex: none; width: 32px; height: 32px; display: grid; place-items: center; border-radius: 50%; border: 1px solid var(--line); color: var(--clay); font: 300 22px/1 var(--sans); transition: transform .25s; }
+.faq-item[open] summary::after { transform: rotate(45deg); }
+.faq-answer { padding: 0 0 20px; color: var(--ink-soft); }
+
+/* ---------- Bildergalerie ---------- */
+.gallery { padding: calc(clamp(56px, 7vw, 90px) * var(--space, 1)) 0; background: var(--cream); }
+.gallery-intro { color: var(--ink-soft); max-width: 680px; }
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; margin-top: 24px; }
+.gallery-item { padding: 0; border: 0; background: var(--sand); aspect-ratio: 1; overflow: hidden; border-radius: calc(var(--radius, 18px) * .7); cursor: zoom-in; }
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
+.gallery-item:hover img { transform: scale(1.04); }
+.lightbox { border: 0; padding: 0; background: transparent; max-width: 96vw; max-height: 96vh; overflow: visible; }
+.lightbox::backdrop { background: rgba(0, 0, 0, .86); }
+.lightbox img { display: block; max-width: 92vw; max-height: 88vh; border-radius: 6px; }
+.lightbox button { position: fixed; border: 0; background: rgba(255,255,255,.12); color: #fff; width: 48px; height: 48px; border-radius: 50%; font: 300 30px/1 var(--sans); cursor: pointer; }
+.lightbox button:hover { background: rgba(255,255,255,.25); }
+.lb-close { top: 18px; right: 18px; }
+.lb-prev { left: 18px; top: 50%; transform: translateY(-50%); }
+.lb-next { right: 18px; top: 50%; transform: translateY(-50%); }
+
+/* ---------- Video-Erfahrungen ---------- */
+.videos { padding: calc(clamp(56px, 7vw, 90px) * var(--space, 1)) 0; background: var(--cream); }
+.video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 24px; }
+.video { margin: 0; }
+.video-frame { position: relative; display: block; width: 100%; aspect-ratio: 16 / 9; padding: 0; border: 0; border-radius: calc(var(--radius, 18px) * .7); overflow: hidden; cursor: pointer; background: linear-gradient(135deg, var(--night), var(--cta)); }
+.video-frame img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .85; }
+.video-play { position: absolute; left: 50%; top: 46%; transform: translate(-50%, -50%); width: 68px; height: 68px; border-radius: 50%; background: var(--clay); display: grid; place-items: center; box-shadow: 0 6px 20px rgba(0,0,0,.3); transition: transform .2s; }
+.video-play svg { width: 28px; height: 28px; fill: #fff; margin-left: 4px; }
+.video-frame:hover .video-play { transform: translate(-50%, -50%) scale(1.06); }
+.video-hint { position: absolute; left: 0; right: 0; bottom: 0; padding: 10px 14px; font-size: 12px; line-height: 1.4; color: #fff; background: linear-gradient(0deg, rgba(0,0,0,.6), transparent); text-align: left; }
+.video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.video figcaption { margin-top: 10px; font: italic 400 19px var(--serif); color: var(--ink); }
 
 /* ---------- Unterseiten ---------- */
 .page-body { padding: calc(clamp(60px, 8vw, 110px) * var(--space, 1)) 0; min-height: 60vh; }
@@ -247,7 +304,8 @@ body.fade-off .split-media img, body.fade-off .testimonials-media img { -webkit-
 /* ===================================================================
    Tablet & Handy
    =================================================================== */
-@media (max-width: 980px) {
+/* Menü als ☰-Symbol, sobald der Platz knapp wird */
+@media (max-width: 1100px) {
   .nav-toggle {
     display: flex; flex-direction: column; justify-content: center; gap: 6px;
     width: 44px; height: 44px; background: none; border: 0; cursor: pointer; padding: 10px;
@@ -264,7 +322,9 @@ body.fade-off .split-media img, body.fade-off .testimonials-media img { -webkit-
   .nav-open .main-nav { transform: none; }
   .main-nav a:not(.btn) { font-size: 18px; padding: 8px 0; }
   .main-nav .btn { margin: 12px 0 0; }
+}
 
+@media (max-width: 980px) {
   .intro-grid { grid-template-columns: 1fr; }
   .branch { display: none; }
   .features { display: grid; grid-template-columns: 1fr 1fr; row-gap: 28px; }

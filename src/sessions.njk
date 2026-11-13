@@ -5,8 +5,17 @@ navKey: sessions
 eleventyComputed:
   title: "{{ sessions.menu_label }}"
 ---
-{% set pd = sessions %}
-{% include "sections/sessions.njk" %}
-{% set s = sessions %}{% include "sections/more.njk" %}
+{% set pd = sessions %}{% set s = sessions %}
+{% if sessions.testimonials_first %}
 {% include "sections/testimonials.njk" %}
+{% include "sections/videos.njk" %}
+{% endif %}
+{% include "sections/sessions.njk" %}
+{% include "sections/prices.njk" %}
+{% include "sections/more.njk" %}
+{% include "sections/faq.njk" %}
+{% if not sessions.testimonials_first %}
+{% include "sections/testimonials.njk" %}
+{% include "sections/videos.njk" %}
+{% endif %}
 {% include "sections/cta.njk" %}

@@ -1,0 +1,22 @@
+{# ---------- PREISE (ein-/ausschaltbar) ---------- #}
+{% if sessions.prices_show and sessions.prices.length %}
+<section class="prices">
+  <div class="wrap">
+    {% if sessions.prices_eyebrow %}<p class="eyebrow">{{ sessions.prices_eyebrow }}</p>{% endif %}
+    {% if sessions.prices_title %}<h2>{{ sessions.prices_title | lines | safe }}</h2>{% endif %}
+    {% if sessions.prices_text %}<div class="prices-intro">{{ sessions.prices_text | paras | safe }}</div>{% endif %}
+    <div class="price-grid">
+      {% for p in sessions.prices %}
+      <div class="price-card{% if p.highlight %} is-highlight{% endif %}">
+        <p class="price-title">{{ p.title }}</p>
+        <p class="price-value">{{ p.price }}</p>
+        {% if p.text %}<div class="price-text">{{ p.text | paras | safe }}</div>{% endif %}
+        {% set plink = sessions.booking_link if (sessions.booking_show and sessions.booking_link) else settings.contact_link %}
+        <a class="price-link" href="{{ plink }}"{% if sessions.booking_show and sessions.booking_link %} target="_blank" rel="noopener"{% endif %}>Anfragen {% include "arrow.njk" %}</a>
+      </div>
+      {% endfor %}
+    </div>
+    {% if sessions.prices_note %}<p class="prices-note">{{ sessions.prices_note }}</p>{% endif %}
+  </div>
+</section>
+{% endif %}

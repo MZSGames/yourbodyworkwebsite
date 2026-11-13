@@ -1,5 +1,16 @@
-{# Optionaler Zusatztext unter einem Bereich. Erwartet: s #}
-{% if s.more_title or s.more_text %}
+{# Optionaler Zusatzbereich unter dem Hauptbereich. Erwartet: s
+   - ohne zweites Bild: Text mittig
+   - mit zweitem Bild (s.image2_show + s.image2): Bild links, Text rechts #}
+{% set hasImg2 = s.image2_show and s.image2 %}
+{% if hasImg2 %}
+<section class="split split-img-left more-split">
+  <div class="split-media"><img src="{{ s.image2 }}" alt="{{ s.image2_alt }}" style="{{ s.image2_focus | focus }}" loading="lazy"></div>
+  <div class="split-text">
+    {% if s.more_title %}<h2>{{ s.more_title | lines | safe }}</h2>{% endif %}
+    {{ s.more_text | paras | safe }}
+  </div>
+</section>
+{% elif s.more_title or s.more_text %}
 <section class="more">
   <div class="wrap narrow">
     {% if s.more_title %}<h2>{{ s.more_title | lines | safe }}</h2>{% endif %}

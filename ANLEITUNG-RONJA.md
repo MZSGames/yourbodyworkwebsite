@@ -15,11 +15,12 @@ Deine Website ist fertig aufgebaut. **Alles, was du im Alltag brauchst, machst d
 - Bildausschnitt und eigene Bilder pro Seite
 - Namen der Menüpunkte und zusätzliche Textbereiche
 - Erfahrungsberichte und Session-Merkmale
+- **Zusatzfunktionen per Häkchen ein- und ausschalten:** Preise, häufige Fragen, Online-Kalender-Button, Bildergalerie, zweites Bild, Video-Erfahrungen und die Seite Workshops
 - Farben, Schrift und Gestaltung
 - E-Mail, Telefon, Instagram und Google-Text
 - Impressum und Datenschutzerklärung
 
-Am Code musst du nur dann etwas ändern, **wenn du etwas grundsätzlich Neues möchtest**, z. B. eine zusätzliche Seite oder einen ganz neuen Bereich. Auch dafür musst du nicht programmieren können: Das erledigt Claude für dich ([Kapitel 7](#7-größere-änderungen-mit-ki-claude)).
+Am Code musst du nur dann etwas ändern, **wenn du etwas möchtest, das es noch gar nicht gibt**, z. B. eine weitere neue Seite oder einen ganz neuen Bereich. Auch dafür musst du nicht programmieren können: Das erledigt Claude für dich ([Kapitel 7](#7-größere-änderungen-mit-ki-claude)).
 
 ### Einrichtung in 4 Schritten (einmalig, ca. 15 Minuten)
 | | Schritt | Wo |
@@ -119,7 +120,7 @@ Deine Website ist jetzt online unter **`https://DEIN-BENUTZERNAME.github.io/webs
 
 So öffnest du den Editor: **app.pagescms.org** → mit GitHub anmelden → Repository `website` auswählen.
 
-Deine Website hat **5 Seiten**, die oben im Menü stehen: **Start**, **CORE® Bodywork**, **Über mich**, **1:1 Sessions** und **Kontakt**. Dazu kommen die Feedback-Seite, das Impressum und die Datenschutzerklärung (unten im Fußbereich).
+Deine Website hat **5 Seiten**, die oben im Menü stehen: **Start**, **CORE® Bodywork**, **Über mich**, **1:1 Sessions** und **Kontakt**. Eine sechste Seite, **Workshops**, ist vorbereitet und lässt sich per Häkchen einschalten. Dazu kommen die Feedback-Seite, das Impressum und die Datenschutzerklärung (unten im Fußbereich).
 
 Im Editor siehst du links:
 
@@ -127,10 +128,11 @@ Im Editor siehst du links:
 |---|---|
 | **Seite: Start** | großer Einstieg mit Bild ganz oben und Einleitung (Frage & Text) |
 | **Seite: CORE® Bodywork** | Text, Bild und Button der CORE-Seite, optional ein Zusatzbereich mit mehr Text |
-| **Seite: Über mich** | Text, Bild und Button der Über-mich-Seite, optional ein Zusatzbereich |
-| **Seite: 1:1 Sessions** | Überschrift, Merkmale mit Symbolen, Button, optional ein Zusatzbereich |
+| **Seite: Über mich** | Text, Bild und Button der Über-mich-Seite; optional Zusatzbereich, zweites Bild und Bildergalerie |
+| **Seite: 1:1 Sessions** | Überschrift, Merkmale mit Symbolen, Button; optional Online-Kalender, Preise, häufige Fragen, Zusatzbereich, Reihenfolge |
+| **Seite: Workshops** | eigene Seite für Workshops (ein-/ausschaltbar), aufgebaut wie „Über mich“ |
 | **Seite: Kontakt** | Text und Button der Kontaktseite |
-| **Erfahrungsberichte (Start & Sessions)** | die Zitate von Kundinnen, die auf der Startseite und der Sessions-Seite erscheinen |
+| **Erfahrungsberichte (Start & Sessions)** | die Zitate von Kundinnen, die auf der Startseite und der Sessions-Seite erscheinen; optional Video-Erfahrungen |
 | **Abschluss-Bereich (dunkler Bereich unten)** | der Satz mit Bild unten auf den Seiten („Vielleicht ist jetzt der Moment …“) |
 | **Design (Farben & Schrift)** | Farbpalette, Schrift, Feinschliff (Textgröße, Buttons, Abstände …) und eigene Farben ([Kapitel 6](#6-farben-und-design-selbst-ändern)) |
 | **Feedback-Seite** | Texte der Seite, auf der Kundinnen Feedback schreiben |
@@ -176,6 +178,9 @@ Im Editor siehst du links:
 | Bild der Kachel **1:1 Sessions** auf der Startseite | **Seite: 1:1 Sessions** → Bild für die Kachel |
 | Bild neben den **Erfahrungsberichten** | **Erfahrungsberichte** → Bild *(gilt für Start und 1:1 Sessions)* |
 | Bild im dunklen **Abschluss-Bereich** unten | **Abschluss-Bereich** → Bild *(gilt für alle Seiten)* |
+| **Zweites Bild** auf Über mich / Workshops | **Seite: Über mich** bzw. **Seite: Workshops** → Zweites Bild |
+| Fotos der **Bildergalerie** | **Seite: Über mich** bzw. **Seite: Workshops** → Bildergalerie: Fotos |
+| **Vorschaubilder** der Videos | **Erfahrungsberichte** → Videos → Vorschaubild |
 
 **Jede Seite individuell gestalten:** Die Bilder der Erfahrungsberichte und des Abschluss-Bereichs gelten zunächst für alle Seiten. Möchtest du auf einer Seite ein **anderes Bild**, öffne diese Seite im Editor, z. B. **Seite: Über mich**. Ganz unten findest du:
 - **„Eigenes Bild für den Abschluss-Bereich (optional)“**, das es auf Start, CORE® Bodywork, Über mich und 1:1 Sessions gibt
@@ -228,14 +233,31 @@ Eingestellt wird der Bildausschnitt **immer im Editor**. Wenn du dir unsicher bi
 | **Seite Über mich:** Motiv eher **rechts** | Das Bild läuft nach links weich aus. |
 
 ### Mehr Einträge hinzufügen
-Bei **Seite: 1:1 Sessions** (Merkmale) und **Erfahrungsberichte** kannst du beliebig viele Einträge **hinzufügen**, **löschen** und **verschieben**. Für jedes Session-Merkmal wählst du ein passendes Symbol aus.
+Bei Listen kannst du beliebig viele Einträge **hinzufügen**, **löschen** und **verschieben**: Session-Merkmale, Erfahrungsberichte, Videos, Preise, häufige Fragen und Galerie-Fotos. Für jedes Session-Merkmal wählst du ein passendes Symbol aus.
+
+### Zusatzfunktionen ein- und ausschalten
+Diese Bereiche sind schon fertig eingebaut. Du schaltest sie mit einem **Häkchen** ein oder aus. Ausgeschaltet sind sie auf der Website unsichtbar, deine Texte und Bilder bleiben aber gespeichert.
+
+| Funktion | Wo im Editor | Häkchen |
+|---|---|---|
+| **Preise**: Angebote mit Titel, Preis und Beschreibung, eines davon hervorhebbar | Seite: 1:1 Sessions | „Preise: Bereich anzeigen“ |
+| **Häufige Fragen**: aufklappbare Fragen & Antworten | Seite: 1:1 Sessions | „Häufige Fragen: Bereich anzeigen“ |
+| **Online-Kalender**: zusätzlicher Button, z. B. zu Calendly | Seite: 1:1 Sessions | „Online-Kalender: Button anzeigen“ und Link eintragen |
+| **Erfahrungen zuerst**: Erfahrungsberichte stehen auf der Sessions-Seite ganz oben | Seite: 1:1 Sessions | „Erfahrungsberichte vor den Sessions zeigen“ |
+| **Zweites Bild**: neben dem Zusatzbereich | Seite: Über mich (auch Workshops) | „Zweites Bild: anzeigen“ |
+| **Bildergalerie**: beliebig viele Fotos, mit Klick groß ansehen | Seite: Über mich (auch Workshops) | „Bildergalerie: anzeigen“ |
+| **Seite Workshops**: eigene Seite mit Menüpunkt und Kachel auf der Startseite | Seite: Workshops | „Seite anzeigen“ |
+| **Video-Erfahrungen**: Videos von YouTube ([Kapitel 4](#4-feedback-von-kundinnen)) | Erfahrungsberichte | „Videos: anzeigen“ |
+
+💡 Die Bereiche sind schon mit **Beispieltexten** gefüllt, z. B. Preise mit „[Preis] €“ und Fragen mit „Hier steht deine Antwort.“ Ersetze sie, **bevor** du das Häkchen setzt.
+
+💡 **Zweites Bild:** Es erscheint neben dem **Zusatzbereich** (Felder „Zusatzbereich – Überschrift/Text“). Trag dort also auch einen Text ein, z. B. „Mein Weg“.
 
 ### Was der Editor *nicht* kann
-Diese Dinge gehen im Editor nicht:
-- einen ganz **neuen Bereich** anlegen, z. B. „Preise“ oder eine Bildergalerie
-- **zusätzliche Bilder** an neuen Stellen einfügen
-- eine **neue Unterseite** anlegen, z. B. „Workshops“
-- die **Reihenfolge der Bereiche** auf einer Seite ändern
+Für Dinge, die es auf deiner Website **noch gar nicht gibt**, brauchst du Hilfe, z. B.:
+- eine **weitere neue Seite**, zusätzlich zu Workshops, z. B. „Retreats“
+- einen **ganz neuen Bereich**, z. B. eine Newsletter-Anmeldung
+- die **Reihenfolge** von Bereichen frei ändern (außer „Erfahrungen zuerst“ bei den Sessions)
 
 Das geht ganz einfach mit KI, siehe [Kapitel 7](#7-größere-änderungen-mit-ki-claude).
 
@@ -267,27 +289,21 @@ Solange kein Schlüssel eingetragen ist, zeigt die Seite einen freundlichen Hinw
 
 💡 Kostenlos sind 250 Feedbacks pro Monat. Das reicht in der Regel völlig.
 
-### Video-Feedback zeigen (optionale Erweiterung)
-Deine Website kann im Moment **noch keine Videos** anzeigen. Wenn du Video-Feedbacks von Kundinnen zeigen möchtest, kann Claude das für dich einbauen ([Kapitel 7](#7-größere-änderungen-mit-ki-claude)).
+### Video-Erfahrungen zeigen (optional)
+Deine Website kann Video-Erfahrungen von YouTube zeigen, unter den Erfahrungsberichten auf der Startseite und der Sessions-Seite.
 
 **⚠️ Vorher wichtig: Einwilligung einholen**
 Bei einem Video ist die Kundin erkennbar, das Feedback ist also **nicht mehr anonym**. Lass dir **schriftlich** bestätigen, dass du das Video auf deiner Website und auf YouTube zeigen darfst. Eine kurze E-Mail von ihr reicht, z. B.: „Ich bin einverstanden, dass Ronja mein Video auf ihrer Website und auf YouTube veröffentlicht.“ Bewahre diese E-Mail auf.
 
-**Der empfohlene Weg: über YouTube**
-1. Lade das Video auf **YouTube** hoch.
-2. Stell die Sichtbarkeit auf **„Nicht gelistet“**. Dann findet man es nicht über die YouTube-Suche, nur über deine Website.
-3. Lass Claude einmalig die Video-Funktion einbauen, mit diesem Text:
+**So geht's:**
+1. Lade das Video auf **YouTube** hoch und stell die Sichtbarkeit auf **„Nicht gelistet“**. Dann findet man es nicht über die YouTube-Suche, nur über deine Website.
+2. Kopiere bei YouTube unter **„Teilen“** den Link, z. B. `https://youtu.be/abc123…`.
+3. In Pages CMS unter **Erfahrungsberichte** bei **Videos** einen Eintrag hinzufügen und den Link einfügen. Optional kannst du einen **Titel** („Anna erzählt …“) und ein eigenes **Vorschaubild** angeben.
+4. Häkchen bei **„Videos: anzeigen“** setzen und **speichern**.
 
-> Mein GitHub-Repository **DEIN-BENUTZERNAME/website** ist eine Eleventy-Website mit Pages CMS (`.pages.yml`). Bitte ergänze bei den Erfahrungsberichten (`src/_data/testimonials.json`) ein **optionales Feld „YouTube-Link“**, das im Editor bearbeitbar ist. Wenn ein Link eingetragen ist, soll das Video im Bereich „Erfahrungen“ erscheinen, passend zum bestehenden Design. **Datenschutzfreundlich:** Zuerst nur ein Vorschaubild mit Play-Button und dem Hinweis, dass beim Abspielen YouTube geladen wird. Erst beim Klick soll das Video über **youtube-nocookie.com** geladen werden. Bitte ergänze auch die Datenschutzerklärung (`src/rechtliches/datenschutz.md`) um einen Abschnitt zu YouTube und teste den Build.
+**Datenschutz ist eingebaut:** Beim Öffnen deiner Website wird **nichts** von YouTube geladen. Besucherinnen sehen zuerst nur eine Fläche mit Play-Symbol und einem kurzen Hinweis. Erst beim Klick wird das Video im datenschutzfreundlichen Modus von YouTube geladen. Ein passender Abschnitt steht bereits in deiner Datenschutzerklärung.
 
-4. Danach fügst du in Pages CMS bei **Erfahrungsberichte** einen neuen Eintrag hinzu und trägst den **YouTube-Link** ein. Den Link findest du bei YouTube unter **„Teilen“**.
-
-**Die Alternative: Video direkt auf der Website**
-Kurze Clips können auch ohne YouTube direkt auf deiner Website liegen. Dann gehen keine Daten an Google. Dafür gilt:
-- Videodateien sind groß. GitHub nimmt einzelne Dateien **über 100 MB nicht an**.
-- Die Website lädt langsamer.
-
-Das eignet sich nur für wenige, sehr kurze Videos, die vorher stark verkleinert wurden, z. B. mit **handbrake.fr**. Für regelmäßige Video-Feedbacks ist YouTube besser. Wenn du diesen Weg willst, schreib Claude: „Bitte baue die Möglichkeit ein, kurze MP4-Videos bei den Erfahrungsberichten hochzuladen und anzuzeigen.“
+💡 Ein ungültiger Link wird einfach nicht angezeigt. Die Website geht dadurch nicht kaputt.
 
 ---
 
@@ -364,6 +380,12 @@ Die Einstellungen sind in **drei Stufen** aufgebaut. Für eine schöne Website r
 
 **Schrift:** Jede Auswahl ist ein abgestimmtes Paar aus Überschrift und Text.
 
+**Schriften frei kombinieren (optional):** Unter dem Schriftpaar findest du zwei weitere Felder:
+- **„Schrift für Überschriften“**: 12 Schriften zur Auswahl
+- **„Schrift für Text“**: 10 Schriften zur Auswahl
+
+Steht dort **„Wie im Schriftpaar (Standard)“**, gilt das gewählte Paar. Wählst du eine eigene Schrift, ersetzt sie nur diesen Teil. So kannst du z. B. das Paar „Elegant“ nehmen und nur die Überschrift auf „Newsreader“ ändern. Alle Schriften werden direkt von deiner Website geladen, ohne Google.
+
 | **Elegant *(Standard)*** | **Klassisch** | **Zeitlos** | **Modern** |
 |:---:|:---:|:---:|:---:|
 | <img src="docs/vorschau/schrift-elegant.jpg" width="170" alt="Elegant"> | <img src="docs/vorschau/schrift-klassisch.jpg" width="170" alt="Klassisch"> | <img src="docs/vorschau/schrift-zeitlos.jpg" width="170" alt="Zeitlos"> | <img src="docs/vorschau/schrift-modern.jpg" width="170" alt="Modern"> |
@@ -412,7 +434,7 @@ Für eine ganz bestimmte Farbe, z. B. deine Logo-Farbe.
 Eine eigene neue Palette oder eine ganz andere Schrift baut dir Claude ein ([Kapitel 7](#7-größere-änderungen-mit-ki-claude)):
 > „Füge im Design eine neue Farbpalette **‚Lavendel dunkel‘** hinzu (Datei `lib/design.js` und Auswahl in `.pages.yml`).“
 
-> „Füge im Design ein neues Schriftpaar mit der Schrift **…** für Überschriften hinzu (über Fontsource, lokal ausgeliefert, in `lib/design.js` und `.pages.yml`).“
+> „Füge bei ‚Schrift für Überschriften‘ die Schrift **…** hinzu (über Fontsource, lokal ausgeliefert, in `lib/design.js` und `.pages.yml`).“
 
 ---
 
@@ -428,15 +450,13 @@ Für alles, was der Editor nicht kann, hilft dir eine KI wie **Claude**. Program
 > Mein GitHub-Repository ist **DEIN-BENUTZERNAME/website**. Es ist eine Eleventy-Website mit Pages CMS als Editor (Konfiguration in `.pages.yml`) und wird über GitHub Actions auf GitHub Pages veröffentlicht. Bitte [deine Änderung]. Neue Inhalte sollen im Editor bearbeitbar sein, ergänze dafür auch `.pages.yml`. Halte dich an das bestehende Design.
 
 ### Beispiele, die du nur noch anpassen musst
-- „Füge unter ‚1:1 Sessions‘ einen neuen Bereich **Preise** mit drei Angeboten hinzu (Titel, Preis, kurze Beschreibung).“
-- „Füge eine **Bildergalerie** mit beliebig vielen Fotos nach ‚Über mich‘ hinzu.“
-- „Lege eine neue Seite **Workshops** an, nach dem Vorbild der Seite ‚Über mich‘, mit eigenem Menüpunkt im Editor und im Menü der Website.“
-- „Füge bei ‚Über mich‘ ein **zweites Bild** hinzu.“
-- „Tausche die **Reihenfolge**: Erfahrungen sollen vor den Sessions kommen.“
-- „Füge eine weitere **Schrift-Auswahl** im Design hinzu, z. B. mit der Schrift … für Überschriften.“
-- „Füge einen Bereich **Häufige Fragen** mit aufklappbaren Fragen hinzu.“
-- „Ermögliche **Video-Feedbacks** von YouTube bei den Erfahrungsberichten“ (ausführlicher Text in [Kapitel 4](#4-feedback-von-kundinnen)).
-- „Binde meinen **Online-Kalender** (Link: …) als Button bei den Sessions ein.“
+Vieles ist schon eingebaut und nur per Häkchen einzuschalten (siehe [Kapitel 3](#zusatzfunktionen-ein--und-ausschalten)). Für alles Weitere zum Beispiel:
+- „Lege eine weitere Seite **Retreats** an, nach dem Vorbild der Seite ‚Workshops‘ (ein-/ausschaltbar, mit Menüpunkt und eigenem Eintrag im Editor).“
+- „Füge auf der Startseite einen Bereich **Newsletter-Anmeldung** hinzu (ein-/ausschaltbar im Editor).“
+- „Füge bei ‚CORE® Bodywork‘ ebenfalls eine **Bildergalerie** hinzu, wie bei ‚Über mich‘.“
+- „Füge einen Bereich mit **Zertifikaten / Ausbildungen** als Liste mit Logos hinzu.“
+- „Mach die **Reihenfolge der Bereiche** auf der Startseite im Editor wählbar.“
+- „Füge bei ‚Schrift für Überschriften‘ die Schrift **…** hinzu.“
 
 ### Tipps für gute Ergebnisse
 - **Eine Änderung nach der anderen.** Kleine Schritte gehen fast immer gut.

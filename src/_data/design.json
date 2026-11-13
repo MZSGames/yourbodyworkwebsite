@@ -1,6 +1,8 @@
 {
   "palette": "erdtoene",
   "fonts": "elegant",
+  "heading_font": "paar",
+  "body_font": "paar",
   "accent": "",
   "text_size": "normal",
   "buttons": "rund",

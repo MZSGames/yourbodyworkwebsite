@@ -4,8 +4,9 @@
     {% for t in [
       { d: core, url: "/core-bodywork/" },
       { d: about, url: "/ueber-mich/" },
-      { d: sessions, url: "/sessions/" }
-    ] %}
+      { d: sessions, url: "/sessions/" },
+      { d: workshops, url: "/workshops/", hide: not workshops.show }
+    ] %}{% if not t.hide %}
     <a class="teaser" href="{{ t.url }}">
       {% set timg = t.d.image or start.hero.image %}
       {% if timg %}<div class="teaser-img"><img src="{{ timg }}" alt="" style="{{ (t.d.image_focus if t.d.image else start.hero.image_focus) | focus }}" loading="lazy"></div>{% endif %}
@@ -13,6 +14,6 @@
       <p class="teaser-title">{{ t.d.title | lines | safe }}</p>
       <span class="teaser-more">Mehr erfahren {% include "arrow.njk" %}</span>
     </a>
-    {% endfor %}
+    {% endif %}{% endfor %}
   </div>
 </section>

@@ -1,0 +1,23 @@
+{# ---------- BILDERGALERIE (ein-/ausschaltbar). Erwartet: s ---------- #}
+{% set gal = [] %}
+{% if s.gallery_show and s.gallery and s.gallery.length %}
+<section class="gallery">
+  <div class="wrap">
+    {% if s.gallery_title %}<h2>{{ s.gallery_title | lines | safe }}</h2>{% endif %}
+    {% if s.gallery_text %}<div class="gallery-intro">{{ s.gallery_text | paras | safe }}</div>{% endif %}
+    <div class="gallery-grid" data-gallery>
+      {% for g in s.gallery %}{% if g.image %}
+      <button type="button" class="gallery-item" aria-label="Bild vergrößern{% if g.image_alt %}: {{ g.image_alt }}{% endif %}">
+        <img src="{{ g.image }}" alt="{{ g.image_alt }}" loading="lazy">
+      </button>
+      {% endif %}{% endfor %}
+    </div>
+  </div>
+  <dialog class="lightbox" aria-label="Großansicht">
+    <button type="button" class="lb-close" aria-label="Schließen">×</button>
+    <button type="button" class="lb-prev" aria-label="Vorheriges Bild">‹</button>
+    <img alt="">
+    <button type="button" class="lb-next" aria-label="Nächstes Bild">›</button>
+  </dialog>
+</section>
+{% endif %}

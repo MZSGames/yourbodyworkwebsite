@@ -2,7 +2,7 @@
 // die Farben, Schriften und Gestaltungs-Optionen der Website.
 // Ungültige oder fehlende Angaben fallen automatisch auf den Standard zurück.
 import { readFileSync } from "node:fs";
-import { palettes, fontPairs, options, headingFiles, bodyFiles } from "../../lib/design.js";
+import { palettes, fontPairs, headingFonts, bodyFonts, options, headingFiles, bodyFiles } from "../../lib/design.js";
 
 const hexOk = (v) => typeof v === "string" && /^#[0-9a-fA-F]{6}$/.test(v.trim());
 const toRgb = (hex) => {
@@ -23,7 +23,11 @@ export default function () {
   } catch {}
 
   const p = palettes[design.palette] || palettes.erdtoene;
-  const f = fontPairs[design.fonts] || fontPairs.elegant;
+  const pair = fontPairs[design.fonts] || fontPairs.elegant;
+  // Einzeln gewählte Schriften überschreiben das Schriftpaar
+  const hPkg = headingFonts[design.heading_font] ? design.heading_font : pair.heading;
+  const bPkg = bodyFonts[design.body_font] ? design.body_font : pair.body;
+  const f = { heading: [hPkg, headingFonts[hPkg].name], body: [bPkg, bodyFonts[bPkg].name] };
   const own = design.custom_colors || {};
 
   // Farben: Palette, optional einzeln überschrieben

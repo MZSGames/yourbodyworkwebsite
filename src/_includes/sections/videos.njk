@@ -1,0 +1,23 @@
+{# ---------- VIDEO-ERFAHRUNGEN (ein-/ausschaltbar) ----------
+   Datenschutz: Es wird nichts von YouTube geladen, bis jemand auf „Abspielen“ klickt.
+   Dann wird das Video über youtube-nocookie.com eingebunden. #}
+{% set vids = testimonials.videos | withVideo %}
+{% if testimonials.videos_show and vids.length %}
+<section class="videos">
+  <div class="wrap">
+    {% if testimonials.videos_title %}<h2>{{ testimonials.videos_title | lines | safe }}</h2>{% endif %}
+    <div class="video-grid">
+      {% for v in vids %}
+      <figure class="video">
+        <button type="button" class="video-frame" data-yt="{{ v.youtube | youtubeId }}" aria-label="Video abspielen{% if v.title %}: {{ v.title }}{% endif %}">
+          {% if v.image %}<img src="{{ v.image }}" alt="{{ v.image_alt }}" loading="lazy">{% endif %}
+          <span class="video-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="video-hint">{{ testimonials.videos_note }}</span>
+        </button>
+        {% if v.title %}<figcaption>{{ v.title }}</figcaption>{% endif %}
+      </figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}

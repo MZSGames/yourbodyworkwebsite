@@ -59,6 +59,16 @@ export default function (eleventyConfig) {
     } catch { return []; }
   });
 
+  // YouTube-Link → Video-ID (youtu.be/…, watch?v=…, shorts/…, embed/…). Ungültig = leer.
+  eleventyConfig.addFilter("youtubeId", (url) => {
+    const u = String(url ?? "").trim();
+    const m = u.match(/(?:youtu\.be\/|youtube(?:-nocookie)?\.com\/(?:watch\?(?:.*&)?v=|shorts\/|embed\/|live\/))([A-Za-z0-9_-]{11})/);
+    return m ? m[1] : "";
+  });
+  eleventyConfig.addFilter("withVideo", (list) =>
+    (Array.isArray(list) ? list : []).filter((v) => v && eleventyConfig.getFilter("youtubeId")(v.youtube))
+  );
+
   // Text mit Leerzeilen → mehrere Absätze
   eleventyConfig.addFilter("paras", (text) =>
     String(text ?? "")

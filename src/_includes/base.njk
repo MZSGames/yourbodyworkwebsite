@@ -29,9 +29,10 @@
           { key: "core", url: "/core-bodywork/", label: core.menu_label },
           { key: "about", url: "/ueber-mich/", label: about.menu_label },
           { key: "sessions", url: "/sessions/", label: sessions.menu_label },
+          { key: "workshops", url: "/workshops/", label: workshops.menu_label, hide: not workshops.show },
           { key: "contact", url: "/kontakt/", label: contact.menu_label }
         ] %}
-        <a href="{{ n.url }}"{% if navKey == n.key %} class="is-active" aria-current="page"{% endif %}>{{ n.label }}</a>
+        {% if not n.hide %}<a href="{{ n.url }}"{% if navKey == n.key %} class="is-active" aria-current="page"{% endif %}>{{ n.label }}</a>{% endif %}
         {% endfor %}
         <a class="btn btn-small" href="{{ settings.contact_link }}">{{ settings.header_button_text }} {% include "arrow.njk" %}</a>
       </nav>

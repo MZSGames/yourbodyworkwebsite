@@ -6,8 +6,40 @@ Liebe Ronja, mit diesem Handbuch kannst du alles rund um deine Website selbst er
 
 ---
 
+## Das Wichtigste in Kürze
+
+### Du musst nie programmieren
+Deine Website ist fertig aufgebaut. **Alles, was du im Alltag brauchst, machst du im Editor**, ganz ohne Code:
+
+- Texte und Bilder auf allen Seiten
+- Bildausschnitt und eigene Bilder pro Seite
+- Namen der Menüpunkte und zusätzliche Textbereiche
+- Erfahrungsberichte und Session-Merkmale
+- Farben, Schrift und Gestaltung
+- E-Mail, Telefon, Instagram und Google-Text
+- Impressum und Datenschutzerklärung
+
+Am Code musst du nur dann etwas ändern, **wenn du etwas grundsätzlich Neues möchtest**, z. B. eine zusätzliche Seite oder einen ganz neuen Bereich. Auch dafür musst du nicht programmieren können: Das erledigt Claude für dich ([Kapitel 7](#7-größere-änderungen-mit-ki-claude)).
+
+### Einrichtung in 4 Schritten (einmalig, ca. 15 Minuten)
+| | Schritt | Wo |
+|:---:|---|---|
+| **1** | Kostenloses **GitHub-Konto** anlegen | github.com |
+| **2** | Die **Vorlage übernehmen** mit „Use this template“ | Link zur Vorlage |
+| **3** | **Veröffentlichen einschalten**: Settings → Pages → „GitHub Actions“, danach einmal „Run workflow“ | dein Repository auf GitHub |
+| **4** | Den **Editor (Pages CMS) verbinden** | app.pagescms.org |
+
+Danach ist deine Website online, und du arbeitest nur noch im Editor. Die genaue Anleitung mit allen Klicks steht in [Kapitel 2](#2-einmalige-einrichtung).
+
+**Später, wenn du möchtest:**
+- Feedback-Formular aktivieren ([Kapitel 4](#4-feedback-von-kundinnen)), 2 Minuten
+- Eigene Domain verbinden ([Kapitel 5](#5-schönere-web-adresse-und-eigene-domain))
+
+---
+
 ## Inhalt
 
+- [Das Wichtigste in Kürze](#das-wichtigste-in-kürze)
 1. [So funktioniert deine Website](#1-so-funktioniert-deine-website)
 2. [Einmalige Einrichtung](#2-einmalige-einrichtung)
 3. [Texte und Bilder bearbeiten](#3-texte-und-bilder-bearbeiten)

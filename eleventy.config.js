@@ -1,4 +1,5 @@
 // Eleventy-Konfiguration: baut aus den Inhalten in src/ die fertige Website in _site/
+import fs from "node:fs";
 import { HtmlBasePlugin } from "@11ty/eleventy";
 import { allFontFiles } from "./lib/design.js";
 
@@ -46,6 +47,16 @@ export default function (eleventyConfig) {
       return `object-position: ${c(m[1])}% ${c(m[2])}%`;
     }
     return `object-position: ${fallback}`;
+  });
+
+  // Liste aller hochgeladenen Bilder (für die Hilfsseite /bildausschnitt/)
+  eleventyConfig.addGlobalData("uploads", () => {
+    try {
+      return fs.readdirSync("src/images/uploads")
+        .filter((f) => /\.(jpe?g|png|webp|gif|avif)$/i.test(f))
+        .sort()
+        .map((f) => `/images/uploads/${f}`);
+    } catch { return []; }
   });
 
   // Text mit Leerzeilen → mehrere Absätze

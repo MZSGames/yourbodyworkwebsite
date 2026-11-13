@@ -168,6 +168,16 @@ Damit z. B. bei einem Porträt nicht der Kopf abgeschnitten wird, gibt es bei je
 3. **Speichern** und nach 1–2 Minuten auf der Website prüfen, **am Computer und am Handy**.
 4. Passt es noch nicht ganz, probier die Nachbar-Position.
 
+**Optional: Hilfsseite zum Finden der richtigen Position**
+Eingestellt wird der Bildausschnitt **immer im Editor**. Wenn du dir unsicher bist, welche der 9 Positionen passt, hilft dir eine kleine Seite auf deiner Website. Sie zeigt dir die passende Position, ohne dass du speichern und warten musst:
+1. Öffne **`https://DEINE-ADRESSE/bildausschnitt/`**. Die Seite steht nicht im Menü und erscheint nicht bei Google. Leg sie dir am besten als Lesezeichen an.
+2. Wähle das Bild aus: eines deiner Website-Bilder oder ein Foto von deinem Gerät. Das Foto vom Gerät wird dabei nirgends hochgeladen.
+3. Klick im Bild auf die Stelle, die sichtbar bleiben soll. Das Bild ist in dieselben 9 Felder aufgeteilt wie die Auswahl im Editor.
+4. Die Seite zeigt dir, **was du im Editor auswählen sollst**, z. B. **„↖ Oben links“**, und eine **Vorschau**, wie das Bild am Computer, am Handy und als Kachel aussieht.
+5. Genau diese Position wählst du dann in Pages CMS im Feld **„Bildausschnitt“** und **speicherst**.
+
+💡 Ein neu hochgeladenes Bild erscheint auf der Hilfsseite erst nach 1–2 Minuten. Du kannst es aber sofort über **„Foto vom Gerät wählen“** prüfen.
+
 <img src="docs/vorschau/bildausschnitt.jpg" width="560" alt="Vergleich Bildausschnitt Mitte und Oben">
 
 *Oben im Beispiel: Bildausschnitt „Mitte“, der Kopf ist abgeschnitten. Unten: „Oben“, das Gesicht ist sichtbar.*

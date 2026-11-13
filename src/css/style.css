@@ -12,22 +12,29 @@
 @font-face { font-family: "Jost"; src: url("../fonts/jost-latin-500-normal.woff2") format("woff2"); font-weight: 500; font-display: swap; }
 
 :root {
-  --cream: #f3ece5;
-  --cream-2: #ede3da;
-  --sand: #e4d6ca;
-  --ink: #2e211b;
-  --ink-soft: #5a463c;
-  --clay: #7d4a35;
-  --clay-dark: #683b29;
-  --night: #2a1d17;
-  --night-2: #3a2a22;
-  --line: rgba(125, 74, 53, .28);
+  /* ===== FARBEN – hier kannst du das ganze Farbschema ändern =====
+     Farben werden als Code geschrieben, z. B. #7d4a35.
+     Eigene Farbcodes findest du z. B. auf https://htmlcolorcodes.com */
 
-  --serif: "Cormorant", "Cormorant Garamond", Georgia, serif;
-  --sans: "Jost", "Helvetica Neue", Arial, sans-serif;
+  --cream: #f3ece5;      /* heller Hintergrund (die meisten Bereiche) */
+  --cream-2: #ede3da;    /* etwas dunklerer Hintergrund (Einleitung, Über mich, Erfahrungen) */
+  --sand: #e4d6ca;       /* Rahmen von Eingabefeldern, inaktive Punkte */
+  --ink: #2e211b;        /* Überschriften und Haupttext */
+  --ink-soft: #5a463c;   /* Fließtext (etwas heller) */
+  --clay: #7d4a35;       /* Akzentfarbe: Buttons, kleine Überzeilen, Symbole */
+  --clay-dark: #683b29;  /* Buttons, wenn man mit der Maus darüber fährt */
+  --night: #2a1d17;      /* dunkler Hintergrund ganz oben (großer Einstieg) */
+  --night-2: #3a2a22;    /* Fußbereich ganz unten */
+  --cta: var(--cta);        /* dunkler Abschluss-Bereich („Vielleicht ist jetzt der Moment …“) */
+  --line: rgba(125, 74, 53, .28); /* feine Trennlinien */
 
-  --wrap: 1180px;
-  --pad: clamp(20px, 5vw, 64px);
+  /* ===== SCHRIFTEN ===== */
+  --serif: "Cormorant", "Cormorant Garamond", Georgia, serif; /* Überschriften */
+  --sans: "Jost", "Helvetica Neue", Arial, sans-serif;         /* Fließtext */
+
+  /* ===== LAYOUT ===== */
+  --wrap: 1180px;                   /* maximale Breite des Inhalts */
+  --pad: clamp(20px, 5vw, 64px);    /* Abstand zum Bildschirmrand */
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -175,10 +182,10 @@ h2 { font-size: clamp(32px, 3.6vw, 50px); }
 .dots button.is-active { background: var(--clay); }
 
 /* ---------- Abschluss-CTA ---------- */
-.cta { position: relative; overflow: hidden; background: #4b3428; color: #fbf3ec; min-height: 380px; display: flex; align-items: center; }
+.cta { position: relative; overflow: hidden; background: var(--cta); color: #fbf3ec; min-height: 380px; display: flex; align-items: center; }
 .cta-media { position: absolute; inset: 0 auto 0 0; width: 55%; }
 .cta-media img { width: 100%; height: 100%; object-fit: cover; object-position: 60% 40%; }
-.cta-media::after { content: ""; position: absolute; inset: 0 -1px 0 0; background: linear-gradient(90deg, rgba(75, 52, 40, 0) 30%, #4b3428 96%); }
+.cta-media::after { content: ""; position: absolute; inset: 0 -1px 0 0; background: linear-gradient(90deg, rgba(75, 52, 40, 0) 30%, var(--cta) 96%); }
 .cta::before { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse at 70% 20%, rgba(240, 180, 130, .18), transparent 60%); pointer-events: none; z-index: 1; }
 .cta-content { position: relative; z-index: 2; text-align: center; padding-top: 70px; padding-bottom: 70px; padding-left: max(var(--pad), 34%); }
 .cta-title { font-style: italic; font-size: clamp(30px, 3.4vw, 46px); line-height: 1.2; margin-bottom: 1em; }
@@ -282,7 +289,7 @@ h2 { font-size: clamp(32px, 3.6vw, 50px); }
 
   .cta { flex-direction: column; }
   .cta-media { position: relative; width: 100%; height: 60vw; }
-  .cta-media::after { background: linear-gradient(0deg, #4b3428, rgba(75, 52, 40, 0) 50%); }
+  .cta-media::after { background: linear-gradient(0deg, var(--cta), rgba(75, 52, 40, 0) 50%); }
   .cta-content { padding: 0 var(--pad) 64px; margin-top: -30px; }
 
   .footer-inner { flex-direction: column; align-items: flex-start; }

@@ -108,6 +108,7 @@ content:
             fields:
               - { name: quote, label: Zitat (ohne Anführungszeichen), type: text }
               - { name: name, label: Name / Initialen (optional), type: string }
+          - { name: feedback_link_text, label: Link zum Feedback-Formular, type: string, description: "Kleiner Link unter den Erfahrungsberichten. Leer lassen = kein Link." }
 
       - name: cta
         label: "7 · Abschluss (dunkler Bereich)"
@@ -128,6 +129,26 @@ content:
           - { name: text, label: Text, type: text }
           - { name: button_text, label: Button-Text, type: string }
           - { name: mail_subject, label: Betreff der E-Mail, type: string, description: "Wird automatisch in die E-Mail eingesetzt, wenn jemand auf den Button klickt." }
+
+  # ================= FEEDBACK =================
+  - name: feedback
+    label: Feedback-Seite
+    type: file
+    path: src/_data/feedback.json
+    format: json
+    fields:
+      - { name: eyebrow, label: Kleine Überzeile, type: string }
+      - { name: title, label: Überschrift, type: text }
+      - { name: intro, label: Einleitungstext, type: text, description: "Leerzeile = neuer Absatz." }
+      - { name: message_label, label: Beschriftung Textfeld, type: string }
+      - { name: message_placeholder, label: Platzhalter im Textfeld, type: string }
+      - { name: name_label, label: Beschriftung Namensfeld, type: string }
+      - { name: consent_label, label: Text beim Häkchen (Veröffentlichung erlaubt), type: string }
+      - { name: button_text, label: Button-Text, type: string }
+      - { name: success_title, label: Überschrift nach dem Absenden, type: string }
+      - { name: success_text, label: Text nach dem Absenden, type: text }
+      - { name: error_text, label: Text bei einem Fehler, type: string }
+      - { name: not_ready_text, label: Text solange kein Schlüssel eingetragen ist, type: string }
 
   # ================= RECHTLICHES =================
   - name: impressum
@@ -161,6 +182,7 @@ content:
       - { name: contact_link, label: "Wohin führen die Anfrage-Buttons?", type: string, description: "#kontakt = zum Kontaktbereich. Alternativ z. B. ein Buchungslink (Calendly o. Ä.)." }
       - { name: contact_email, label: E-Mail-Adresse, type: string }
       - { name: phone, label: Telefon (optional), type: string, description: "Leer lassen, wenn keine Nummer angezeigt werden soll." }
+      - { name: feedback_key, label: Feedback-Schlüssel (Web3Forms), type: string, description: "Kostenlos auf web3forms.com anfordern – der Schlüssel kommt per E-Mail. Hier einfügen, dann ist das Feedback-Formular aktiv." }
       - { name: instagram_handle, label: Instagram-Name, type: string, description: "z. B. @ronja.sereinig" }
       - { name: instagram_url, label: Instagram-Link, type: string, description: "Leer lassen blendet Instagram aus." }
       - { name: instagram_label, label: Instagram-Beschriftung, type: string }

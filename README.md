@@ -41,6 +41,7 @@ src/
 
 - Die Pfade passen sich automatisch an: `…github.io/repo-name/` und eigene Domain funktionieren beide.
 - Die Schriften (Cormorant Garamond und Jost) werden lokal ausgeliefert, ohne Google Fonts.
+- Anonymes Feedback: Seite `/feedback/`, Versand über Web3Forms (kostenlos, ohne Konto). Der Schlüssel wird im Editor unter Einstellungen eingetragen. Das Feedback geht per E-Mail an die Seitenbetreiberin und wird nicht automatisch veröffentlicht.
 - Kontakt läuft per `mailto:`-Button. Alternativ kann in den Einstellungen ein Buchungslink für alle Anfrage-Buttons eingetragen werden.
 
 **Hinweis:** Prüfen, ob „CORE®“ so verwendet werden darf. Das ist ein Markenzeichen des Ausbildungsanbieters.

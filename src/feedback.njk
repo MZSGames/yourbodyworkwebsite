@@ -1,0 +1,44 @@
+---
+layout: base.njk
+title: Feedback
+bodyClass: page
+permalink: /feedback/
+---
+{% set f = feedback %}
+<section class="page-body feedback-page">
+  <div class="wrap narrow">
+    <p class="eyebrow">{{ f.eyebrow }}</p>
+    <h1>{{ f.title | lines | safe }}</h1>
+    <div class="feedback-intro">{{ f.intro | paras | safe }}</div>
+
+    {% if settings.feedback_key %}
+    <form class="feedback-form" action="https://api.web3forms.com/submit" method="POST" data-feedback>
+      <input type="hidden" name="access_key" value="{{ settings.feedback_key }}">
+      <input type="hidden" name="subject" value="Neues Feedback über deine Website">
+      <input type="hidden" name="from_name" value="Website-Feedback">
+      <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
+
+      <label>{{ f.message_label }}
+        <textarea name="Feedback" rows="7" required placeholder="{{ f.message_placeholder }}"></textarea>
+      </label>
+      <label>{{ f.name_label }}
+        <input name="Name" autocomplete="off">
+      </label>
+      <label class="check">
+        <input type="checkbox" name="Veröffentlichung erlaubt" value="Ja">
+        <span>{{ f.consent_label }}</span>
+      </label>
+      <button class="btn" type="submit">{{ f.button_text }} {% include "arrow.njk" %}</button>
+      <p class="form-error" hidden>{{ f.error_text }}</p>
+    </form>
+
+    <div class="feedback-success" hidden>
+      <h2>{{ f.success_title }}</h2>
+      {{ f.success_text | paras | safe }}
+      <p><a class="btn btn-outline" href="/">Zur Startseite {% include "arrow.njk" %}</a></p>
+    </div>
+    {% else %}
+    <p class="feedback-not-ready">{{ f.not_ready_text }}</p>
+    {% endif %}
+  </div>
+</section>

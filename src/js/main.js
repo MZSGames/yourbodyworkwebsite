@@ -56,3 +56,31 @@ if (track && dotsBox) {
   window.addEventListener("resize", build);
   build();
 }
+
+// Feedback-Formular: ohne Seitenwechsel absenden
+const fbForm = document.querySelector("[data-feedback]");
+if (fbForm) {
+  const btn = fbForm.querySelector("button[type=submit]");
+  const err = fbForm.querySelector(".form-error");
+  const ok = document.querySelector(".feedback-success");
+  fbForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    err.hidden = true;
+    btn.disabled = true;
+    try {
+      const res = await fetch(fbForm.action, {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: new FormData(fbForm),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok || data.success === false) throw new Error(data.message || res.status);
+      fbForm.hidden = true;
+      ok.hidden = false;
+      ok.scrollIntoView({ behavior: "smooth", block: "center" });
+    } catch (_) {
+      err.hidden = false;
+      btn.disabled = false;
+    }
+  });
+}

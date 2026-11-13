@@ -68,6 +68,23 @@ Fertig! 🎉 Ab jetzt brauchst du nur noch Teil 2.
 ### Erfahrungsberichte & Session-Merkmale
 In den Bereichen **„5 · 1:1 Sessions“** und **„6 · Erfahrungen anderer Frauen“** kannst du Einträge hinzufügen, löschen und verschieben. Für jedes Session-Merkmal wählst du ein passendes Symbol aus.
 
+### Feedback von Kundinnen
+Auf deiner Website gibt es die Seite **`/feedback/`**, z. B. `https://DEINE-ADRESSE/feedback/`. Dort können Kundinnen anonym und ohne Anmeldung schreiben, wie sie die Session erlebt haben. Schick ihnen den Link am besten nach der Session. Zusätzlich gibt es einen kleinen Link unter den Erfahrungsberichten und im Fußbereich.
+
+**Einmalig aktivieren (2 Minuten):**
+1. Öffne **https://web3forms.com** und klicke auf **„Create your Access Key“**.
+2. Gib die E-Mail-Adresse ein, an die das Feedback geschickt werden soll.
+3. Du bekommst einen **Schlüssel** per E-Mail, eine lange Buchstaben-Zahlen-Kombination. Kopiere ihn.
+4. Füge ihn in Pages CMS unter **Einstellungen → Feedback-Schlüssel** ein und klicke auf **Speichern**.
+
+Solange kein Schlüssel eingetragen ist, zeigt die Seite nur einen freundlichen Hinweis statt des Formulars.
+
+**So läuft es danach:**
+- Jedes Feedback kommt bei dir **per E-Mail** an. Es erscheint **nicht** automatisch auf der Website. Du entscheidest, was online geht.
+- In der E-Mail siehst du, ob die Kundin der Veröffentlichung zugestimmt hat (**„Veröffentlichung erlaubt: Ja“**).
+- Wenn ja und du es zeigen möchtest: In Pages CMS unter **Startseite → 6 · Erfahrungen anderer Frauen** einen neuen Erfahrungsbericht hinzufügen, den Text hineinkopieren und speichern.
+- Texte und Beschriftungen der Feedback-Seite änderst du unter **Feedback-Seite**.
+
 ### Einstellungen
 Unter **Einstellungen** änderst du:
 - deine E-Mail-Adresse, Telefonnummer und Instagram
@@ -83,6 +100,7 @@ In der linken Leiste unter **Impressum** bzw. **Datenschutzerklärung**.
 - [ ] E-Mail-Adresse in den **Einstellungen** eintragen
 - [ ] Bei **1:1 Sessions** den Standort „[deiner Region]“ ersetzen
 - [ ] Impressum und Datenschutzerklärung ausfüllen
+- [ ] Feedback-Schlüssel von web3forms.com in den **Einstellungen** eintragen
 
 ---
 

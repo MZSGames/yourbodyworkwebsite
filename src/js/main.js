@@ -1,3 +1,16 @@
+// Menü-Symbol (☰) automatisch zeigen, wenn die Menüpunkte nicht in eine Zeile passen
+const headerInner = document.querySelector(".header-inner");
+const fitNav = () => {
+  if (!headerInner) return;
+  document.body.classList.remove("nav-compact");
+  if (window.innerWidth > 1200 && headerInner.scrollWidth > headerInner.clientWidth + 1) {
+    document.body.classList.add("nav-compact");
+  }
+};
+fitNav();
+window.addEventListener("resize", fitNav);
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitNav);
+
 // Mobiles Menü
 const toggle = document.querySelector(".nav-toggle");
 if (toggle) {

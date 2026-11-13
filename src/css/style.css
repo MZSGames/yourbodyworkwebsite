@@ -71,6 +71,7 @@ h2 { font-size: clamp(32px, 3.6vw, 50px); }
   backdrop-filter: blur(8px);
   border-bottom: 1px solid color-mix(in srgb, var(--clay) 8%, transparent);
 }
+.site-header .wrap { max-width: 1340px; }
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 28px; height: 72px; }
 .logo { text-decoration: none; display: flex; flex-direction: column; line-height: 1.1; }
 .logo-name { font: 400 22px var(--serif); letter-spacing: .2em; text-transform: uppercase; }
@@ -334,6 +335,24 @@ body.fade-off .split-media img, body.fade-off .testimonials-media img { -webkit-
   .main-nav a:not(.btn) { font-size: 18px; padding: 8px 0; }
   .main-nav .btn { margin: 12px 0 0; }
 }
+
+/* Gleiches Menü-Symbol, wenn die Menüpunkte nicht in eine Zeile passen (wird per Skript gesetzt) */
+.nav-compact .nav-toggle {
+    display: flex; flex-direction: column; justify-content: center; gap: 6px;
+    width: 44px; height: 44px; background: none; border: 0; cursor: pointer; padding: 10px;
+  }
+.nav-compact .nav-toggle span { display: block; height: 1px; background: var(--ink); transition: transform .3s, opacity .3s; }
+.nav-compact.nav-open .nav-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-compact.nav-open .nav-toggle span:nth-child(2) { opacity: 0; }
+.nav-compact.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+.nav-compact .main-nav {
+    position: fixed; inset: 72px 0 auto 0; flex-direction: column; gap: 6px;
+    background: var(--cream); padding: 20px var(--pad) 32px; border-bottom: 1px solid var(--line);
+    transform: translateY(-120%); transition: transform .35s ease; z-index: -1;
+  }
+.nav-compact.nav-open .main-nav { transform: none; }
+.nav-compact .main-nav a:not(.btn) { font-size: 18px; padding: 8px 0; }
+.nav-compact .main-nav .btn { margin: 12px 0 0; }
 
 @media (max-width: 980px) {
   .intro-grid { grid-template-columns: 1fr; }

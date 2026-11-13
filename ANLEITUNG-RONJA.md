@@ -286,6 +286,18 @@ Unter **Einstellungen** kannst du festlegen:
 
 ## 4. Feedback von Kundinnen
 
+**Zwei Seiten, zwei Aufgaben (nicht doppelt!):**
+
+| | Erfahrungen & Feedbacks | Feedback-Seite |
+|---|---|---|
+| Wofür? | Hier **zeigst** du Zitate und Videos von Kundinnen. | Hier **schreiben** Kundinnen dir anonym ein neues Feedback. |
+| Adresse | `/erfahrungen/` | `/feedback/` |
+| Im Menü? | Ja | Nein, nur unten auf der Seite und als Button |
+| Wer sieht es? | Alle Besucher | Nur du, per E-Mail |
+
+So hängen sie zusammen: Kundin schreibt auf der Feedback-Seite → du bekommst eine E-Mail → gefällt es dir, trägst du es unter **Seite: Erfahrungen & Feedbacks** ein → jetzt sehen es alle.
+
+
 Auf deiner Website gibt es die Seite **`/feedback/`**. Dort können Kundinnen **anonym und ohne Anmeldung** schreiben, wie sie die Session erlebt haben.
 
 ### Einmalig aktivieren (2 Minuten)

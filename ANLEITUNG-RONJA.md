@@ -311,7 +311,11 @@ Solange kein Schlüssel eingetragen ist, zeigt die Seite einen freundlichen Hinw
 ### So läuft es danach
 - Schick Kundinnen nach der Session den Link: `https://DEINE-ADRESSE/feedback/`
 - Jedes Feedback kommt **per E-Mail** bei dir an. Es erscheint **nicht automatisch** auf der Website. Du entscheidest, was online geht.
-- In der E-Mail steht, ob die Kundin zustimmt: **„Veröffentlichung erlaubt: Ja“**.
+- In der E-Mail steht unter **„Veröffentlichung“**, was die Kundin ausgewählt hat:
+  - **Nein, nur für dich** → bitte nicht auf die Website stellen.
+  - **Ja, aber anonym** → du darfst es zeigen. Lass das Feld **Name** leer.
+  - **Ja, gern mit Vornamen/Initialen** → trag beim Erfahrungsbericht im Feld **Name** genau das ein, was sie im Formular angegeben hat.
+- Mit Namen zeigst du ein Feedback nur, wenn sie das so ausgewählt hat. Im Zweifel lieber anonym. Bewahre die E-Mail als Nachweis auf.
 - Wenn ja und du es zeigen möchtest: In Pages CMS unter **Seite: Erfahrungen & Feedbacks** einen neuen Erfahrungsbericht hinzufügen, den Text hineinkopieren und speichern.
 
 💡 Kostenlos sind 250 Feedbacks pro Monat. Das reicht in der Regel völlig.

@@ -23,10 +23,12 @@ bodyClass: page
       <label>{{ f.name_label }}
         <input name="Name" autocomplete="off">
       </label>
-      <label class="check">
-        <input type="checkbox" name="Veröffentlichung erlaubt" value="Ja">
-        <span>{{ f.consent_label }}</span>
-      </label>
+      <fieldset class="consent">
+        <legend>{{ f.consent_title }}</legend>
+        <label class="check"><input type="radio" name="Veröffentlichung" value="{{ f.consent_no }}" checked><span>{{ f.consent_no }}</span></label>
+        <label class="check"><input type="radio" name="Veröffentlichung" value="{{ f.consent_anon }}"><span>{{ f.consent_anon }}</span></label>
+        <label class="check"><input type="radio" name="Veröffentlichung" value="{{ f.consent_name }}"><span>{{ f.consent_name }}</span></label>
+      </fieldset>
       <button class="btn" type="submit">{{ f.button_text }} {% include "arrow.njk" %}</button>
       <p class="form-error" hidden>{{ f.error_text }}</p>
     </form>

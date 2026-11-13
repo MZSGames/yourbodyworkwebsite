@@ -191,6 +191,8 @@ h2 { font-size: clamp(32px, 3.6vw, 50px); }
 .feedback-form input:focus, .feedback-form textarea:focus { outline: none; border-color: var(--clay); }
 .feedback-form .check { display: flex; gap: 10px; align-items: flex-start; font-size: 15px; }
 .feedback-form .check input { margin-top: 5px; accent-color: var(--clay); }
+.feedback-form .consent { border: 0; padding: 0; margin: 0; display: grid; gap: 8px; }
+.feedback-form .consent legend { font-weight: 600; margin-bottom: 8px; padding: 0; }
 .feedback-form .btn { justify-self: start; }
 .feedback-form .btn[disabled] { opacity: .6; cursor: wait; }
 .form-error { color: #9b3a2a; font-size: 15px; }

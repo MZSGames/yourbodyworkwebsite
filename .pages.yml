@@ -724,7 +724,10 @@ content:
       - { name: message_label, label: Beschriftung Textfeld, type: string }
       - { name: message_placeholder, label: Platzhalter im Textfeld, type: string }
       - { name: name_label, label: Beschriftung Namensfeld, type: string }
-      - { name: consent_label, label: Text beim Häkchen (Veröffentlichung erlaubt), type: string }
+      - { name: consent_title, label: "Frage zur Veröffentlichung", type: string }
+      - { name: consent_no, label: "Auswahl 1: nicht veröffentlichen", type: string }
+      - { name: consent_anon, label: "Auswahl 2: anonym veröffentlichen", type: string }
+      - { name: consent_name, label: "Auswahl 3: mit Namen veröffentlichen", type: string }
       - { name: button_text, label: Button-Text, type: string }
       - { name: success_title, label: Überschrift nach dem Absenden, type: string }
       - { name: success_text, label: Text nach dem Absenden, type: text }

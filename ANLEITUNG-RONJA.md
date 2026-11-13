@@ -329,7 +329,8 @@ Für alles, was der Editor nicht kann, hilft dir eine KI wie **Claude**. Program
 | **Das Feedback-Formular wird nicht angezeigt.** | Unter **Einstellungen** den Feedback-Schlüssel prüfen. Er muss ganz und ohne Leerzeichen eingefügt sein. |
 | **Es kommt kein Feedback per E-Mail an.** | Im Spam-Ordner nachsehen. Die E-Mails kommen von Web3Forms. |
 | **Ich kann mich bei Pages CMS nicht anmelden.** | Auf **github.com** einloggen, dann erneut auf app.pagescms.org „Sign in with GitHub“. Passwort vergessen? Auf github.com **„Forgot password?“** nutzen. |
-| **Ein Feld fehlt im Editor.** | Das Feld ist nicht in `.pages.yml` eingetragen. Bitte Claude, es zu ergänzen. |
+| **Ein neuer Menüpunkt oder ein neues Feld erscheint nicht im Editor**, z. B. nachdem Claude etwas eingebaut hat. | Pages CMS merkt sich die alte Einstellung. In Pages CMS links auf **„Settings“** klicken (nicht „Einstellungen“). Dort ganz am Ende der Datei eine **leere Zeile** einfügen, **speichern** und die Seite neu laden. |
+| **Ein Feld fehlt im Editor, auch nach dem Trick oben.** | Das Feld ist nicht in `.pages.yml` eingetragen. Bitte Claude, es zu ergänzen. |
 | **Ein Bild sieht unscharf aus.** | Ein größeres Foto hochladen (mind. 1800 px breit). |
 | **Ein Bild ist falsch zugeschnitten.** | Ein Foto wählen, bei dem das Motiv auf der richtigen Seite ist (siehe Tabelle in [Kapitel 3](#3-texte-und-bilder-bearbeiten)). |
 

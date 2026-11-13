@@ -5,15 +5,13 @@ title: Impressum
 **Ronja Sereinig**
 CORE® Emotional Bodywork
 
-[Straße und Hausnummer]
+[Strasse und Hausnummer]
 [PLZ Ort]
-[Land]
+Schweiz
 
 E-Mail: [deine E-Mail-Adresse]
 Telefon: [optional]
 
-## Angaben zur Tätigkeit
+[UID-Nummer, z. B. CHE-123.456.789 – nur falls vorhanden, z. B. bei Eintrag im Handelsregister oder MWST-Pflicht]
 
-[Unternehmensgegenstand, ggf. Gewerbe, Kammerzugehörigkeit, zuständige Aufsichtsbehörde, UID-Nummer – je nach Land und Rechtsform ergänzen.]
-
-*Bitte diesen Text durch ein vollständiges, rechtlich geprüftes Impressum ersetzen.*
+*Bitte die Angaben in eckigen Klammern ersetzen und das Impressum prüfen lassen.*

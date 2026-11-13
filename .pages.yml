@@ -15,9 +15,9 @@ content:
     path: src/_data/start.json
     format: json
     fields:
-      - { name: menu_label, label: Name im Menü, type: string, description: "So heißt die Seite oben im Menü." }
+      - { name: menu_label, label: Name im Menü, type: string, description: "So heisst die Seite oben im Menü." }
       - name: hero
-        label: "Großer Einstieg (ganz oben)"
+        label: "Grosser Einstieg (ganz oben)"
         type: object
         fields:
           - { name: eyebrow, label: Kleine Überzeile, type: string }
@@ -29,7 +29,7 @@ content:
           - { name: image_alt, label: Bildbeschreibung, type: string, description: "Kurz beschreiben, was zu sehen ist (für Google und blinde Menschen)." }
           - name: image_focus
             label: "Bildausschnitt"
-            description: "Welcher Teil des Bildes sichtbar bleibt, wenn es zugeschnitten wird. Bei Hochkant-Porträts meist „Oben“. Leer = Mitte."
+            description: "Welcher Teil des Bildes sichtbar bleibt, wenn es zugeschnitten wird. Bei Hochkant-Porträts meist «Oben». Leer = Mitte."
             type: select
             options:
               values:
@@ -49,11 +49,11 @@ content:
           - { name: title, label: Überschrift, type: text, description: "Mit Enter einen Zeilenumbruch setzen." }
           - { name: text, label: Text, type: text, description: "Leerzeile = neuer Absatz." }
           - { name: accent, label: Hervorgehobener Satz (kursiv), type: string }
-      - { name: testimonials_image, label: "Eigenes Bild für die Erfahrungsberichte (optional)", type: image, description: "Nur für diese Seite. Leer lassen = gemeinsames Bild aus „Erfahrungsberichte“." }
+      - { name: testimonials_image, label: "Eigenes Bild für die Erfahrungsberichte (optional)", type: image, description: "Nur für diese Seite. Leer lassen = gemeinsames Bild aus «Erfahrungsberichte»." }
       - { name: testimonials_image_alt, label: "Bildbeschreibung (Erfahrungsberichte)", type: string }
       - name: testimonials_image_focus
         label: "Bildausschnitt"
-        description: "Welcher Teil des Bildes sichtbar bleibt, wenn es zugeschnitten wird. Bei Hochkant-Porträts meist „Oben“. Leer = Mitte."
+        description: "Welcher Teil des Bildes sichtbar bleibt, wenn es zugeschnitten wird. Bei Hochkant-Porträts meist «Oben». Leer = Mitte."
         type: select
         options:
           values:
@@ -66,11 +66,11 @@ content:
             - { name: unten-links, label: "↙ Unten links" }
             - { name: unten, label: "↓ Unten" }
             - { name: unten-rechts, label: "↘ Unten rechts" }
-      - { name: cta_image, label: "Eigenes Bild für den Abschluss-Bereich (optional)", type: image, description: "Nur für diese Seite. Leer lassen = gemeinsames Bild aus „Abschluss-Bereich“." }
+      - { name: cta_image, label: "Eigenes Bild für den Abschluss-Bereich (optional)", type: image, description: "Nur für diese Seite. Leer lassen = gemeinsames Bild aus «Abschluss-Bereich»." }
       - { name: cta_image_alt, label: "Bildbeschreibung (Abschluss-Bereich)", type: string }
       - name: cta_image_focus
         label: "Bildausschnitt"
-        description: "Welcher Teil des Bildes sichtbar bleibt, wenn es zugeschnitten wird. Bei Hochkant-Porträts meist „Oben“. Leer = Mitte."
+        description: "Welcher Teil des Bildes sichtbar bleibt, wenn es zugeschnitten wird. Bei Hochkant-Porträts meist «Oben». Leer = Mitte."
         type: select
         options:
           values:
@@ -91,7 +91,7 @@ content:
     format: json
     fields:
       - { name: show, label: "Seite anzeigen", type: boolean, description: "Angehakt = die Seite Über mich ist online und steht im Menü. Nicht angehakt = sie ist ausgeblendet, deine Inhalte bleiben gespeichert." }
-      - { name: menu_label, label: Name im Menü, type: string, description: "So heißt die Seite oben im Menü." }
+      - { name: menu_label, label: Name im Menü, type: string, description: "So heisst die Seite oben im Menü." }
       - { name: eyebrow, label: Kleine Überzeile, type: string }
       - { name: title, label: Überschrift, type: text }
       - { name: text, label: Text, type: text, description: "Leerzeile = neuer Absatz." }
@@ -101,7 +101,7 @@ content:
       - { name: image_alt, label: Bildbeschreibung, type: string }
       - name: image_focus
         label: "Bildausschnitt"
-        description: "Welcher Teil des Bildes sichtbar bleibt, wenn es zugeschnitten wird. Bei Hochkant-Porträts meist „Oben“. Leer = Mitte."
+        description: "Welcher Teil des Bildes sichtbar bleibt, wenn es zugeschnitten wird. Bei Hochkant-Porträts meist «Oben». Leer = Mitte."
         type: select
         options:
           values:
@@ -116,11 +116,11 @@ content:
             - { name: unten-rechts, label: "↘ Unten rechts" }
       - { name: more_title, label: Zusatzbereich – Überschrift (optional), type: string, description: "Erscheint unter dem Hauptbereich. Leer lassen = kein Zusatzbereich." }
       - { name: more_text, label: Zusatzbereich – Text (optional), type: text, description: "Für mehr Text auf dieser Seite. Leerzeile = neuer Absatz." }
-      - { name: cta_image, label: "Eigenes Bild für den Abschluss-Bereich (optional)", type: image, description: "Nur für diese Seite. Leer lassen = gemeinsames Bild aus „Abschluss-Bereich“." }
+      - { name: cta_image, label: "Eigenes Bild für den Abschluss-Bereich (optional)", type: image, description: "Nur für diese Seite. Leer lassen = gemeinsames Bild aus «Abschluss-Bereich»." }
       - { name: cta_image_alt, label: "Bildbeschreibung (Abschluss-Bereich)", type: string }
       - name: cta_image_focus
         label: "Bildausschnitt"
-        description: "Welcher Teil des Bildes sichtbar bleibt, wenn es zugeschnitten wird. Bei Hochkant-Porträts meist „Oben“. Leer = Mitte."
+        description: "Welcher Teil des Bildes sichtbar bleibt, wenn es zugeschnitten wird. Bei Hochkant-Porträts meist «Oben». Leer = Mitte."
         type: select
         options:
           values:
@@ -160,7 +160,7 @@ content:
       - { name: gallery_text, label: "Bildergalerie: Text (optional)", type: text }
       - name: gallery
         label: "Bildergalerie: Fotos"
-        description: "Beliebig viele Fotos. Ein Klick auf der Website zeigt das Foto groß."
+        description: "Beliebig viele Fotos. Ein Klick auf der Website zeigt das Foto gross."
         type: object
         list:
           collapsible:
@@ -177,7 +177,7 @@ content:
     format: json
     fields:
       - { name: show, label: "Seite anzeigen", type: boolean, description: "Angehakt = die Seite 1:1 Sessions ist online und steht im Menü. Nicht angehakt = sie ist ausgeblendet, deine Inhalte bleiben gespeichert." }
-      - { name: menu_label, label: Name im Menü, type: string, description: "So heißt die Seite oben im Menü." }
+      - { name: menu_label, label: Name im Menü, type: string, description: "So heisst die Seite oben im Menü." }
       - { name: eyebrow, label: Kleine Überzeile, type: string }
       - { name: title, label: Überschrift, type: text }
       - name: items
@@ -208,7 +208,7 @@ content:
       - { name: image_alt, label: Bildbeschreibung, type: string }
       - name: image_focus
         label: "Bildausschnitt"
-        description: "Welcher Teil des Bildes sichtbar bleibt, wenn es zugeschnitten wird. Bei Hochkant-Porträts meist „Oben“. Leer = Mitte."
+        description: "Welcher Teil des Bildes sichtbar bleibt, wenn es zugeschnitten wird. Bei Hochkant-Porträts meist «Oben». Leer = Mitte."
         type: select
         options:
           values:
@@ -223,11 +223,11 @@ content:
             - { name: unten-rechts, label: "↘ Unten rechts" }
       - { name: more_title, label: Zusatzbereich – Überschrift (optional), type: string, description: "Erscheint unter dem Hauptbereich. Leer lassen = kein Zusatzbereich." }
       - { name: more_text, label: Zusatzbereich – Text (optional), type: text, description: "Für mehr Text auf dieser Seite. Leerzeile = neuer Absatz." }
-      - { name: testimonials_image, label: "Eigenes Bild für die Erfahrungsberichte (optional)", type: image, description: "Nur für diese Seite. Leer lassen = gemeinsames Bild aus „Erfahrungsberichte“." }
+      - { name: testimonials_image, label: "Eigenes Bild für die Erfahrungsberichte (optional)", type: image, description: "Nur für diese Seite. Leer lassen = gemeinsames Bild aus «Erfahrungsberichte»." }
       - { name: testimonials_image_alt, label: "Bildbeschreibung (Erfahrungsberichte)", type: string }
       - name: testimonials_image_focus
         label: "Bildausschnitt"
-        description: "Welcher Teil des Bildes sichtbar bleibt, wenn es zugeschnitten wird. Bei Hochkant-Porträts meist „Oben“. Leer = Mitte."
+        description: "Welcher Teil des Bildes sichtbar bleibt, wenn es zugeschnitten wird. Bei Hochkant-Porträts meist «Oben». Leer = Mitte."
         type: select
         options:
           values:
@@ -240,11 +240,11 @@ content:
             - { name: unten-links, label: "↙ Unten links" }
             - { name: unten, label: "↓ Unten" }
             - { name: unten-rechts, label: "↘ Unten rechts" }
-      - { name: cta_image, label: "Eigenes Bild für den Abschluss-Bereich (optional)", type: image, description: "Nur für diese Seite. Leer lassen = gemeinsames Bild aus „Abschluss-Bereich“." }
+      - { name: cta_image, label: "Eigenes Bild für den Abschluss-Bereich (optional)", type: image, description: "Nur für diese Seite. Leer lassen = gemeinsames Bild aus «Abschluss-Bereich»." }
       - { name: cta_image_alt, label: "Bildbeschreibung (Abschluss-Bereich)", type: string }
       - name: cta_image_focus
         label: "Bildausschnitt"
-        description: "Welcher Teil des Bildes sichtbar bleibt, wenn es zugeschnitten wird. Bei Hochkant-Porträts meist „Oben“. Leer = Mitte."
+        description: "Welcher Teil des Bildes sichtbar bleibt, wenn es zugeschnitten wird. Bei Hochkant-Porträts meist «Oben». Leer = Mitte."
         type: select
         options:
           values:
@@ -264,7 +264,7 @@ content:
       - { name: booking_link, label: "Online-Kalender: Link", type: string, description: "Die Adresse deines Online-Kalenders, z. B. https://calendly.com/… – wird in einem neuen Fenster geöffnet." }
 
       # ---- Reihenfolge ----
-      - { name: testimonials_first, label: "Erfahrungsberichte vor den Sessions zeigen", type: boolean, description: "Nur wenn bei „Seite: Erfahrungen“ auch „Auf der Seite 1:1 Sessions zeigen“ angehakt ist." }
+      - { name: testimonials_first, label: "Erfahrungsberichte vor den Sessions zeigen", type: boolean, description: "Nur wenn bei «Seite: Erfahrungen» auch «Auf der Seite 1:1 Sessions zeigen» angehakt ist." }
 
       # ---- Preise (optional) ----
       - { name: prices_show, label: "Preise: Bereich anzeigen", type: boolean }
@@ -281,7 +281,7 @@ content:
             summary: "{title} – {price}"
         fields:
           - { name: title, label: Titel, type: string, description: "z. B. 1:1 Session" }
-          - { name: price, label: Preis, type: string, description: "z. B. 120 € oder ab 90 €" }
+          - { name: price, label: Preis, type: string, description: "z. B. CHF 120.– oder ab CHF 90.–" }
           - { name: text, label: Kurze Beschreibung, type: text }
           - { name: highlight, label: Hervorheben, type: boolean, description: "Rahmen in der Akzentfarbe, z. B. für dein beliebtestes Angebot." }
       - { name: prices_note, label: "Preise: Hinweis unter den Angeboten (optional)", type: string, description: "z. B. Alle Preise inkl. MwSt." }
@@ -309,7 +309,7 @@ content:
     format: json
     fields:
       - { name: show, label: "Seite anzeigen", type: boolean, description: "Angehakt = die Seite Erfahrungen & Feedbacks ist online und steht im Menü. Nicht angehakt = sie ist ausgeblendet, deine Inhalte bleiben gespeichert. Die Zitate auf der Startseite stellst du weiter unten separat ein." }
-      - { name: menu_label, label: Name im Menü, type: string, description: "So heißt die Seite oben im Menü." }
+      - { name: menu_label, label: Name im Menü, type: string, description: "So heisst die Seite oben im Menü." }
       - { name: page_eyebrow, label: "Seite: Kleine Überzeile", type: string }
       - { name: page_title, label: "Seite: Überschrift", type: text, description: "Mit Enter einen Zeilenumbruch setzen." }
       - { name: page_text, label: "Seite: Einleitungstext", type: text, description: "Leerzeile = neuer Absatz." }
@@ -318,7 +318,7 @@ content:
       - { name: image_alt, label: Bildbeschreibung, type: string }
       - name: image_focus
         label: "Bildausschnitt"
-        description: "Welcher Teil des Bildes sichtbar bleibt, wenn es zugeschnitten wird. Bei Hochkant-Porträts meist „Oben“. Leer = Mitte."
+        description: "Welcher Teil des Bildes sichtbar bleibt, wenn es zugeschnitten wird. Bei Hochkant-Porträts meist «Oben». Leer = Mitte."
         type: select
         options:
           values:
@@ -350,7 +350,7 @@ content:
       - { name: videos_note, label: "Videos: Datenschutz-Hinweis", type: string, description: "Erscheint auf jedem Video, bevor es abgespielt wird." }
       - name: videos
         label: "Videos"
-        description: "YouTube-Link einfügen (z. B. https://youtu.be/…). Tipp: Video auf YouTube als „Nicht gelistet“ hochladen. Einverständnis der Kundin einholen!"
+        description: "YouTube-Link einfügen (z. B. https://youtu.be/…). Tipp: Video auf YouTube als «Nicht gelistet» hochladen. Einverständnis der Kundin einholen!"
         type: object
         list:
           collapsible:
@@ -358,7 +358,7 @@ content:
             summary: "{title}"
         fields:
           - { name: youtube, label: YouTube-Link, type: string }
-          - { name: title, label: "Titel / Name (optional)", type: string, description: "z. B. „Anna erzählt von ihrer Session“" }
+          - { name: title, label: "Titel / Name (optional)", type: string, description: "z. B. «Anna erzählt von ihrer Session»" }
           - { name: image, label: "Vorschaubild (optional)", type: image, description: "Eigenes Bild, das vor dem Abspielen gezeigt wird. Leer = schlichte Fläche mit Play-Symbol." }
           - { name: image_alt, label: Bildbeschreibung, type: string }
 
@@ -370,7 +370,7 @@ content:
       # ---- Auch auf anderen Seiten zeigen ----
       - { name: show_on_start, label: "Auf der Startseite zeigen", type: boolean, description: "Zeigt die Zitate zum Durchblättern auf der Startseite." }
       - { name: show_on_sessions, label: "Auf der Seite 1:1 Sessions zeigen", type: boolean, description: "Zeigt die Zitate zum Durchblättern auch auf der Sessions-Seite." }
-      - { name: all_link_text, label: "Link „Alle Erfahrungen ansehen“", type: string, description: "Erscheint auf Start/Sessions unter den Zitaten. Leer lassen = kein Link." }
+      - { name: all_link_text, label: "Link «Alle Erfahrungen ansehen»", type: string, description: "Erscheint auf Start/Sessions unter den Zitaten. Leer lassen = kein Link." }
 
   - name: seite_workshops
     label: "Seite: Workshops"
@@ -379,7 +379,7 @@ content:
     format: json
     fields:
       - { name: show, label: "Seite anzeigen", type: boolean, description: "Angehakt = die Seite Workshops ist online und steht im Menü und als Kachel auf der Startseite." }
-      - { name: menu_label, label: Name im Menü, type: string, description: "So heißt die Seite oben im Menü." }
+      - { name: menu_label, label: Name im Menü, type: string, description: "So heisst die Seite oben im Menü." }
       - { name: eyebrow, label: Kleine Überzeile, type: string }
       - { name: title, label: Überschrift, type: text }
       - { name: text, label: Text, type: text, description: "Leerzeile = neuer Absatz." }
@@ -389,7 +389,7 @@ content:
       - { name: image_alt, label: Bildbeschreibung, type: string }
       - name: image_focus
         label: "Bildausschnitt"
-        description: "Welcher Teil des Bildes sichtbar bleibt, wenn es zugeschnitten wird. Bei Hochkant-Porträts meist „Oben“. Leer = Mitte."
+        description: "Welcher Teil des Bildes sichtbar bleibt, wenn es zugeschnitten wird. Bei Hochkant-Porträts meist «Oben». Leer = Mitte."
         type: select
         options:
           values:
@@ -404,11 +404,11 @@ content:
             - { name: unten-rechts, label: "↘ Unten rechts" }
       - { name: more_title, label: Zusatzbereich – Überschrift (optional), type: string, description: "Erscheint unter dem Hauptbereich. Leer lassen = kein Zusatzbereich." }
       - { name: more_text, label: Zusatzbereich – Text (optional), type: text, description: "Für mehr Text auf dieser Seite. Leerzeile = neuer Absatz." }
-      - { name: cta_image, label: "Eigenes Bild für den Abschluss-Bereich (optional)", type: image, description: "Nur für diese Seite. Leer lassen = gemeinsames Bild aus „Abschluss-Bereich“." }
+      - { name: cta_image, label: "Eigenes Bild für den Abschluss-Bereich (optional)", type: image, description: "Nur für diese Seite. Leer lassen = gemeinsames Bild aus «Abschluss-Bereich»." }
       - { name: cta_image_alt, label: "Bildbeschreibung (Abschluss-Bereich)", type: string }
       - name: cta_image_focus
         label: "Bildausschnitt"
-        description: "Welcher Teil des Bildes sichtbar bleibt, wenn es zugeschnitten wird. Bei Hochkant-Porträts meist „Oben“. Leer = Mitte."
+        description: "Welcher Teil des Bildes sichtbar bleibt, wenn es zugeschnitten wird. Bei Hochkant-Porträts meist «Oben». Leer = Mitte."
         type: select
         options:
           values:
@@ -448,7 +448,7 @@ content:
       - { name: gallery_text, label: "Bildergalerie: Text (optional)", type: text }
       - name: gallery
         label: "Bildergalerie: Fotos"
-        description: "Beliebig viele Fotos. Ein Klick auf der Website zeigt das Foto groß."
+        description: "Beliebig viele Fotos. Ein Klick auf der Website zeigt das Foto gross."
         type: object
         list:
           collapsible:
@@ -465,7 +465,7 @@ content:
     format: json
     fields:
       - { name: show, label: "Seite anzeigen", type: boolean, description: "Angehakt = die Seite CORE® Bodywork ist online und steht im Menü. Nicht angehakt = sie ist ausgeblendet, deine Inhalte bleiben gespeichert." }
-      - { name: menu_label, label: Name im Menü, type: string, description: "So heißt die Seite oben im Menü." }
+      - { name: menu_label, label: Name im Menü, type: string, description: "So heisst die Seite oben im Menü." }
       - { name: eyebrow, label: Kleine Überzeile, type: string }
       - { name: title, label: Überschrift, type: text }
       - { name: text, label: Text, type: text, description: "Leerzeile = neuer Absatz." }
@@ -475,7 +475,7 @@ content:
       - { name: image_alt, label: Bildbeschreibung, type: string }
       - name: image_focus
         label: "Bildausschnitt"
-        description: "Welcher Teil des Bildes sichtbar bleibt, wenn es zugeschnitten wird. Bei Hochkant-Porträts meist „Oben“. Leer = Mitte."
+        description: "Welcher Teil des Bildes sichtbar bleibt, wenn es zugeschnitten wird. Bei Hochkant-Porträts meist «Oben». Leer = Mitte."
         type: select
         options:
           values:
@@ -490,11 +490,11 @@ content:
             - { name: unten-rechts, label: "↘ Unten rechts" }
       - { name: more_title, label: Zusatzbereich – Überschrift (optional), type: string, description: "Erscheint unter dem Hauptbereich. Leer lassen = kein Zusatzbereich." }
       - { name: more_text, label: Zusatzbereich – Text (optional), type: text, description: "Für mehr Text auf dieser Seite. Leerzeile = neuer Absatz." }
-      - { name: cta_image, label: "Eigenes Bild für den Abschluss-Bereich (optional)", type: image, description: "Nur für diese Seite. Leer lassen = gemeinsames Bild aus „Abschluss-Bereich“." }
+      - { name: cta_image, label: "Eigenes Bild für den Abschluss-Bereich (optional)", type: image, description: "Nur für diese Seite. Leer lassen = gemeinsames Bild aus «Abschluss-Bereich»." }
       - { name: cta_image_alt, label: "Bildbeschreibung (Abschluss-Bereich)", type: string }
       - name: cta_image_focus
         label: "Bildausschnitt"
-        description: "Welcher Teil des Bildes sichtbar bleibt, wenn es zugeschnitten wird. Bei Hochkant-Porträts meist „Oben“. Leer = Mitte."
+        description: "Welcher Teil des Bildes sichtbar bleibt, wenn es zugeschnitten wird. Bei Hochkant-Porträts meist «Oben». Leer = Mitte."
         type: select
         options:
           values:
@@ -514,8 +514,8 @@ content:
     path: src/_data/contact.json
     format: json
     fields:
-      - { name: show, label: "Seite anzeigen", type: boolean, description: "Angehakt = die Kontaktseite ist online und steht im Menü. Nicht angehakt = sie ist ausgeblendet, deine Inhalte bleiben gespeichert. Buttons wie „Session anfragen“ öffnen dann direkt eine E-Mail an dich." }
-      - { name: menu_label, label: Name im Menü, type: string, description: "So heißt die Seite oben im Menü." }
+      - { name: show, label: "Seite anzeigen", type: boolean, description: "Angehakt = die Kontaktseite ist online und steht im Menü. Nicht angehakt = sie ist ausgeblendet, deine Inhalte bleiben gespeichert. Buttons wie «Session anfragen» öffnen dann direkt eine E-Mail an dich." }
+      - { name: menu_label, label: Name im Menü, type: string, description: "So heisst die Seite oben im Menü." }
       - { name: eyebrow, label: Kleine Überzeile, type: string }
       - { name: title, label: Überschrift, type: string }
       - { name: text, label: Text, type: text }
@@ -528,7 +528,7 @@ content:
       - { name: form_phone_label, label: "Formular: Beschriftung Telefon", type: string }
       - { name: form_message_label, label: "Formular: Beschriftung Nachricht", type: string }
       - { name: form_message_placeholder, label: "Formular: grauer Beispieltext im Nachrichtenfeld", type: string }
-      - { name: form_privacy_text, label: "Formular: Text beim Datenschutz-Häkchen", type: text, description: "Danach folgt automatisch der Link „Datenschutzerklärung“." }
+      - { name: form_privacy_text, label: "Formular: Text beim Datenschutz-Häkchen", type: text, description: "Danach folgt automatisch der Link «Datenschutzerklärung»." }
       - { name: form_button, label: "Formular: Button-Text", type: string }
       - { name: form_success_title, label: "Formular: Überschrift nach dem Senden", type: string }
       - { name: form_success_text, label: "Formular: Text nach dem Senden", type: text }
@@ -542,13 +542,13 @@ content:
     path: src/_data/cta.json
     format: json
     fields:
-      - { name: title, label: "Satz (kursiv, groß)", type: text }
+      - { name: title, label: "Satz (kursiv, gross)", type: text }
       - { name: button_text, label: Button-Text, type: string }
       - { name: image, label: Bild, type: image }
       - { name: image_alt, label: Bildbeschreibung, type: string }
       - name: image_focus
         label: "Bildausschnitt"
-        description: "Welcher Teil des Bildes sichtbar bleibt, wenn es zugeschnitten wird. Bei Hochkant-Porträts meist „Oben“. Leer = Mitte."
+        description: "Welcher Teil des Bildes sichtbar bleibt, wenn es zugeschnitten wird. Bei Hochkant-Porträts meist «Oben». Leer = Mitte."
         type: select
         options:
           values:
@@ -642,13 +642,13 @@ content:
 
       # ---- Feinschliff (optional) ----
       - name: text_size
-        label: "Feinschliff: Textgröße"
+        label: "Feinschliff: Textgrösse"
         type: select
         options:
           values:
             - { name: klein, label: "Klein" }
             - { name: normal, label: "Normal (Standard)" }
-            - { name: gross, label: "Groß – besser lesbar" }
+            - { name: gross, label: "Gross – besser lesbar" }
       - name: buttons
         label: "Feinschliff: Form der Buttons"
         type: select
@@ -717,7 +717,7 @@ content:
               message: "Bitte einen Farbcode mit # und 6 Zeichen eingeben, z. B. #7d4a35 – oder das Feld leer lassen."
           - name: dark
             label: "Dunkle Bereiche"
-            description: "Großer Einstieg oben, Abschluss-Bereich und Fußbereich, z. B. #2a1d17"
+            description: "Grosser Einstieg oben, Abschluss-Bereich und Fussbereich, z. B. #2a1d17"
             type: string
             pattern:
               regex: "^(#[0-9a-fA-F]{6})?$"

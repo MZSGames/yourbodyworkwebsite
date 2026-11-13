@@ -23,7 +23,7 @@ eleventyComputed:
     <div class="exp-grid">
       {% for t in testimonials.items %}
       <figure class="exp-card">
-        <blockquote>„{{ t.quote }}“</blockquote>
+        <blockquote>«{{ t.quote }}»</blockquote>
         {% if t.name %}<figcaption>– {{ t.name }}</figcaption>{% endif %}
       </figure>
       {% endfor %}

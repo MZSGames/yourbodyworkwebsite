@@ -93,7 +93,7 @@ document.querySelectorAll(".video-frame[data-yt]").forEach((btn) => {
   }, { once: true });
 });
 
-// Bildergalerie: Großansicht mit Weiter/Zurück
+// Bildergalerie: Grossansicht mit Weiter/Zurück
 document.querySelectorAll(".gallery").forEach((gal) => {
   const items = [...gal.querySelectorAll(".gallery-item img")];
   const dlg = gal.querySelector(".lightbox");

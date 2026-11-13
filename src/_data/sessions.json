@@ -44,19 +44,19 @@
   "prices": [
     {
       "title": "Kennenlernen",
-      "price": "[Preis] €",
+      "price": "CHF [Preis]",
       "text": "Ein erstes Gespräch, in dem wir schauen, was du dir wünschst und ob CORE® Emotional Bodywork für dich passt.",
       "highlight": false
     },
     {
       "title": "1:1 Session",
-      "price": "[Preis] €",
+      "price": "CHF [Preis]",
       "text": "Eine Session mit ca. 90 Minuten, ganz in deinem Tempo und in einem geschützten Raum.",
       "highlight": true
     },
     {
       "title": "3er-Paket",
-      "price": "[Preis] €",
+      "price": "CHF [Preis]",
       "text": "Drei Sessions für eine tiefere Begleitung über mehrere Wochen.",
       "highlight": false
     }

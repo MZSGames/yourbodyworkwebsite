@@ -5,6 +5,7 @@ navKey: core
 eleventyComputed:
   title: "{{ core.menu_label }}"
 ---
+{% set pd = core %}
 {% set s = core %}{% set side = "left" %}{% set btnClass = "" %}
 {% include "sections/split.njk" %}
 {% include "sections/more.njk" %}

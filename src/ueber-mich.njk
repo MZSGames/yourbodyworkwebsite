@@ -5,6 +5,7 @@ navKey: about
 eleventyComputed:
   title: "{{ about.menu_label }}"
 ---
+{% set pd = about %}
 {% set s = about %}{% set side = "right" %}{% set btnClass = "btn-outline" %}
 {% include "sections/split.njk" %}
 {% include "sections/more.njk" %}

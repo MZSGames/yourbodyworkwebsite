@@ -1,6 +1,9 @@
-{# ---------- ABSCHLUSS ---------- #}
-<section class="cta{% if not cta.image %} no-image{% endif %}">
-  {% if cta.image %}<div class="cta-media"><img src="{{ cta.image }}" alt="{{ cta.image_alt }}" loading="lazy"></div>{% endif %}
+{# ---------- ABSCHLUSS ----------
+   Bild: eigenes Bild der Seite (pd.cta_image), sonst das gemeinsame Bild #}
+{% set ctaImg = (pd.cta_image if pd and pd.cta_image else cta.image) %}
+{% set ctaAlt = (pd.cta_image_alt if pd and pd.cta_image else cta.image_alt) %}
+<section class="cta{% if not ctaImg %} no-image{% endif %}">
+  {% if ctaImg %}<div class="cta-media"><img src="{{ ctaImg }}" alt="{{ ctaAlt }}" loading="lazy"></div>{% endif %}
   <div class="wrap cta-content">
     <p class="cta-title">{{ cta.title | lines | safe }}</p>
     <a class="btn" href="{{ settings.contact_link }}">{{ cta.button_text }} {% include "arrow.njk" %}</a>

@@ -5,6 +5,7 @@ navKey: sessions
 eleventyComputed:
   title: "{{ sessions.menu_label }}"
 ---
+{% set pd = sessions %}
 {% include "sections/sessions.njk" %}
 {% set s = sessions %}{% include "sections/more.njk" %}
 {% include "sections/testimonials.njk" %}

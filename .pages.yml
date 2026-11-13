@@ -9,6 +9,7 @@ media:
 
 content:
   # ================= SEITEN =================
+
   - name: seite_start
     label: "Seite: Start"
     type: file
@@ -34,6 +35,10 @@ content:
           - { name: title, label: Überschrift, type: text, description: "Mit Enter einen Zeilenumbruch setzen." }
           - { name: text, label: Text, type: text, description: "Leerzeile = neuer Absatz." }
           - { name: accent, label: Hervorgehobener Satz (kursiv), type: string }
+      - { name: testimonials_image, label: "Eigenes Bild für die Erfahrungsberichte (optional)", type: image, description: "Nur für diese Seite. Leer lassen = gemeinsames Bild aus „Erfahrungsberichte“." }
+      - { name: testimonials_image_alt, label: "Bildbeschreibung (Erfahrungsberichte)", type: string }
+      - { name: cta_image, label: "Eigenes Bild für den Abschluss-Bereich (optional)", type: image, description: "Nur für diese Seite. Leer lassen = gemeinsames Bild aus „Abschluss-Bereich“." }
+      - { name: cta_image_alt, label: "Bildbeschreibung (Abschluss-Bereich)", type: string }
 
   - name: seite_core
     label: "Seite: CORE® Bodywork"
@@ -51,6 +56,8 @@ content:
       - { name: image_alt, label: Bildbeschreibung, type: string }
       - { name: more_title, label: Zusatzbereich – Überschrift (optional), type: string, description: "Erscheint unter dem Hauptbereich. Leer lassen = kein Zusatzbereich." }
       - { name: more_text, label: Zusatzbereich – Text (optional), type: text, description: "Für mehr Text auf dieser Seite. Leerzeile = neuer Absatz." }
+      - { name: cta_image, label: "Eigenes Bild für den Abschluss-Bereich (optional)", type: image, description: "Nur für diese Seite. Leer lassen = gemeinsames Bild aus „Abschluss-Bereich“." }
+      - { name: cta_image_alt, label: "Bildbeschreibung (Abschluss-Bereich)", type: string }
 
   - name: seite_about
     label: "Seite: Über mich"
@@ -68,6 +75,8 @@ content:
       - { name: image_alt, label: Bildbeschreibung, type: string }
       - { name: more_title, label: Zusatzbereich – Überschrift (optional), type: string, description: "Erscheint unter dem Hauptbereich. Leer lassen = kein Zusatzbereich." }
       - { name: more_text, label: Zusatzbereich – Text (optional), type: text, description: "Für mehr Text auf dieser Seite. Leerzeile = neuer Absatz." }
+      - { name: cta_image, label: "Eigenes Bild für den Abschluss-Bereich (optional)", type: image, description: "Nur für diese Seite. Leer lassen = gemeinsames Bild aus „Abschluss-Bereich“." }
+      - { name: cta_image_alt, label: "Bildbeschreibung (Abschluss-Bereich)", type: string }
 
   - name: seite_sessions
     label: "Seite: 1:1 Sessions"
@@ -106,6 +115,10 @@ content:
       - { name: image_alt, label: Bildbeschreibung, type: string }
       - { name: more_title, label: Zusatzbereich – Überschrift (optional), type: string, description: "Erscheint unter dem Hauptbereich. Leer lassen = kein Zusatzbereich." }
       - { name: more_text, label: Zusatzbereich – Text (optional), type: text, description: "Für mehr Text auf dieser Seite. Leerzeile = neuer Absatz." }
+      - { name: testimonials_image, label: "Eigenes Bild für die Erfahrungsberichte (optional)", type: image, description: "Nur für diese Seite. Leer lassen = gemeinsames Bild aus „Erfahrungsberichte“." }
+      - { name: testimonials_image_alt, label: "Bildbeschreibung (Erfahrungsberichte)", type: string }
+      - { name: cta_image, label: "Eigenes Bild für den Abschluss-Bereich (optional)", type: image, description: "Nur für diese Seite. Leer lassen = gemeinsames Bild aus „Abschluss-Bereich“." }
+      - { name: cta_image_alt, label: "Bildbeschreibung (Abschluss-Bereich)", type: string }
 
   - name: seite_kontakt
     label: "Seite: Kontakt"
@@ -121,6 +134,7 @@ content:
       - { name: mail_subject, label: Betreff der E-Mail, type: string, description: "Wird automatisch in die E-Mail eingesetzt, wenn jemand auf den Button klickt." }
 
   # ================= BEREICHE AUF MEHREREN SEITEN =================
+
   - name: erfahrungen
     label: "Erfahrungsberichte (Start & Sessions)"
     type: file
@@ -155,6 +169,7 @@ content:
       - { name: image_alt, label: Bildbeschreibung, type: string }
 
   # ================= DESIGN =================
+
   - name: design
     label: Design (Farben & Schrift)
     type: file
@@ -190,6 +205,7 @@ content:
           message: "Bitte einen Farbcode mit # und 6 Zeichen eingeben, z. B. #7d4a35 – oder das Feld leer lassen."
 
   # ================= FEEDBACK =================
+
   - name: feedback
     label: Feedback-Seite
     type: file
@@ -210,6 +226,7 @@ content:
       - { name: not_ready_text, label: Text solange kein Schlüssel eingetragen ist, type: string }
 
   # ================= RECHTLICHES =================
+
   - name: impressum
     label: Impressum
     type: file
@@ -229,6 +246,7 @@ content:
       - { name: body, label: Inhalt, type: rich-text }
 
   # ================= EINSTELLUNGEN =================
+
   - name: einstellungen
     label: Einstellungen
     type: file

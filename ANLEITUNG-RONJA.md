@@ -134,6 +134,23 @@ Im Editor siehst du links:
 3. Fülle die **Bildbeschreibung** aus, z. B. „Ronja sitzt am See“. Das hilft blinden Menschen und Google.
 4. **Speichern**.
 
+### Welches Bild erscheint wo?
+
+| Bild auf der Website | Wo du es einstellst |
+|---|---|
+| Großes Bild ganz oben auf der **Startseite** | **Seite: Start** → Großer Einstieg → Bild |
+| Bild auf der Seite **CORE® Bodywork** (und in der Kachel auf der Startseite) | **Seite: CORE® Bodywork** → Bild |
+| Bild auf der Seite **Über mich** (und in der Kachel auf der Startseite) | **Seite: Über mich** → Bild |
+| Bild der Kachel **1:1 Sessions** auf der Startseite | **Seite: 1:1 Sessions** → Bild für die Kachel |
+| Bild neben den **Erfahrungsberichten** | **Erfahrungsberichte** → Bild *(gilt für Start und 1:1 Sessions)* |
+| Bild im dunklen **Abschluss-Bereich** unten | **Abschluss-Bereich** → Bild *(gilt für alle Seiten)* |
+
+**Jede Seite individuell gestalten:** Die Bilder der Erfahrungsberichte und des Abschluss-Bereichs gelten zunächst für alle Seiten. Möchtest du auf einer Seite ein **anderes Bild**, öffne diese Seite im Editor, z. B. **Seite: Über mich**. Ganz unten findest du:
+- **„Eigenes Bild für den Abschluss-Bereich (optional)“**, das es auf Start, CORE® Bodywork, Über mich und 1:1 Sessions gibt
+- **„Eigenes Bild für die Erfahrungsberichte (optional)“**, das es auf Start und 1:1 Sessions gibt
+
+Ein Bild eintragen heißt: Nur diese Seite bekommt dieses Bild. Feld **leer lassen** heißt: Es gilt das gemeinsame Bild.
+
 **So werden deine Fotos schön:**
 
 | Tipp | Warum |

@@ -168,6 +168,28 @@ Solange kein Schlüssel eingetragen ist, zeigt die Seite einen freundlichen Hinw
 
 💡 Kostenlos sind 250 Feedbacks pro Monat. Das reicht in der Regel völlig.
 
+### Video-Feedback zeigen (optionale Erweiterung)
+Deine Website kann im Moment **noch keine Videos** anzeigen. Wenn du Video-Feedbacks von Kundinnen zeigen möchtest, kann Claude das für dich einbauen ([Kapitel 7](#7-größere-änderungen-mit-ki-claude)).
+
+**⚠️ Vorher wichtig: Einwilligung einholen**
+Bei einem Video ist die Kundin erkennbar, das Feedback ist also **nicht mehr anonym**. Lass dir **schriftlich** bestätigen, dass du das Video auf deiner Website und auf YouTube zeigen darfst. Eine kurze E-Mail von ihr reicht, z. B.: „Ich bin einverstanden, dass Ronja mein Video auf ihrer Website und auf YouTube veröffentlicht.“ Bewahre diese E-Mail auf.
+
+**Der empfohlene Weg: über YouTube**
+1. Lade das Video auf **YouTube** hoch.
+2. Stell die Sichtbarkeit auf **„Nicht gelistet“**. Dann findet man es nicht über die YouTube-Suche, nur über deine Website.
+3. Lass Claude einmalig die Video-Funktion einbauen, mit diesem Text:
+
+> Mein GitHub-Repository **DEIN-BENUTZERNAME/website** ist eine Eleventy-Website mit Pages CMS (`.pages.yml`). Bitte ergänze bei den Erfahrungsberichten (`testimonials` in `src/_data/home.json`) ein **optionales Feld „YouTube-Link“**, das im Editor bearbeitbar ist. Wenn ein Link eingetragen ist, soll das Video im Bereich „Erfahrungen“ erscheinen, passend zum bestehenden Design. **Datenschutzfreundlich:** Zuerst nur ein Vorschaubild mit Play-Button und dem Hinweis, dass beim Abspielen YouTube geladen wird. Erst beim Klick soll das Video über **youtube-nocookie.com** geladen werden. Bitte ergänze auch die Datenschutzerklärung (`src/rechtliches/datenschutz.md`) um einen Abschnitt zu YouTube und teste den Build.
+
+4. Danach fügst du in Pages CMS bei **„6 · Erfahrungen anderer Frauen“** einen neuen Eintrag hinzu und trägst den **YouTube-Link** ein. Den Link findest du bei YouTube unter **„Teilen“**.
+
+**Die Alternative: Video direkt auf der Website**
+Kurze Clips können auch ohne YouTube direkt auf deiner Website liegen. Dann gehen keine Daten an Google. Dafür gilt:
+- Videodateien sind groß. GitHub nimmt einzelne Dateien **über 100 MB nicht an**.
+- Die Website lädt langsamer.
+
+Das eignet sich nur für wenige, sehr kurze Videos, die vorher stark verkleinert wurden, z. B. mit **handbrake.fr**. Für regelmäßige Video-Feedbacks ist YouTube besser. Wenn du diesen Weg willst, schreib Claude: „Bitte baue die Möglichkeit ein, kurze MP4-Videos bei den Erfahrungsberichten hochzuladen und anzuzeigen.“
+
 ---
 
 ## 5. Schönere Web-Adresse und eigene Domain
@@ -274,6 +296,7 @@ Für alles, was der Editor nicht kann, hilft dir eine KI wie **Claude**. Program
 - „Tausche die **Reihenfolge**: Erfahrungen sollen vor den Sessions kommen.“
 - „Ändere die **Schrift** der Überschriften in eine andere elegante Serifenschrift.“
 - „Füge einen Bereich **Häufige Fragen** mit aufklappbaren Fragen hinzu.“
+- „Ermögliche **Video-Feedbacks** von YouTube bei den Erfahrungsberichten“ (ausführlicher Text in [Kapitel 4](#4-feedback-von-kundinnen)).
 - „Binde meinen **Online-Kalender** (Link: …) als Button bei den Sessions ein.“
 
 ### Tipps für gute Ergebnisse

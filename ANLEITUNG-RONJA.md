@@ -124,6 +124,8 @@ Im Editor siehst du links:
 
 💡 **Erfahrungsberichte ausblenden:** Alle Einträge löschen.
 
+💡 **Ein Bild weglassen:** Bild im Feld entfernen und speichern. Der Bereich wird dann einfach ohne Bild angezeigt.
+
 💡 **Die Kacheln auf der Startseite** (unter der Einleitung) führen zu CORE® Bodywork, Über mich und 1:1 Sessions. Sie zeigen automatisch das Bild und die Überschrift der jeweiligen Seite. Das Bild für die Sessions-Kachel stellst du unter **Seite: 1:1 Sessions** ein.
 
 ### Bilder austauschen
@@ -342,6 +344,7 @@ Für alles, was der Editor nicht kann, hilft dir eine KI wie **Claude**. Program
 | **Bilder oder Design fehlen nach einem Domain-Wechsel.** | **Actions → „Website veröffentlichen“ → „Run workflow“** |
 | **Das Feedback-Formular wird nicht angezeigt.** | Unter **Einstellungen** den Feedback-Schlüssel prüfen. Er muss ganz und ohne Leerzeichen eingefügt sein. |
 | **Es kommt kein Feedback per E-Mail an.** | Im Spam-Ordner nachsehen. Die E-Mails kommen von Web3Forms. |
+| **Manche Seiten zeigen noch die alten Farben oder Texte, andere schon die neuen.** | Dein Browser zeigt noch eine gespeicherte Kopie (bis zu ca. 10 Minuten). **Strg + F5** drücken (am Mac **Cmd + Shift + R**) oder kurz warten. |
 | **Ich kann mich bei Pages CMS nicht anmelden.** | Auf **github.com** einloggen, dann erneut auf app.pagescms.org „Sign in with GitHub“. Passwort vergessen? Auf github.com **„Forgot password?“** nutzen. |
 | **Ein neuer Menüpunkt oder ein neues Feld erscheint nicht im Editor**, z. B. nachdem Claude etwas eingebaut hat. | Pages CMS merkt sich die alte Einstellung. In Pages CMS links auf **„Settings“** klicken (nicht „Einstellungen“). Dort ganz am Ende der Datei eine **leere Zeile** einfügen, **speichern** und die Seite neu laden. |
 | **Ein Feld fehlt im Editor, auch nach dem Trick oben.** | Das Feld ist nicht in `.pages.yml` eingetragen. Bitte Claude, es zu ergänzen. |

@@ -1,8 +1,10 @@
 {# ---------- HERO ---------- #}
 <section class="hero">
+  {% if start.hero.image %}
   <div class="hero-media">
     <img src="{{ start.hero.image }}" alt="{{ start.hero.image_alt }}" fetchpriority="high">
   </div>
+  {% endif %}
   <div class="wrap hero-content">
     <p class="eyebrow">{{ start.hero.eyebrow }}</p>
     <h1>{{ start.hero.title | lines | safe }}</h1>

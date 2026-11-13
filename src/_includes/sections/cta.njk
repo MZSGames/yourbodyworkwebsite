@@ -1,6 +1,6 @@
 {# ---------- ABSCHLUSS ---------- #}
-<section class="cta">
-  <div class="cta-media"><img src="{{ cta.image }}" alt="{{ cta.image_alt }}" loading="lazy"></div>
+<section class="cta{% if not cta.image %} no-image{% endif %}">
+  {% if cta.image %}<div class="cta-media"><img src="{{ cta.image }}" alt="{{ cta.image_alt }}" loading="lazy"></div>{% endif %}
   <div class="wrap cta-content">
     <p class="cta-title">{{ cta.title | lines | safe }}</p>
     <a class="btn" href="{{ settings.contact_link }}">{{ cta.button_text }} {% include "arrow.njk" %}</a>

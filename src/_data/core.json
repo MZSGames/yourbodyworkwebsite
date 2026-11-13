@@ -7,8 +7,10 @@
   "button_link": "/sessions/",
   "image": "/images/uploads/core.jpg",
   "image_alt": "Hand liegt sanft auf dem Herzen",
+  "image_focus": "",
   "more_title": "",
   "more_text": "",
   "cta_image": "",
-  "cta_image_alt": ""
+  "cta_image_alt": "",
+  "cta_image_focus": ""
 }

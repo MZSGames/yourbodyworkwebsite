@@ -7,8 +7,10 @@
   "button_link": "/kontakt/",
   "image": "/images/uploads/about.jpg",
   "image_alt": "Ronja lehnt mit geschlossenen Augen an einem Baum",
+  "image_focus": "",
   "more_title": "",
   "more_text": "",
   "cta_image": "",
-  "cta_image_alt": ""
+  "cta_image_alt": "",
+  "cta_image_focus": ""
 }

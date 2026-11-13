@@ -25,8 +25,11 @@
   "more_text": "",
   "image": "/images/uploads/cta.jpg",
   "image_alt": "Frau sitzt bei Sonnenuntergang auf einem Hügel",
+  "image_focus": "",
   "testimonials_image": "",
   "testimonials_image_alt": "",
+  "testimonials_image_focus": "",
   "cta_image": "",
-  "cta_image_alt": ""
+  "cta_image_alt": "",
+  "cta_image_focus": ""
 }

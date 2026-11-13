@@ -2,9 +2,10 @@
    Bild: eigenes Bild der Seite (pd.testimonials_image), sonst das gemeinsame Bild #}
 {% set tImg = (pd.testimonials_image if pd and pd.testimonials_image else testimonials.image) %}
 {% set tAlt = (pd.testimonials_image_alt if pd and pd.testimonials_image else testimonials.image_alt) %}
+{% set tFocus = (pd.testimonials_image_focus if pd and pd.testimonials_image else testimonials.image_focus) %}
 {% if testimonials.items.length %}
 <section class="testimonials{% if not tImg %} no-image{% endif %}">
-  {% if tImg %}<div class="testimonials-media"><img src="{{ tImg }}" alt="{{ tAlt }}" loading="lazy"></div>{% endif %}
+  {% if tImg %}<div class="testimonials-media"><img src="{{ tImg }}" alt="{{ tAlt }}" style="{{ tFocus | focus }}" loading="lazy"></div>{% endif %}
   <div class="testimonials-body">
     <p class="eyebrow">{{ testimonials.eyebrow }}</p>
     <div class="quotes" tabindex="0" aria-label="Erfahrungsberichte">

@@ -2,7 +2,7 @@
 <section class="hero">
   {% if start.hero.image %}
   <div class="hero-media">
-    <img src="{{ start.hero.image }}" alt="{{ start.hero.image_alt }}" fetchpriority="high">
+    <img src="{{ start.hero.image }}" alt="{{ start.hero.image_alt }}" style="{{ start.hero.image_focus | focus('30% 30%') }}" fetchpriority="high">
   </div>
   {% endif %}
   <div class="wrap hero-content">

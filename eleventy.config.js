@@ -27,6 +27,14 @@ export default function (eleventyConfig) {
   // Design-Auswahl neu einlesen, wenn sie sich ändert
   eleventyConfig.addWatchTarget("./lib/");
 
+  // Bildausschnitt (oben/mitte/unten) → CSS object-position. Ohne Auswahl gilt die Standard-Position.
+  eleventyConfig.addFilter("focus", (value, fallback = "50% 50%") => {
+    const y = { oben: "15%", mitte: "50%", unten: "85%" }[value];
+    if (!y) return `object-position: ${fallback}`;
+    const x = String(fallback).split(" ")[0];
+    return `object-position: ${x} ${y}`;
+  });
+
   // Text mit Leerzeilen → mehrere Absätze
   eleventyConfig.addFilter("paras", (text) =>
     String(text ?? "")

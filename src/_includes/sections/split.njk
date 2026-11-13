@@ -1,6 +1,6 @@
 {# Bild + Text. Erwartet: s (Daten), side ("left"/"right"), btnClass #}
 <section class="split split-img-{{ side }}{% if not s.image %} no-image{% endif %}">
-  {% if s.image %}<div class="split-media"><img src="{{ s.image }}" alt="{{ s.image_alt }}" fetchpriority="high"></div>{% endif %}
+  {% if s.image %}<div class="split-media"><img src="{{ s.image }}" alt="{{ s.image_alt }}" style="{{ s.image_focus | focus }}" fetchpriority="high"></div>{% endif %}
   <div class="split-text">
     <p class="eyebrow">{{ s.eyebrow }}</p>
     <h1 class="h2">{{ s.title | lines | safe }}</h1>

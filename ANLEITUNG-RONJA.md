@@ -151,6 +151,20 @@ Im Editor siehst du links:
 
 Ein Bild eintragen heißt: Nur diese Seite bekommt dieses Bild. Feld **leer lassen** heißt: Es gilt das gemeinsame Bild.
 
+### Hochkant-Fotos und Bildausschnitt
+Du kannst **Quer- und Hochkant-Fotos** verwenden. Die Website verzerrt nichts. Sie **schneidet das Foto aber zu**, damit es in den Bildbereich passt. Die meisten Bildbereiche sind breit. Bei einem Hochkant-Foto ist deshalb nur ein Teil davon zu sehen, standardmäßig **die Mitte**.
+
+Damit bei einem Porträt nicht der Kopf abgeschnitten wird, gibt es bei jedem Bild das Feld **„Bildausschnitt“**:
+- **Oben:** Der obere Teil bleibt sichtbar. Das ist ideal für Hochkant-Porträts, damit das Gesicht im Bild bleibt.
+- **Mitte:** Standard, passt für die meisten Querformat-Fotos.
+- **Unten:** Der untere Teil bleibt sichtbar, z. B. bei Händen oder Füßen.
+
+<img src="docs/vorschau/bildausschnitt.jpg" width="560" alt="Vergleich Bildausschnitt Mitte und Oben">
+
+*Oben im Beispiel: Bildausschnitt „Mitte“, der Kopf ist abgeschnitten. Unten: „Oben“, das Gesicht ist sichtbar.*
+
+💡 Am schönsten wirken **Querformat-Fotos**, weil sie fast vollständig zu sehen sind. Schau dir nach dem Speichern die Seite immer kurz **am Computer und am Handy** an, denn der Ausschnitt ist dort etwas unterschiedlich.
+
 **So werden deine Fotos schön:**
 
 | Tipp | Warum |

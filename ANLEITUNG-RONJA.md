@@ -386,12 +386,12 @@ Statt `https://ronja-sereinig.github.io/website/` kann deine Adresse auch `https
 
 💡 Den Benutzernamen kannst du unter **github.com → dein Profilbild → Settings → Account → Change username** ändern. Danach musst du auch den Repository-Namen anpassen.
 
-### Möglichkeit B: Eigene Domain, z. B. `ronja-sereinig.ch`
+### Möglichkeit B: Eigene Domain, z. B. `deinedomain.ch`
 Kosten: ca. CHF 10–25 pro Jahr für eine .ch-Domain. Das wirkt am professionellsten, z. B. auf Visitenkarten oder Instagram.
 
 **Schritt 1 – Domain kaufen**
 Bei einem Schweizer Domain-Anbieter, z. B. **Hostpoint** (https://www.hostpoint.ch), **Infomaniak** (https://www.infomaniak.com), **cyon** (https://www.cyon.ch) oder **Metanet** (https://www.metanet.ch). Es reicht die Domain allein, du brauchst **kein Webhosting-Paket**.
-💡 Viele Anbieter bieten auch eine passende E-Mail-Adresse an, z. B. `hallo@ronja-sereinig.ch`. Das ist praktisch und wirkt professionell.
+💡 Viele Anbieter bieten auch eine passende E-Mail-Adresse an, z. B. `hallo@deinedomain.ch`. Das ist praktisch und wirkt professionell.
 
 **Schritt 2 – Beim Domain-Anbieter die DNS-Einträge setzen**
 Suche in deinem Kundenbereich nach **«DNS»**, **«DNS-Einstellungen»** oder **«Nameserver-Einträge»**. Lege diese Einträge an. Falls dort schon andere **A-Einträge** für «@» stehen, lösche diese vorher.
@@ -408,7 +408,7 @@ Suche in deinem Kundenbereich nach **«DNS»**, **«DNS-Einstellungen»** oder *
 
 **Schritt 3 – Auf GitHub eintragen**
 1. Im Repository: **Settings → Pages**
-2. Bei **Custom domain** deine Domain eintragen, z. B. `ronja-sereinig.ch`, und **Save** klicken.
+2. Bei **Custom domain** deine Domain eintragen, z. B. `deinedomain.ch`, und **Save** klicken.
 3. Warten, bis GitHub die Domain prüft. Das dauert von ein paar Minuten bis zu 24 Stunden.
 4. Wenn möglich, Häkchen bei **«Enforce HTTPS»** setzen. Dann hat deine Seite das Schloss-Symbol 🔒.
 
@@ -416,7 +416,7 @@ Suche in deinem Kundenbereich nach **«DNS»**, **«DNS-Einstellungen»** oder *
 **Actions → «Website veröffentlichen» → «Run workflow» → «Run workflow»**
 Ohne diesen Schritt fehlen auf der neuen Domain Bilder und Design.
 
-**Danach:** Den Link überall aktualisieren, z. B. auf Instagram, Google-Profil und Visitenkarten. Den Feedback-Link schickst du ab dann als `https://ronja-sereinig.ch/feedback/`.
+**Danach:** Den Link überall aktualisieren, z. B. auf Instagram, Google-Profil und Visitenkarten. Den Feedback-Link schickst du ab dann als `https://deinedomain.ch/feedback/`.
 
 ---
 

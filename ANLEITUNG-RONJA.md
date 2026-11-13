@@ -51,6 +51,7 @@ Dauer: ca. 15 Minuten. Du machst das nur ein einziges Mal.
 2. Klicke oben rechts auf den grünen Button **„Use this template“** → **„Create a new repository“**.
 3. Bei **Repository name** trägst du `website` ein. Wenn du gleich die schönere Adresse willst, siehe [Kapitel 5](#5-schönere-web-adresse-und-eigene-domain).
 4. **Public** ausgewählt lassen. Das ist nötig, damit das Veröffentlichen kostenlos ist.
+   ⚠️ **Stell das Repository später nicht auf „Private“.** Mit dem kostenlosen GitHub-Konto geht deine Website dann sofort offline. „Public“ heißt nur, dass man die Dateien deiner Website sehen kann, also Texte, Bilder und Design, die ohnehin online stehen. **Ändern kannst nur du.** Lege dort einfach nichts Privates ab, z. B. Kundinnendaten. Feedback kommt nur per E-Mail zu dir und landet nicht im Repository.
 5. Klicke auf **„Create repository“**.
 
 ### Schritt 3 – Veröffentlichen einschalten

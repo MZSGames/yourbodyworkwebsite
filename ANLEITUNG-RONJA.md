@@ -154,14 +154,26 @@ Ein Bild eintragen heißt: Nur diese Seite bekommt dieses Bild. Feld **leer lass
 ### Hochkant-Fotos und Bildausschnitt
 Du kannst **Quer- und Hochkant-Fotos** verwenden. Die Website verzerrt nichts. Sie **schneidet das Foto aber zu**, damit es in den Bildbereich passt. Die meisten Bildbereiche sind breit. Bei einem Hochkant-Foto ist deshalb nur ein Teil davon zu sehen, standardmäßig **die Mitte**.
 
-Damit bei einem Porträt nicht der Kopf abgeschnitten wird, gibt es bei jedem Bild das Feld **„Bildausschnitt“**:
-- **Oben:** Der obere Teil bleibt sichtbar. Das ist ideal für Hochkant-Porträts, damit das Gesicht im Bild bleibt.
-- **Mitte:** Standard, passt für die meisten Querformat-Fotos.
-- **Unten:** Der untere Teil bleibt sichtbar, z. B. bei Händen oder Füßen.
+Damit z. B. bei einem Porträt nicht der Kopf abgeschnitten wird, gibt es bei jedem Bild das Feld **„Bildausschnitt“**. Du hast zwei Möglichkeiten:
+
+**Einfach:** Ins Feld eines dieser Wörter schreiben:
+- `oben`: Der obere Teil bleibt sichtbar. Das ist ideal für Hochkant-Porträts.
+- `mitte`: Standard, gilt auch, wenn das Feld leer ist.
+- `unten`: Der untere Teil bleibt sichtbar.
+
+**Genau, mit dem Bildausschnitt-Werkzeug:** Damit bestimmst du per Klick genau, welche Stelle sichtbar bleibt.
+1. Öffne auf deiner Website die Seite **`/bildausschnitt/`**, z. B. `https://DEINE-ADRESSE/bildausschnitt/`. Die Seite steht nicht im Menü und wird von Google nicht angezeigt. Leg sie dir am besten als Lesezeichen an.
+2. **Bild auswählen:** Klick auf eines deiner Website-Bilder. Du kannst auch ein Foto von deinem Gerät wählen, das dabei nirgends hochgeladen wird.
+3. **Ins Bild klicken**, auf die Stelle, die immer sichtbar bleiben soll, z. B. das Gesicht. Den Punkt kannst du auch mit der Maus oder dem Finger verschieben.
+4. **Vorschau prüfen:** Du siehst sofort, wie das Bild am Computer, am Handy und als Kachel zugeschnitten wird.
+5. **„Wert kopieren“** klicken. Der Wert sieht so aus: `25 15`.
+6. In Pages CMS beim passenden Bild ins Feld **„Bildausschnitt“** einfügen und **speichern**.
+
+💡 Ein neu hochgeladenes Bild erscheint im Werkzeug erst, wenn die Website neu veröffentlicht ist, also nach 1–2 Minuten. Du kannst es aber sofort über **„Foto vom Gerät wählen“** prüfen.
 
 <img src="docs/vorschau/bildausschnitt.jpg" width="560" alt="Vergleich Bildausschnitt Mitte und Oben">
 
-*Oben im Beispiel: Bildausschnitt „Mitte“, der Kopf ist abgeschnitten. Unten: „Oben“, das Gesicht ist sichtbar.*
+*Oben im Beispiel: Bildausschnitt `mitte`, der Kopf ist abgeschnitten. Unten: `oben`, das Gesicht ist sichtbar.*
 
 💡 Am schönsten wirken **Querformat-Fotos**, weil sie fast vollständig zu sehen sind. Schau dir nach dem Speichern die Seite immer kurz **am Computer und am Handy** an, denn der Ausschnitt ist dort etwas unterschiedlich.
 
@@ -410,8 +422,9 @@ Für alles, was der Editor nicht kann, hilft dir eine KI wie **Claude**. Program
 | **Ich kann mich bei Pages CMS nicht anmelden.** | Auf **github.com** einloggen, dann erneut auf app.pagescms.org „Sign in with GitHub“. Passwort vergessen? Auf github.com **„Forgot password?“** nutzen. |
 | **Ein neuer Menüpunkt oder ein neues Feld erscheint nicht im Editor**, z. B. nachdem Claude etwas eingebaut hat. | Pages CMS merkt sich die alte Einstellung. In Pages CMS links auf **„Settings“** klicken (nicht „Einstellungen“). Dort ganz am Ende der Datei eine **leere Zeile** einfügen, **speichern** und die Seite neu laden. |
 | **Ein Feld fehlt im Editor, auch nach dem Trick oben.** | Das Feld ist nicht in `.pages.yml` eingetragen. Bitte Claude, es zu ergänzen. |
+| **Bei einem Foto ist der Kopf oder das Wichtigste abgeschnitten.** | Im Feld **„Bildausschnitt“** `oben` eintragen, oder mit dem Werkzeug unter `/bildausschnitt/` die genaue Stelle wählen ([Kapitel 3](#3-texte-und-bilder-bearbeiten)). |
 | **Ein Bild sieht unscharf aus.** | Ein größeres Foto hochladen (mind. 1800 px breit). |
-| **Ein Bild ist falsch zugeschnitten.** | Ein Foto wählen, bei dem das Motiv auf der richtigen Seite ist (siehe Tabelle in [Kapitel 3](#3-texte-und-bilder-bearbeiten)). |
+| **Ein Bild ist falsch zugeschnitten.** | Feld **„Bildausschnitt“** nutzen (siehe oben), oder ein Foto wählen, bei dem das Motiv auf der richtigen Seite ist. |
 
 ---
 

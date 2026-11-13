@@ -19,6 +19,7 @@ Liebe Ronja, mit diesem Handbuch kannst du alles rund um deine Website selbst er
 9. [Etwas rückgängig machen](#9-etwas-rückgängig-machen)
 10. [Sicherungskopie herunterladen](#10-sicherungskopie-herunterladen)
 11. [Überblick: Konten und Kosten](#11-überblick-konten-und-kosten)
+12. [Repository privat stellen (optional)](#12-repository-privat-stellen-optional)
 
 ---
 
@@ -51,7 +52,7 @@ Dauer: ca. 15 Minuten. Du machst das nur ein einziges Mal.
 2. Klicke oben rechts auf den grünen Button **„Use this template“** → **„Create a new repository“**.
 3. Bei **Repository name** trägst du `website` ein. Wenn du gleich die schönere Adresse willst, siehe [Kapitel 5](#5-schönere-web-adresse-und-eigene-domain).
 4. **Public** ausgewählt lassen. Das ist nötig, damit das Veröffentlichen kostenlos ist.
-   ⚠️ **Stell das Repository später nicht auf „Private“.** Mit dem kostenlosen GitHub-Konto geht deine Website dann sofort offline. „Public“ heißt nur, dass man die Dateien deiner Website sehen kann, also Texte, Bilder und Design, die ohnehin online stehen. **Ändern kannst nur du.** Lege dort einfach nichts Privates ab, z. B. Kundinnendaten. Feedback kommt nur per E-Mail zu dir und landet nicht im Repository.
+   ⚠️ **Stell das Repository später nicht auf „Private“.** Mit dem kostenlosen GitHub-Konto geht deine Website dann sofort offline. „Public“ heißt nur, dass man die Dateien deiner Website sehen kann, also Texte, Bilder und Design, die ohnehin online stehen. **Ändern kannst nur du.** Lege dort einfach nichts Privates ab, z. B. Kundinnendaten. Feedback kommt nur per E-Mail zu dir und landet nicht im Repository. Wenn du es trotzdem privat möchtest, siehe [Kapitel 12](#12-repository-privat-stellen-optional).
 5. Klicke auf **„Create repository“**.
 
 ### Schritt 3 – Veröffentlichen einschalten
@@ -336,6 +337,8 @@ Darin ist deine komplette Website mit allen Texten und Bildern.
 | Pages CMS | Editor | kostenlos | Anmeldung mit GitHub |
 | Web3Forms | Feedback-Formular | kostenlos bis 250 Feedbacks pro Monat | nein, nur der Schlüssel per E-Mail |
 | Eigene Domain | schöne Adresse | ca. 10–20 € pro Jahr | beim Domain-Anbieter |
+| GitHub Pro (optional) | privates Repository mit Website | ein paar $ pro Monat | dein GitHub-Konto |
+| Cloudflare (optional) | kostenlose Alternative bei privatem Repository | kostenlos | ja |
 | Claude | größere Änderungen | kostenloses Konto möglich, für größere Arbeiten evtl. Abo | ja |
 
 **Wichtige Adressen (zum Abspeichern):**
@@ -343,5 +346,47 @@ Darin ist deine komplette Website mit allen Texten und Bildern.
 - Dateien und Einstellungen: **https://github.com/DEIN-BENUTZERNAME/website**
 - Deine Website: **https://DEIN-BENUTZERNAME.github.io/website/** oder deine eigene Domain
 - Feedback-Seite: **…/feedback/**
+
+---
+
+## 12. Repository privat stellen (optional)
+
+**Musst du das?** Nein. Dein Repository ist öffentlich, damit die Veröffentlichung kostenlos bleibt. Man kann dort nur das sehen, was ohnehin auf deiner Website steht: Texte, Bilder und Design. **Ändern kannst nur du.** Für die meisten Websites ist „öffentlich“ völlig in Ordnung.
+
+Wenn du es trotzdem privat haben möchtest, ist das wichtig zu wissen:
+
+> ⚠️ **Mit dem kostenlosen GitHub-Konto geht deine Website offline, sobald du das Repository auf „Private“ stellst.** GitHub veröffentlicht Websites aus privaten Repositories nur mit einem bezahlten Konto.
+
+Es gibt zwei Möglichkeiten:
+
+### Möglichkeit A: GitHub Pro (kostenpflichtig, am einfachsten)
+Mit **GitHub Pro** bleibt deine Website online, auch wenn das Repository privat ist. Die Website selbst bleibt dabei für alle sichtbar, nur die Dateien sind versteckt. Pro kostet ein paar Dollar im Monat. Den aktuellen Preis siehst du auf github.com/pricing.
+
+1. Auf **github.com** oben rechts auf dein **Profilbild → Settings**.
+2. Links auf **Billing and licensing** bzw. **„Plans and usage“** → **GitHub Pro** auswählen und bezahlen.
+3. **Erst danach** dein Repository öffnen → **Settings** → **General** → ganz nach unten zu **„Danger Zone“** → **„Change visibility“** → **„Make private“** → bestätigen.
+4. Deine Website kurz aufrufen und prüfen, ob sie noch erreichbar ist. Falls nicht: **Actions → „Website veröffentlichen“ → „Run workflow“**.
+
+⚠️ **Wichtig:**
+- Die Reihenfolge einhalten: **zuerst Pro buchen, dann auf privat stellen.**
+- Wenn du Pro später **kündigst**, geht deine Website offline. Stell das Repository dann vorher wieder auf **„Public“** (gleicher Weg wie oben, nur „Make public“).
+
+### Möglichkeit B: Kostenlos über Cloudflare (aufwändiger)
+Das Repository bleibt **privat** auf GitHub, veröffentlicht wird die Website aber kostenlos über **Cloudflare Pages** statt über GitHub. Der Editor (Pages CMS) funktioniert genauso wie bisher.
+
+Dafür müssen ein paar technische Einstellungen geändert werden. Am einfachsten lässt du dir dabei von Claude helfen ([Kapitel 7](#7-größere-änderungen-mit-ki-claude)):
+
+> Mein GitHub-Repository **DEIN-BENUTZERNAME/website** ist eine Eleventy-Website mit Pages CMS, die bisher über GitHub Actions auf GitHub Pages veröffentlicht wird. Ich möchte das Repository auf privat stellen und die Website stattdessen kostenlos über **Cloudflare Pages** veröffentlichen. Bitte passe das Repository an und erkläre mir Schritt für Schritt, was ich bei Cloudflare einstellen muss (Build-Befehl, Ausgabeordner, eigene Domain).
+
+Grob läuft es so ab:
+1. Kostenloses Konto auf **cloudflare.com** anlegen.
+2. Bei Cloudflare unter **Workers & Pages** ein neues Projekt anlegen und dein GitHub-Repository verbinden.
+3. Als Build-Befehl `npm run build` und als Ausgabeordner `_site` eintragen.
+4. Deine Website ist dann unter `….pages.dev` erreichbar. Eine eigene Domain kannst du bei Cloudflare direkt verbinden.
+5. **Erst wenn die Website über Cloudflare läuft**, das Repository auf GitHub auf **privat** stellen (siehe Schritt 3 bei Möglichkeit A). Danach unter **Settings → Pages** GitHub Pages abschalten.
+
+💡 **Wenn du eine eigene Domain hast**, musst du deren DNS-Einträge von GitHub auf Cloudflare umstellen. Cloudflare zeigt dir dabei genau an, was einzutragen ist.
+
+---
 
 Viel Freude mit deiner Website! 🌿

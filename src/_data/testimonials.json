@@ -1,5 +1,5 @@
 {
-  "show": true,
+  "show": false,
   "menu_label": "Erfahrungen & Feedbacks",
   "page_eyebrow": "Erfahrungen",
   "page_title": "Was Frauen nach\nihrer Session erzählen",
@@ -7,19 +7,15 @@
   "eyebrow": "Erfahrungen anderer Frauen",
   "image": "/images/uploads/testimonials.jpg",
   "image_alt": "Wildblumen im Gegenlicht",
-  "image_focus": "",
   "items": [
     {
-      "quote": "Nach der Session habe ich mich so viel leichter, klarer und wieder mehr wie ich selbst gefühlt. Es war eine tief berührende und befreiende Erfahrung.",
-      "name": ""
+      "quote": "Nach der Session habe ich mich so viel leichter, klarer und wieder mehr wie ich selbst gefühlt. Es war eine tief berührende und befreiende Erfahrung."
     },
     {
-      "quote": "Ich hätte nicht gedacht, wie viel sich in mir bewegen kann, wenn ich wirklich fühlen darf. Danke, liebe Ronja, für diesen sicheren Raum.",
-      "name": ""
+      "quote": "Ich hätte nicht gedacht, wie viel sich in mir bewegen kann, wenn ich wirklich fühlen darf. Danke, liebe Ronja, für diesen sicheren Raum."
     },
     {
-      "quote": "Ich bin mit so viel Ruhe und Vertrauen in mich selbst nach Hause gegangen. Diese Arbeit wirkt noch lange nach.",
-      "name": ""
+      "quote": "Ich bin mit so viel Ruhe und Vertrauen in mich selbst nach Hause gegangen. Diese Arbeit wirkt noch lange nach."
     }
   ],
   "feedback_link_text": "Du warst schon bei mir? Teile deine Erfahrung",
@@ -27,17 +23,12 @@
   "videos_title": "Erfahrungen im Video",
   "videos_note": "Beim Abspielen wird das Video von YouTube geladen. Dabei werden Daten an YouTube (Google) übertragen.",
   "videos": [
-    {
-      "youtube": "",
-      "title": "",
-      "image": "",
-      "image_alt": ""
-    }
+    {}
   ],
-  "show_on_start": true,
-  "show_on_sessions": false,
-  "all_link_text": "Alle Erfahrungen ansehen",
   "invite_title": "Du warst schon bei mir?",
   "invite_text": "Ich freue mich sehr, wenn du deine Erfahrung teilst – anonym und ohne Anmeldung.",
-  "invite_button": "Feedback schreiben"
+  "invite_button": "Feedback schreiben",
+  "show_on_start": true,
+  "show_on_sessions": false,
+  "all_link_text": "Alle Erfahrungen ansehen"
 }

@@ -120,7 +120,7 @@ Deine Website ist jetzt online unter **`https://DEIN-BENUTZERNAME.github.io/webs
 
 So öffnest du den Editor: **app.pagescms.org** → mit GitHub anmelden → Repository `website` auswählen.
 
-Deine Website hat **5 Seiten**, die oben im Menü stehen: **Start**, **CORE® Bodywork**, **Über mich**, **1:1 Sessions** und **Kontakt**. Eine sechste Seite, **Workshops**, ist vorbereitet und lässt sich per Häkchen einschalten. Dazu kommen die Feedback-Seite, das Impressum und die Datenschutzerklärung (unten im Fußbereich).
+Deine Website hat **6 Seiten**, die oben im Menü stehen: **Start**, **CORE® Bodywork**, **Über mich**, **1:1 Sessions**, **Erfahrungen** und **Kontakt**. Eine sechste Seite, **Workshops**, ist vorbereitet und lässt sich per Häkchen einschalten. Dazu kommen die Feedback-Seite, das Impressum und die Datenschutzerklärung (unten im Fußbereich).
 
 Im Editor siehst du links:
 
@@ -132,7 +132,7 @@ Im Editor siehst du links:
 | **Seite: 1:1 Sessions** | Überschrift, Merkmale mit Symbolen, Button; optional Online-Kalender, Preise, häufige Fragen, Zusatzbereich, Reihenfolge |
 | **Seite: Workshops** | eigene Seite für Workshops (ein-/ausschaltbar), aufgebaut wie „Über mich“ |
 | **Seite: Kontakt** | Text und Button der Kontaktseite |
-| **Erfahrungsberichte (Start & Sessions)** | die Zitate von Kundinnen, die auf der Startseite und der Sessions-Seite erscheinen; optional Video-Erfahrungen |
+| **Seite: Erfahrungen** | eigene Seite mit allen Zitaten von Kundinnen, Videos und einer Einladung zum Feedback; per Häkchen auch auf Startseite und Sessions-Seite |
 | **Abschluss-Bereich (dunkler Bereich unten)** | der Satz mit Bild unten auf den Seiten („Vielleicht ist jetzt der Moment …“) |
 | **Design (Farben & Schrift)** | Farbpalette, Schrift, Feinschliff (Textgröße, Buttons, Abstände …) und eigene Farben ([Kapitel 6](#6-farben-und-design-selbst-ändern)) |
 | **Feedback-Seite** | Texte der Seite, auf der Kundinnen Feedback schreiben |
@@ -176,11 +176,11 @@ Im Editor siehst du links:
 | Bild auf der Seite **CORE® Bodywork** (und in der Kachel auf der Startseite) | **Seite: CORE® Bodywork** → Bild |
 | Bild auf der Seite **Über mich** (und in der Kachel auf der Startseite) | **Seite: Über mich** → Bild |
 | Bild der Kachel **1:1 Sessions** auf der Startseite | **Seite: 1:1 Sessions** → Bild für die Kachel |
-| Bild neben den **Erfahrungsberichten** | **Erfahrungsberichte** → Bild *(gilt für Start und 1:1 Sessions)* |
+| Bild oben auf der Seite **Erfahrungen** (auch neben den Zitaten auf der Startseite) | **Seite: Erfahrungen** → Bild |
 | Bild im dunklen **Abschluss-Bereich** unten | **Abschluss-Bereich** → Bild *(gilt für alle Seiten)* |
 | **Zweites Bild** auf Über mich / Workshops | **Seite: Über mich** bzw. **Seite: Workshops** → Zweites Bild |
 | Fotos der **Bildergalerie** | **Seite: Über mich** bzw. **Seite: Workshops** → Bildergalerie: Fotos |
-| **Vorschaubilder** der Videos | **Erfahrungsberichte** → Videos → Vorschaubild |
+| **Vorschaubilder** der Videos | **Seite: Erfahrungen** → Videos → Vorschaubild |
 
 **Jede Seite individuell gestalten:** Die Bilder der Erfahrungsberichte und des Abschluss-Bereichs gelten zunächst für alle Seiten. Möchtest du auf einer Seite ein **anderes Bild**, öffne diese Seite im Editor, z. B. **Seite: Über mich**. Ganz unten findest du:
 - **„Eigenes Bild für den Abschluss-Bereich (optional)“**, das es auf Start, CORE® Bodywork, Über mich und 1:1 Sessions gibt
@@ -243,11 +243,12 @@ Diese Bereiche sind schon fertig eingebaut. Du schaltest sie mit einem **Häkche
 | **Preise**: Angebote mit Titel, Preis und Beschreibung, eines davon hervorhebbar | Seite: 1:1 Sessions | „Preise: Bereich anzeigen“ |
 | **Häufige Fragen**: aufklappbare Fragen & Antworten | Seite: 1:1 Sessions | „Häufige Fragen: Bereich anzeigen“ |
 | **Online-Kalender**: zusätzlicher Button, z. B. zu Calendly | Seite: 1:1 Sessions | „Online-Kalender: Button anzeigen“ und Link eintragen |
-| **Erfahrungen zuerst**: Erfahrungsberichte stehen auf der Sessions-Seite ganz oben | Seite: 1:1 Sessions | „Erfahrungsberichte vor den Sessions zeigen“ |
+| **Erfahrungen auf der Startseite**: Zitate zum Durchblättern | Seite: Erfahrungen | „Auf der Startseite zeigen“ |
+| **Erfahrungen auf der Sessions-Seite** | Seite: Erfahrungen | „Auf der Seite 1:1 Sessions zeigen“ (und bei Seite: 1:1 Sessions optional „Erfahrungsberichte vor den Sessions zeigen“) |
 | **Zweites Bild**: neben dem Zusatzbereich | Seite: Über mich (auch Workshops) | „Zweites Bild: anzeigen“ |
 | **Bildergalerie**: beliebig viele Fotos, mit Klick groß ansehen | Seite: Über mich (auch Workshops) | „Bildergalerie: anzeigen“ |
 | **Seite Workshops**: eigene Seite mit Menüpunkt und Kachel auf der Startseite | Seite: Workshops | „Seite anzeigen“ |
-| **Video-Erfahrungen**: Videos von YouTube ([Kapitel 4](#4-feedback-von-kundinnen)) | Erfahrungsberichte | „Videos: anzeigen“ |
+| **Video-Erfahrungen**: Videos von YouTube auf der Seite Erfahrungen ([Kapitel 4](#4-feedback-von-kundinnen)) | Seite: Erfahrungen | „Videos: anzeigen“ |
 
 💡 Die Bereiche sind schon mit **Beispieltexten** gefüllt, z. B. Preise mit „[Preis] €“ und Fragen mit „Hier steht deine Antwort.“ Ersetze sie, **bevor** du das Häkchen setzt.
 
@@ -285,12 +286,12 @@ Solange kein Schlüssel eingetragen ist, zeigt die Seite einen freundlichen Hinw
 - Schick Kundinnen nach der Session den Link: `https://DEINE-ADRESSE/feedback/`
 - Jedes Feedback kommt **per E-Mail** bei dir an. Es erscheint **nicht automatisch** auf der Website. Du entscheidest, was online geht.
 - In der E-Mail steht, ob die Kundin zustimmt: **„Veröffentlichung erlaubt: Ja“**.
-- Wenn ja und du es zeigen möchtest: In Pages CMS unter **Erfahrungsberichte** einen neuen Eintrag hinzufügen, den Text hineinkopieren und speichern.
+- Wenn ja und du es zeigen möchtest: In Pages CMS unter **Seite: Erfahrungen** einen neuen Erfahrungsbericht hinzufügen, den Text hineinkopieren und speichern.
 
 💡 Kostenlos sind 250 Feedbacks pro Monat. Das reicht in der Regel völlig.
 
 ### Video-Erfahrungen zeigen (optional)
-Deine Website kann Video-Erfahrungen von YouTube zeigen, unter den Erfahrungsberichten auf der Startseite und der Sessions-Seite.
+Deine Website kann Video-Erfahrungen von YouTube zeigen, auf der Seite **Erfahrungen**.
 
 **⚠️ Vorher wichtig: Einwilligung einholen**
 Bei einem Video ist die Kundin erkennbar, das Feedback ist also **nicht mehr anonym**. Lass dir **schriftlich** bestätigen, dass du das Video auf deiner Website und auf YouTube zeigen darfst. Eine kurze E-Mail von ihr reicht, z. B.: „Ich bin einverstanden, dass Ronja mein Video auf ihrer Website und auf YouTube veröffentlicht.“ Bewahre diese E-Mail auf.
@@ -298,7 +299,7 @@ Bei einem Video ist die Kundin erkennbar, das Feedback ist also **nicht mehr ano
 **So geht's:**
 1. Lade das Video auf **YouTube** hoch und stell die Sichtbarkeit auf **„Nicht gelistet“**. Dann findet man es nicht über die YouTube-Suche, nur über deine Website.
 2. Kopiere bei YouTube unter **„Teilen“** den Link, z. B. `https://youtu.be/abc123…`.
-3. In Pages CMS unter **Erfahrungsberichte** bei **Videos** einen Eintrag hinzufügen und den Link einfügen. Optional kannst du einen **Titel** („Anna erzählt …“) und ein eigenes **Vorschaubild** angeben.
+3. In Pages CMS unter **Seite: Erfahrungen** bei **Videos** einen Eintrag hinzufügen und den Link einfügen. Optional kannst du einen **Titel** („Anna erzählt …“) und ein eigenes **Vorschaubild** angeben.
 4. Häkchen bei **„Videos: anzeigen“** setzen und **speichern**.
 
 **Datenschutz ist eingebaut:** Beim Öffnen deiner Website wird **nichts** von YouTube geladen. Besucherinnen sehen zuerst nur eine Fläche mit Play-Symbol und einem kurzen Hinweis. Erst beim Klick wird das Video im datenschutzfreundlichen Modus von YouTube geladen. Ein passender Abschnitt steht bereits in deiner Datenschutzerklärung.
@@ -530,6 +531,7 @@ Darin ist deine komplette Website mit allen Texten und Bildern.
 - Editor: **https://app.pagescms.org**
 - Dateien und Einstellungen: **https://github.com/DEIN-BENUTZERNAME/website**
 - Deine Website: **https://DEIN-BENUTZERNAME.github.io/website/** oder deine eigene Domain
+- Seite Erfahrungen: **…/erfahrungen/**
 - Feedback-Seite: **…/feedback/**
 
 ---

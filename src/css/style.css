@@ -71,11 +71,11 @@ h2 { font-size: clamp(32px, 3.6vw, 50px); }
   backdrop-filter: blur(8px);
   border-bottom: 1px solid color-mix(in srgb, var(--clay) 8%, transparent);
 }
-.header-inner { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 28px; height: 72px; }
 .logo { text-decoration: none; display: flex; flex-direction: column; line-height: 1.1; }
 .logo-name { font: 400 22px var(--serif); letter-spacing: .2em; text-transform: uppercase; }
 .logo-sub { font: 400 11.5px var(--sans); letter-spacing: .08em; margin-top: 4px; color: var(--ink-soft); }
-.main-nav { display: flex; align-items: center; gap: clamp(14px, 2vw, 34px); }
+.main-nav { display: flex; align-items: center; gap: clamp(12px, 1.6vw, 30px); }
 .main-nav a, .logo-name, .logo-sub { white-space: nowrap; }
 .main-nav a:not(.btn) { font-size: 14.5px; text-decoration: none; padding: 6px 0; position: relative; }
 .main-nav a:not(.btn)::after {
@@ -273,7 +273,7 @@ body.fade-off .split-media img, body.fade-off .testimonials-media img { -webkit-
 
 /* ---------- Video-Erfahrungen ---------- */
 .videos { padding: calc(clamp(56px, 7vw, 90px) * var(--space, 1)) 0; background: var(--cream); }
-.video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 24px; }
+.video-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; margin-top: 24px; }
 .video { margin: 0; }
 .video-frame { position: relative; display: block; width: 100%; aspect-ratio: 16 / 9; padding: 0; border: 0; border-radius: calc(var(--radius, 18px) * .7); overflow: hidden; cursor: pointer; background: linear-gradient(135deg, var(--night), var(--cta)); }
 .video-frame img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .85; }
@@ -283,6 +283,17 @@ body.fade-off .split-media img, body.fade-off .testimonials-media img { -webkit-
 .video-hint { position: absolute; left: 0; right: 0; bottom: 0; padding: 10px 14px; font-size: 12px; line-height: 1.4; color: #fff; background: linear-gradient(0deg, rgba(0,0,0,.6), transparent); text-align: left; }
 .video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .video figcaption { margin-top: 10px; font: italic 400 19px var(--serif); color: var(--ink); }
+
+/* ---------- Seite Erfahrungen ---------- */
+.exp-list { padding: calc(clamp(56px, 7vw, 90px) * var(--space, 1)) 0; background: var(--cream-2); }
+.exp-grid { columns: 2 320px; column-gap: clamp(18px, 2.4vw, 28px); }
+.exp-card { break-inside: avoid; margin: 0 0 clamp(18px, 2.4vw, 28px); background: var(--cream); border: 1px solid var(--line); border-radius: var(--radius, 18px); padding: clamp(24px, 3vw, 34px); }
+.exp-card blockquote { margin: 0; font: italic 400 clamp(21px, 1.9vw, 25px)/1.45 var(--serif); color: var(--ink); }
+.exp-card figcaption { margin-top: 14px; font-size: 14px; letter-spacing: .04em; color: var(--clay); }
+.exp-invite { padding: calc(clamp(56px, 7vw, 90px) * var(--space, 1)) 0; background: var(--cream); text-align: center; }
+.exp-invite p { color: var(--ink-soft); }
+.exp-invite .btn { margin-top: .8em; }
+.feedback-link { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 26px; }
 
 /* ---------- Unterseiten ---------- */
 .page-body { padding: calc(clamp(60px, 8vw, 110px) * var(--space, 1)) 0; min-height: 60vh; }
@@ -305,7 +316,7 @@ body.fade-off .split-media img, body.fade-off .testimonials-media img { -webkit-
    Tablet & Handy
    =================================================================== */
 /* Menü als ☰-Symbol, sobald der Platz knapp wird */
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .nav-toggle {
     display: flex; flex-direction: column; justify-content: center; gap: 6px;
     width: 44px; height: 44px; background: none; border: 0; cursor: pointer; padding: 10px;

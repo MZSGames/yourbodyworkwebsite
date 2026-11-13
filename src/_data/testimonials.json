@@ -1,4 +1,8 @@
 {
+  "menu_label": "Erfahrungen",
+  "page_eyebrow": "Erfahrungen",
+  "page_title": "Was Frauen nach\nihrer Session erzählen",
+  "page_text": "Hier teilen Frauen, wie sie CORE® Emotional Bodywork erlebt haben – in ihren eigenen Worten.",
   "eyebrow": "Erfahrungen anderer Frauen",
   "image": "/images/uploads/testimonials.jpg",
   "image_alt": "Wildblumen im Gegenlicht",
@@ -28,5 +32,11 @@
       "image": "",
       "image_alt": ""
     }
-  ]
+  ],
+  "show_on_start": true,
+  "show_on_sessions": false,
+  "all_link_text": "Alle Erfahrungen ansehen",
+  "invite_title": "Du warst schon bei mir?",
+  "invite_text": "Ich freue mich sehr, wenn du deine Erfahrung teilst – anonym und ohne Anmeldung.",
+  "invite_button": "Feedback schreiben"
 }

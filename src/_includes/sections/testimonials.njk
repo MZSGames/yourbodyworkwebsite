@@ -17,7 +17,10 @@
       {% endfor %}
     </div>
     <div class="dots" aria-hidden="true"></div>
-    {% if testimonials.feedback_link_text %}<p class="feedback-link"><a href="/feedback/">{{ testimonials.feedback_link_text }} {% include "arrow.njk" %}</a></p>{% endif %}
+    <p class="feedback-link">
+      {% if testimonials.all_link_text %}<a href="/erfahrungen/">{{ testimonials.all_link_text }} {% include "arrow.njk" %}</a>{% endif %}
+      {% if testimonials.feedback_link_text %}<a href="/feedback/">{{ testimonials.feedback_link_text }} {% include "arrow.njk" %}</a>{% endif %}
+    </p>
   </div>
 </section>
 {% endif %}

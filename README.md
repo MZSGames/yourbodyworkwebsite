@@ -52,6 +52,7 @@ src/
 - Anonymes Feedback: Seite `/feedback/`, Versand über Web3Forms (kostenlos, ohne Konto). Der Schlüssel wird im Editor unter Einstellungen eingetragen. Das Feedback geht per E-Mail an die Seitenbetreiberin und wird nicht automatisch veröffentlicht.
 - **Bildausschnitt:** Feld `*_focus` je Bild, Auswahl aus 9 Positionen (oben-links … unten-rechts) → CSS `object-position`. Optionale Hilfsseite `/bildausschnitt/` (noindex, nicht verlinkt) zeigt per Klick, welche Position im Editor zu wählen ist.
 - **Zusatzfunktionen (per Häkchen im Editor):** Preise, FAQ, Online-Kalender-Button, „Erfahrungen zuerst“ (Sessions); zweites Bild und Bildergalerie mit Lightbox (Über mich, Workshops); Seite Workshops (`src/workshops.11tydata.js` baut sie nur bei `show: true`); Video-Erfahrungen (YouTube erst nach Klick über youtube-nocookie). Schriften für Überschrift und Text getrennt wählbar.
+- **Seite Erfahrungen** (`/erfahrungen/`): alle Zitate, Videos, Einladung zum Feedback; Zitate per Häkchen zusätzlich auf Start/Sessions (`show_on_start`, `show_on_sessions`).
 - Kontakt läuft per `mailto:`-Button. Alternativ kann in den Einstellungen ein Buchungslink für alle Anfrage-Buttons eingetragen werden.
 
 **Hinweis:** Prüfen, ob „CORE®“ so verwendet werden darf. Das ist ein Markenzeichen des Ausbildungsanbieters.

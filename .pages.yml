@@ -312,7 +312,7 @@ content:
       - { name: booking_link, label: "Online-Kalender: Link", type: string, description: "Die Adresse deines Online-Kalenders, z. B. https://calendly.com/… – wird in einem neuen Fenster geöffnet." }
 
       # ---- Reihenfolge ----
-      - { name: testimonials_first, label: "Erfahrungsberichte vor den Sessions zeigen", type: boolean, description: "Angehakt = auf dieser Seite kommen die Erfahrungsberichte ganz oben, vor den Sessions." }
+      - { name: testimonials_first, label: "Erfahrungsberichte vor den Sessions zeigen", type: boolean, description: "Nur wenn bei „Seite: Erfahrungen“ auch „Auf der Seite 1:1 Sessions zeigen“ angehakt ist." }
 
       # ---- Preise (optional) ----
       - { name: prices_show, label: "Preise: Bereich anzeigen", type: boolean }
@@ -452,13 +452,17 @@ content:
   # ================= BEREICHE AUF MEHREREN SEITEN =================
 
   - name: erfahrungen
-    label: "Erfahrungsberichte (Start & Sessions)"
+    label: "Seite: Erfahrungen"
     type: file
     path: src/_data/testimonials.json
     format: json
     fields:
+      - { name: menu_label, label: Name im Menü, type: string, description: "So heißt die Seite oben im Menü." }
+      - { name: page_eyebrow, label: "Seite: Kleine Überzeile", type: string }
+      - { name: page_title, label: "Seite: Überschrift", type: text, description: "Mit Enter einen Zeilenumbruch setzen." }
+      - { name: page_text, label: "Seite: Einleitungstext", type: text, description: "Leerzeile = neuer Absatz." }
       - { name: eyebrow, label: Kleine Überzeile, type: string }
-      - { name: image, label: Bild (links), type: image }
+      - { name: image, label: Bild, type: image, description: "Erscheint oben auf der Seite Erfahrungen und links neben den Zitaten auf Start/Sessions." }
       - { name: image_alt, label: Bildbeschreibung, type: string }
       - name: image_focus
         label: "Bildausschnitt"
@@ -489,7 +493,7 @@ content:
       - { name: feedback_link_text, label: Link zum Feedback-Formular, type: string, description: "Kleiner Link unter den Erfahrungsberichten. Leer lassen = kein Link." }
 
       # ---- Video-Erfahrungen (optional) ----
-      - { name: videos_show, label: "Videos: anzeigen", type: boolean, description: "Zeigt Videos von YouTube unter den Erfahrungsberichten (Startseite und 1:1 Sessions)." }
+      - { name: videos_show, label: "Videos: anzeigen", type: boolean, description: "Zeigt Videos von YouTube auf der Seite Erfahrungen." }
       - { name: videos_title, label: "Videos: Überschrift", type: string }
       - { name: videos_note, label: "Videos: Datenschutz-Hinweis", type: string, description: "Erscheint auf jedem Video, bevor es abgespielt wird." }
       - name: videos
@@ -505,6 +509,16 @@ content:
           - { name: title, label: "Titel / Name (optional)", type: string, description: "z. B. „Anna erzählt von ihrer Session“" }
           - { name: image, label: "Vorschaubild (optional)", type: image, description: "Eigenes Bild, das vor dem Abspielen gezeigt wird. Leer = schlichte Fläche mit Play-Symbol." }
           - { name: image_alt, label: Bildbeschreibung, type: string }
+
+      # ---- Einladung zum Feedback (unten auf der Seite Erfahrungen) ----
+      - { name: invite_title, label: "Einladung: Überschrift", type: string, description: "Leer lassen = keine Einladung." }
+      - { name: invite_text, label: "Einladung: Text", type: text }
+      - { name: invite_button, label: "Einladung: Button-Text", type: string, description: "Führt zur Feedback-Seite." }
+
+      # ---- Auch auf anderen Seiten zeigen ----
+      - { name: show_on_start, label: "Auf der Startseite zeigen", type: boolean, description: "Zeigt die Zitate zum Durchblättern auf der Startseite." }
+      - { name: show_on_sessions, label: "Auf der Seite 1:1 Sessions zeigen", type: boolean, description: "Zeigt die Zitate zum Durchblättern auch auf der Sessions-Seite." }
+      - { name: all_link_text, label: "Link „Alle Erfahrungen ansehen“", type: string, description: "Erscheint auf Start/Sessions unter den Zitaten. Leer lassen = kein Link." }
 
   - name: abschluss
     label: "Abschluss-Bereich (dunkler Bereich unten)"

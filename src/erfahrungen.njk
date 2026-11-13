@@ -1,0 +1,49 @@
+---
+layout: base.njk
+permalink: /erfahrungen/
+navKey: erfahrungen
+eleventyComputed:
+  title: "{{ testimonials.menu_label }}"
+---
+{% set pd = testimonials %}
+
+{# Kopf der Seite: Text + Bild der Erfahrungsberichte #}
+<section class="split split-img-right{% if not testimonials.image %} no-image{% endif %} exp-head">
+  {% if testimonials.image %}<div class="split-media"><img src="{{ testimonials.image }}" alt="{{ testimonials.image_alt }}" style="{{ testimonials.image_focus | focus }}" fetchpriority="high"></div>{% endif %}
+  <div class="split-text">
+    {% if testimonials.page_eyebrow %}<p class="eyebrow">{{ testimonials.page_eyebrow }}</p>{% endif %}
+    <h1 class="h2">{{ testimonials.page_title | lines | safe }}</h1>
+    {{ testimonials.page_text | paras | safe }}
+  </div>
+</section>
+
+{# Alle Zitate #}
+{% if testimonials.items.length %}
+<section class="exp-list">
+  <div class="wrap">
+    <div class="exp-grid">
+      {% for t in testimonials.items %}
+      <figure class="exp-card">
+        <blockquote>„{{ t.quote }}“</blockquote>
+        {% if t.name %}<figcaption>– {{ t.name }}</figcaption>{% endif %}
+      </figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% include "sections/videos.njk" %}
+
+{# Einladung, selbst Feedback zu geben #}
+{% if testimonials.invite_title or testimonials.invite_text %}
+<section class="exp-invite">
+  <div class="wrap narrow">
+    {% if testimonials.invite_title %}<h2>{{ testimonials.invite_title | lines | safe }}</h2>{% endif %}
+    {{ testimonials.invite_text | paras | safe }}
+    {% if testimonials.invite_button %}<a class="btn" href="/feedback/">{{ testimonials.invite_button }} {% include "arrow.njk" %}</a>{% endif %}
+  </div>
+</section>
+{% endif %}
+
+{% include "sections/cta.njk" %}

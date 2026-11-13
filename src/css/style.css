@@ -1,36 +1,12 @@
 /* ===================================================================
    Ronja Sereinig – CORE® Emotional Bodywork
-   Farben und Schriften zentral hier oben anpassen.
+   Farben und Schriften: im Editor unter „Design“.
    =================================================================== */
 
-@font-face { font-family: "Cormorant"; src: url("../fonts/cormorant-garamond-latin-400-normal.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
-@font-face { font-family: "Cormorant"; src: url("../fonts/cormorant-garamond-latin-500-normal.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
-@font-face { font-family: "Cormorant"; src: url("../fonts/cormorant-garamond-latin-400-italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
-@font-face { font-family: "Cormorant"; src: url("../fonts/cormorant-garamond-latin-500-italic.woff2") format("woff2"); font-weight: 500; font-style: italic; font-display: swap; }
-@font-face { font-family: "Jost"; src: url("../fonts/jost-latin-300-normal.woff2") format("woff2"); font-weight: 300; font-display: swap; }
-@font-face { font-family: "Jost"; src: url("../fonts/jost-latin-400-normal.woff2") format("woff2"); font-weight: 400; font-display: swap; }
-@font-face { font-family: "Jost"; src: url("../fonts/jost-latin-500-normal.woff2") format("woff2"); font-weight: 500; font-display: swap; }
 
 :root {
-  /* ===== FARBEN – hier kannst du das ganze Farbschema ändern =====
-     Farben werden als Code geschrieben, z. B. #7d4a35.
-     Eigene Farbcodes findest du z. B. auf https://htmlcolorcodes.com */
-
-  --cream: #f3ece5;      /* heller Hintergrund (die meisten Bereiche) */
-  --cream-2: #ede3da;    /* etwas dunklerer Hintergrund (Einleitung, Über mich, Erfahrungen) */
-  --sand: #e4d6ca;       /* Rahmen von Eingabefeldern, inaktive Punkte */
-  --ink: #2e211b;        /* Überschriften und Haupttext */
-  --ink-soft: #5a463c;   /* Fließtext (etwas heller) */
-  --clay: #5e6b4f;       /* Akzentfarbe: Buttons, kleine Überzeilen, Symbole */
-  --clay-dark: #683b29;  /* Buttons, wenn man mit der Maus darüber fährt */
-  --night: #2a1d17;      /* dunkler Hintergrund ganz oben (großer Einstieg) */
-  --night-2: #3a2a22;    /* Fußbereich ganz unten */
-  --cta: var(--cta);        /* dunkler Abschluss-Bereich („Vielleicht ist jetzt der Moment …“) */
-  --line: rgba(125, 74, 53, .28); /* feine Trennlinien */
-
-  /* ===== SCHRIFTEN ===== */
-  --serif: "Cormorant", "Cormorant Garamond", Georgia, serif; /* Überschriften */
-  --sans: "Jost", "Helvetica Neue", Arial, sans-serif;         /* Fließtext */
+  /* Farben und Schriften werden im Editor eingestellt (Pages CMS → Design).
+     Die Werte kommen aus src/_data/design.json und lib/design.js. */
 
   /* ===== LAYOUT ===== */
   --wrap: 1180px;                   /* maximale Breite des Inhalts */
@@ -88,9 +64,9 @@ h2 { font-size: clamp(32px, 3.6vw, 50px); }
 /* ---------- Header ---------- */
 .site-header {
   position: sticky; top: 0; z-index: 50;
-  background: rgba(243, 236, 229, .94);
+  background: color-mix(in srgb, var(--cream) 94%, transparent);
   backdrop-filter: blur(8px);
-  border-bottom: 1px solid rgba(125, 74, 53, .08);
+  border-bottom: 1px solid color-mix(in srgb, var(--clay) 8%, transparent);
 }
 .header-inner { display: flex; align-items: center; justify-content: space-between; height: 72px; }
 .logo { text-decoration: none; display: flex; flex-direction: column; line-height: 1.1; }
@@ -110,7 +86,7 @@ h2 { font-size: clamp(32px, 3.6vw, 50px); }
 .hero {
   position: relative; overflow: hidden;
   background: var(--night);
-  color: #f6eee7;
+  color: color-mix(in srgb, var(--cream) 60%, #fff);
   min-height: min(82vh, 700px);
   display: flex; align-items: center;
 }
@@ -118,15 +94,15 @@ h2 { font-size: clamp(32px, 3.6vw, 50px); }
 .hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: 30% 30%; }
 .hero-media::before {
   content: ""; position: absolute; inset: 0; z-index: 1;
-  background: linear-gradient(90deg, var(--night) 0%, rgba(42, 29, 23, .75) 22%, rgba(42, 29, 23, 0) 55%);
+  background: linear-gradient(90deg, var(--night) 0%, color-mix(in srgb, var(--night) 75%, transparent) 22%, color-mix(in srgb, var(--night) 0%, transparent) 55%);
 }
 .hero-content { position: relative; z-index: 2; padding-top: 80px; padding-bottom: 80px; }
 .hero-content > * { max-width: 560px; }
 .hero-content h1 { max-width: 760px; font-size: clamp(40px, 5vw, 66px); }
-.hero .eyebrow { color: #f1e6dc; letter-spacing: .38em; }
-.hero h1 { color: #fbf5ef; }
-.hero .lead { font-size: 18px; color: #eadfd5; margin-bottom: 1.8em; }
-.hero .note { font: italic 400 19px var(--serif); color: #d9cabd; margin-top: 1.6em; }
+.hero .eyebrow { color: var(--cream); letter-spacing: .38em; }
+.hero h1 { color: color-mix(in srgb, var(--cream) 40%, #fff); }
+.hero .lead { font-size: 18px; color: var(--cream-2); margin-bottom: 1.8em; }
+.hero .note { font: italic 400 19px var(--serif); color: var(--sand); margin-top: 1.6em; }
 
 /* ---------- Intro ---------- */
 .intro { background: var(--cream-2); padding: clamp(60px, 8vw, 100px) 0; }
@@ -182,11 +158,11 @@ h2 { font-size: clamp(32px, 3.6vw, 50px); }
 .dots button.is-active { background: var(--clay); }
 
 /* ---------- Abschluss-CTA ---------- */
-.cta { position: relative; overflow: hidden; background: var(--cta); color: #fbf3ec; min-height: 380px; display: flex; align-items: center; }
+.cta { position: relative; overflow: hidden; background: var(--cta); color: color-mix(in srgb, var(--cream) 50%, #fff); min-height: 380px; display: flex; align-items: center; }
 .cta-media { position: absolute; inset: 0 auto 0 0; width: 55%; }
 .cta-media img { width: 100%; height: 100%; object-fit: cover; object-position: 60% 40%; }
-.cta-media::after { content: ""; position: absolute; inset: 0 -1px 0 0; background: linear-gradient(90deg, rgba(75, 52, 40, 0) 30%, var(--cta) 96%); }
-.cta::before { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse at 70% 20%, rgba(240, 180, 130, .18), transparent 60%); pointer-events: none; z-index: 1; }
+.cta-media::after { content: ""; position: absolute; inset: 0 -1px 0 0; background: linear-gradient(90deg, color-mix(in srgb, var(--cta) 0%, transparent) 30%, var(--cta) 96%); }
+.cta::before { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse at 70% 20%, color-mix(in srgb, var(--sand) 18%, transparent), transparent 60%); pointer-events: none; z-index: 1; }
 .cta-content { position: relative; z-index: 2; text-align: center; padding-top: 70px; padding-bottom: 70px; padding-left: max(var(--pad), 34%); }
 .cta-title { font-style: italic; font-size: clamp(30px, 3.4vw, 46px); line-height: 1.2; margin-bottom: 1em; }
 
@@ -205,7 +181,7 @@ h2 { font-size: clamp(32px, 3.6vw, 50px); }
 .feedback-form label { display: grid; gap: 6px; font-size: 14px; letter-spacing: .03em; color: var(--ink-soft); }
 .feedback-form input:not([type=checkbox]), .feedback-form textarea {
   font: 300 16px/1.6 var(--sans); color: var(--ink);
-  background: #faf6f2; border: 1px solid var(--sand); border-radius: 12px; padding: 12px 14px; resize: vertical;
+  background: color-mix(in srgb, var(--cream) 45%, #fff); border: 1px solid var(--sand); border-radius: 12px; padding: 12px 14px; resize: vertical;
 }
 .feedback-form input:focus, .feedback-form textarea:focus { outline: none; border-color: var(--clay); }
 .feedback-form .check { display: flex; gap: 10px; align-items: flex-start; font-size: 15px; }
@@ -224,14 +200,14 @@ h2 { font-size: clamp(32px, 3.6vw, 50px); }
 .prose a { color: var(--clay); }
 
 /* ---------- Footer ---------- */
-.site-footer { background: var(--night-2); color: #efe4da; padding: 26px 0; }
+.site-footer { background: var(--night-2); color: var(--cream-2); padding: 26px 0; }
 .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
-.logo-light .logo-sub { color: #cdbcae; }
+.logo-light .logo-sub { color: var(--sand); opacity: .8; }
 .footer-nav { display: flex; gap: 40px; font-size: 14px; }
 .footer-nav a { text-decoration: none; }
 .footer-nav a:hover { text-decoration: underline; }
 .insta { display: flex; align-items: center; gap: 12px; text-decoration: none; font-size: 15px; }
-.insta small { display: block; font-size: 11.5px; color: #cdbcae; }
+.insta small { display: block; font-size: 11.5px; color: var(--sand); opacity: .8; }
 .insta svg { width: 26px; height: 26px; fill: none; stroke: currentColor; stroke-width: 1.5; }
 .insta .fill { fill: currentColor; stroke: none; }
 
@@ -270,7 +246,7 @@ h2 { font-size: clamp(32px, 3.6vw, 50px); }
   .logo-name { font-size: 18px; letter-spacing: .16em; }
   .hero { flex-direction: column; align-items: stretch; min-height: 0; }
   .hero-media { position: relative; width: 100%; height: 56vw; min-height: 260px; }
-  .hero-media::before { background: linear-gradient(0deg, var(--night) 0%, rgba(42, 29, 23, 0) 45%); }
+  .hero-media::before { background: linear-gradient(0deg, var(--night) 0%, color-mix(in srgb, var(--night) 0%, transparent) 45%); }
   .hero-content { padding-top: 0; padding-bottom: 56px; margin-top: -40px; }
 
   .split, .testimonials { grid-template-columns: 1fr; }
@@ -289,7 +265,7 @@ h2 { font-size: clamp(32px, 3.6vw, 50px); }
 
   .cta { flex-direction: column; }
   .cta-media { position: relative; width: 100%; height: 60vw; }
-  .cta-media::after { background: linear-gradient(0deg, var(--cta), rgba(75, 52, 40, 0) 50%); }
+  .cta-media::after { background: linear-gradient(0deg, var(--cta), color-mix(in srgb, var(--cta) 0%, transparent) 50%); }
   .cta-content { padding: 0 var(--pad) 64px; margin-top: -30px; }
 
   .footer-inner { flex-direction: column; align-items: flex-start; }

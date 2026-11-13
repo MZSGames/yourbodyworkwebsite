@@ -130,6 +130,41 @@ content:
           - { name: button_text, label: Button-Text, type: string }
           - { name: mail_subject, label: Betreff der E-Mail, type: string, description: "Wird automatisch in die E-Mail eingesetzt, wenn jemand auf den Button klickt." }
 
+  # ================= DESIGN =================
+  - name: design
+    label: Design (Farben & Schrift)
+    type: file
+    path: src/_data/design.json
+    format: json
+    fields:
+      - name: palette
+        label: Farbpalette
+        description: "Ändert alle Farben der Website auf einmal. Vorschaubilder findest du im Handbuch (Kapitel 6)."
+        type: select
+        options:
+          values:
+            - { name: erdtoene, label: "Erdtöne (warmes Braun)" }
+            - { name: salbei, label: "Salbei (sanftes Grün)" }
+            - { name: rose, label: "Rosé (zartes Altrosa)" }
+            - { name: meer, label: "Sand & Meer (Beige mit Blaugrau)" }
+            - { name: terrakotta, label: "Terrakotta (warmes Orange-Rot)" }
+      - name: fonts
+        label: Schrift
+        type: select
+        options:
+          values:
+            - { name: elegant, label: "Elegant (Cormorant Garamond + Jost)" }
+            - { name: klassisch, label: "Klassisch (Lora + Source Sans)" }
+            - { name: modern, label: "Modern (Playfair Display + Montserrat)" }
+            - { name: weich, label: "Weich (Fraunces + Nunito)" }
+      - name: accent
+        label: Eigene Akzentfarbe (optional)
+        description: "Farbe für Buttons, Überzeilen und Symbole, z. B. #7d4a35. Leer lassen = Farbe der Palette. Farbcodes findest du auf htmlcolorcodes.com"
+        type: string
+        pattern:
+          regex: "^(#[0-9a-fA-F]{6})?$"
+          message: "Bitte einen Farbcode mit # und 6 Zeichen eingeben, z. B. #7d4a35 – oder das Feld leer lassen."
+
   # ================= FEEDBACK =================
   - name: feedback
     label: Feedback-Seite

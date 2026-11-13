@@ -92,6 +92,7 @@ Links siehst du:
 | Menüpunkt | Was du dort änderst |
 |---|---|
 | **Startseite** | alle 8 Bereiche der Startseite, von oben nach unten |
+| **Design (Farben & Schrift)** | Farbpalette, Schrift, eigene Akzentfarbe ([Kapitel 6](#6-farben-und-design-selbst-ändern)) |
 | **Feedback-Seite** | Texte der Seite, auf der Kundinnen Feedback schreiben |
 | **Impressum** / **Datenschutzerklärung** | die rechtlichen Seiten |
 | **Einstellungen** | Name, E-Mail, Telefon, Instagram, Google-Text, Feedback-Schlüssel |
@@ -242,38 +243,47 @@ Ohne diesen Schritt fehlen auf der neuen Domain Bilder und Design.
 
 ## 6. Farben und Design selbst ändern
 
-Alle Farben stehen gesammelt in **einer Datei**. Jede Farbe ist dort auf Deutsch beschriftet.
+Farben und Schrift änderst du genauso einfach wie Texte, direkt im Editor.
 
-### Eine Farbe ändern
-1. Auf **github.com** dein Repository öffnen.
-2. Nacheinander klicken: **src** → **css** → **style.css**
-3. Rechts oben auf das **Stift-Symbol ✏️** („Edit this file“) klicken.
-4. Ganz oben findest du den Abschnitt **FARBEN**, zum Beispiel:
-   ```
-   --clay: #7d4a35;       /* Akzentfarbe: Buttons, kleine Überzeilen, Symbole */
-   ```
-5. Ersetze **nur den Farbcode**, z. B. `#7d4a35` durch `#5e6b4f`. Lass `--clay:` und den `;` am Ende stehen.
-6. Oben rechts auf **„Commit changes…“** und dann noch einmal auf **„Commit changes“** klicken.
-7. Nach 1–2 Minuten ist die neue Farbe online.
+### So geht's
+1. **app.pagescms.org** öffnen → dein Repository `website` auswählen.
+2. Links auf **„Design (Farben & Schrift)“** klicken.
+3. Bei **Farbpalette** und **Schrift** auswählen, was dir gefällt.
+4. **Speichern**. Nach 1–2 Minuten hat deine ganze Website das neue Aussehen.
 
-💡 Farbcodes zum Aussuchen findest du auf **https://htmlcolorcodes.com**. Klick eine Farbe an und kopiere den Code mit `#`.
-💡 Ändere am besten **eine Farbe nach der anderen** und schau dir das Ergebnis jeweils an.
+Gefällt es dir nicht? Einfach wieder die vorherige Auswahl treffen und speichern.
 
-### Welche Farbe macht was?
+### Die Farbpaletten
+Jede Palette ändert **alle Farben auf einmal**: Hintergründe, Text, Buttons, Symbole und die dunklen Bereiche. Die Farben sind aufeinander abgestimmt, du kannst also nichts falsch kombinieren.
 
-| Name | Wo sie vorkommt |
-|---|---|
-| `--cream` | heller Haupt-Hintergrund |
-| `--cream-2` | etwas dunklerer Hintergrund (Einleitung, Über mich, Erfahrungen) |
-| `--ink` | Überschriften und Haupttext |
-| `--ink-soft` | Fließtext |
-| `--clay` | **Akzentfarbe**: Buttons, Überzeilen, Symbole |
-| `--clay-dark` | Buttons beim Darüberfahren mit der Maus |
-| `--night` | dunkler Bereich ganz oben |
-| `--cta` | dunkler Abschluss-Bereich |
-| `--night-2` | Fußbereich ganz unten |
+| Erdtöne | Salbei | Rosé | Sand & Meer | Terrakotta |
+|:---:|:---:|:---:|:---:|:---:|
+| <img src="docs/vorschau/farbe-erdtoene.jpg" width="170" alt="Erdtöne"> | <img src="docs/vorschau/farbe-salbei.jpg" width="170" alt="Salbei"> | <img src="docs/vorschau/farbe-rose.jpg" width="170" alt="Rosé"> | <img src="docs/vorschau/farbe-meer.jpg" width="170" alt="Sand & Meer"> | <img src="docs/vorschau/farbe-terrakotta.jpg" width="170" alt="Terrakotta"> |
+| warmes Braun *(Standard)* | sanftes Grün | zartes Altrosa | Beige mit Blaugrau | warmes Orange-Rot |
 
-Für alles, was über Farben hinausgeht, z. B. andere Schriften, andere Abstände oder ein anderes Layout, nutze am besten [Kapitel 7](#7-größere-änderungen-mit-ki-claude).
+### Die Schriften
+
+| Elegant *(Standard)* | Klassisch |
+|:---:|:---:|
+| <img src="docs/vorschau/schrift-elegant.jpg" width="300" alt="Elegant"> | <img src="docs/vorschau/schrift-klassisch.jpg" width="300" alt="Klassisch"> |
+| **Modern** | **Weich** |
+| <img src="docs/vorschau/schrift-modern.jpg" width="300" alt="Modern"> | <img src="docs/vorschau/schrift-weich.jpg" width="300" alt="Weich"> |
+
+### Eigene Akzentfarbe (optional)
+Die **Akzentfarbe** ist die Farbe von Buttons, kleinen Überzeilen und Symbolen. Wenn du dafür eine ganz bestimmte Farbe möchtest, z. B. deine Logo-Farbe:
+
+1. Auf **https://htmlcolorcodes.com** eine Farbe anklicken und den Code kopieren. Er beginnt mit `#` und hat 6 Zeichen, z. B. `#5e6b4f`.
+2. In Pages CMS unter **Design** ins Feld **„Eigene Akzentfarbe“** einfügen.
+3. **Speichern**.
+
+Feld **leer lassen** = die Akzentfarbe der gewählten Palette wird verwendet.
+Der Editor nimmt nur gültige Farbcodes an. Ein Tippfehler kann deine Website also nicht beschädigen.
+
+💡 **Tipp:** Wähle eine Akzentfarbe, die **kräftig genug** ist. Auf Buttons steht weiße Schrift, die muss gut lesbar bleiben.
+
+### Noch mehr anpassen?
+Für Änderungen, die über Palette, Schrift und Akzentfarbe hinausgehen, z. B. eine ganz eigene Farbwelt, andere Schriften oder andere Abstände, nutze [Kapitel 7](#7-größere-änderungen-mit-ki-claude). Zum Beispiel:
+> „Füge im Design eine neue Farbpalette **‚Lavendel‘** hinzu (Datei `lib/design.js` und Auswahl in `.pages.yml`).“
 
 ---
 
@@ -294,7 +304,7 @@ Für alles, was der Editor nicht kann, hilft dir eine KI wie **Claude**. Program
 - „Lege eine neue Unterseite **Workshops** an und verlinke sie im Menü.“
 - „Füge bei ‚Über mich‘ ein **zweites Bild** hinzu.“
 - „Tausche die **Reihenfolge**: Erfahrungen sollen vor den Sessions kommen.“
-- „Ändere die **Schrift** der Überschriften in eine andere elegante Serifenschrift.“
+- „Füge eine weitere **Schrift-Auswahl** im Design hinzu, z. B. mit der Schrift … für Überschriften.“
 - „Füge einen Bereich **Häufige Fragen** mit aufklappbaren Fragen hinzu.“
 - „Ermögliche **Video-Feedbacks** von YouTube bei den Erfahrungsberichten“ (ausführlicher Text in [Kapitel 4](#4-feedback-von-kundinnen)).
 - „Binde meinen **Online-Kalender** (Link: …) als Button bei den Sessions ein.“

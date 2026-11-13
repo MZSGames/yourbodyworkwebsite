@@ -8,8 +8,11 @@
   <meta property="og:title" content="{{ settings.site_title }}">
   <meta property="og:description" content="{{ settings.meta_description }}">
   <meta property="og:image" content="{{ settings.share_image }}">
-  <link rel="preload" href="/fonts/cormorant-garamond-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ theme.preload }}" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/css/style.css">
+  <style>
+{{ theme.css | safe }}
+  </style>
 </head>
 <body class="{{ bodyClass }}">
   <header class="site-header" id="top">

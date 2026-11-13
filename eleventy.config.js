@@ -1,14 +1,6 @@
 // Eleventy-Konfiguration: baut aus den Inhalten in src/ die fertige Website in _site/
 import { HtmlBasePlugin } from "@11ty/eleventy";
-const fontFiles = [
-  "cormorant-garamond/files/cormorant-garamond-latin-400-normal.woff2",
-  "cormorant-garamond/files/cormorant-garamond-latin-400-italic.woff2",
-  "cormorant-garamond/files/cormorant-garamond-latin-500-normal.woff2",
-  "cormorant-garamond/files/cormorant-garamond-latin-500-italic.woff2",
-  "jost/files/jost-latin-300-normal.woff2",
-  "jost/files/jost-latin-400-normal.woff2",
-  "jost/files/jost-latin-500-normal.woff2",
-];
+import { allFontFiles } from "./lib/design.js";
 
 const escapeHtml = (s) =>
   String(s ?? "")
@@ -23,7 +15,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/js": "js" });
   eleventyConfig.addPassthroughCopy({ "src/images": "images" });
   // Schriften lokal ausliefern (kein Google-Fonts-Aufruf → DSGVO-freundlich)
-  for (const f of fontFiles) {
+  for (const f of allFontFiles()) {
     eleventyConfig.addPassthroughCopy({
       [`node_modules/@fontsource/${f}`]: `fonts/${f.split("/").pop()}`,
     });
@@ -31,6 +23,9 @@ export default function (eleventyConfig) {
 
   // Zeilenumbrüche in Impressum/Datenschutz beibehalten
   eleventyConfig.amendLibrary("md", (md) => md.set({ breaks: true }));
+
+  // Design-Auswahl neu einlesen, wenn sie sich ändert
+  eleventyConfig.addWatchTarget("./lib/");
 
   // Text mit Leerzeilen → mehrere Absätze
   eleventyConfig.addFilter("paras", (text) =>

@@ -774,3 +774,4 @@ content:
       - { name: meta_description, label: Beschreibung für Google, type: text, description: "ca. 150 Zeichen" }
       - { name: share_image, label: "Vorschaubild beim Teilen (WhatsApp, Facebook …)", type: image }
       
+      

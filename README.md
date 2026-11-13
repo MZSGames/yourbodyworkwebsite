@@ -50,7 +50,7 @@ src/
 - Die Pfade passen sich automatisch an: `…github.io/repo-name/` und eigene Domain funktionieren beide.
 - **Design im Editor:** 12 Farbpaletten, 8 Schriftpaare, Feinschliff (Textgröße, Button-Form, Ecken, Abstände, Bildverlauf) und optionale eigene Farben werden in `src/_data/design.json` gewählt (Pages CMS → Design). Ungültige Werte fallen auf den Standard zurück. Paletten und Schriften sind in `lib/design.js` definiert; `src/_data/theme.js` erzeugt daraus CSS-Variablen und `@font-face`. Alle Schriften werden lokal ausgeliefert (Fontsource), ohne Google Fonts. Vorschaubilder: `docs/vorschau/`.
 - Anonymes Feedback: Seite `/feedback/`, Versand über Web3Forms (kostenlos, ohne Konto). Der Schlüssel wird im Editor unter Einstellungen eingetragen. Das Feedback geht per E-Mail an die Seitenbetreiberin und wird nicht automatisch veröffentlicht.
-- **Bildausschnitt:** Feld `*_focus` je Bild (`oben`/`mitte`/`unten` oder `x y` in Prozent). Hilfswerkzeug unter `/bildausschnitt/` (noindex, nicht verlinkt): Bild anklicken, Wert kopieren.
+- **Bildausschnitt:** Feld `*_focus` je Bild, Auswahl aus 9 Positionen (oben-links … unten-rechts) → CSS `object-position`.
 - Kontakt läuft per `mailto:`-Button. Alternativ kann in den Einstellungen ein Buchungslink für alle Anfrage-Buttons eingetragen werden.
 
 **Hinweis:** Prüfen, ob „CORE®“ so verwendet werden darf. Das ist ein Markenzeichen des Ausbildungsanbieters.

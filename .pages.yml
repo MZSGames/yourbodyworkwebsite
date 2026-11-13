@@ -169,40 +169,128 @@ content:
       - { name: image_alt, label: Bildbeschreibung, type: string }
 
   # ================= DESIGN =================
-
   - name: design
     label: Design (Farben & Schrift)
     type: file
     path: src/_data/design.json
     format: json
     fields:
+      # ---- Die wichtigsten zwei Einstellungen ----
       - name: palette
         label: Farbpalette
         description: "Ändert alle Farben der Website auf einmal. Vorschaubilder findest du im Handbuch (Kapitel 6)."
         type: select
         options:
           values:
-            - { name: erdtoene, label: "Erdtöne (warmes Braun)" }
-            - { name: salbei, label: "Salbei (sanftes Grün)" }
-            - { name: rose, label: "Rosé (zartes Altrosa)" }
-            - { name: meer, label: "Sand & Meer (Beige mit Blaugrau)" }
-            - { name: terrakotta, label: "Terrakotta (warmes Orange-Rot)" }
+            - { name: erdtoene, label: "Erdtöne – warmes Braun (Standard)" }
+            - { name: terrakotta, label: "Terrakotta – warmes Orange-Rot" }
+            - { name: pfirsich, label: "Pfirsich – sanftes Apricot" }
+            - { name: rose, label: "Rosé – zartes Altrosa" }
+            - { name: lavendel, label: "Lavendel – helles Violett" }
+            - { name: salbei, label: "Salbei – sanftes Grün" }
+            - { name: olive, label: "Olive – erdiges Gelbgrün" }
+            - { name: wald, label: "Waldgrün – tiefes Grün" }
+            - { name: meer, label: "Sand & Meer – Beige mit Blaugrau" }
+            - { name: nachtblau, label: "Nachtblau – kühles Blau" }
+            - { name: gold, label: "Creme & Gold – hell mit Goldton" }
+            - { name: stein, label: "Stein – schlichtes Grau" }
       - name: fonts
         label: Schrift
+        description: "Schrift für Überschriften und Text. Vorschaubilder im Handbuch (Kapitel 6)."
         type: select
         options:
           values:
-            - { name: elegant, label: "Elegant (Cormorant Garamond + Jost)" }
-            - { name: klassisch, label: "Klassisch (Lora + Source Sans)" }
-            - { name: modern, label: "Modern (Playfair Display + Montserrat)" }
-            - { name: weich, label: "Weich (Fraunces + Nunito)" }
+            - { name: elegant, label: "Elegant – Cormorant Garamond + Jost (Standard)" }
+            - { name: klassisch, label: "Klassisch – Lora + Source Sans" }
+            - { name: zeitlos, label: "Zeitlos – EB Garamond + Karla" }
+            - { name: modern, label: "Modern – Playfair Display + Montserrat" }
+            - { name: edel, label: "Edel – Bodoni Moda + Raleway" }
+            - { name: weich, label: "Weich – Fraunces + Nunito" }
+            - { name: ruhig, label: "Ruhig – Spectral + Work Sans" }
+            - { name: schlicht, label: "Schlicht – DM Sans (ohne Serifen)" }
+
+      # ---- Feinschliff (optional) ----
+      - name: text_size
+        label: "Feinschliff: Textgröße"
+        type: select
+        options:
+          values:
+            - { name: klein, label: "Klein" }
+            - { name: normal, label: "Normal (Standard)" }
+            - { name: gross, label: "Groß – besser lesbar" }
+      - name: buttons
+        label: "Feinschliff: Form der Buttons"
+        type: select
+        options:
+          values:
+            - { name: rund, label: "Rund (Standard)" }
+            - { name: weich, label: "Leicht abgerundet" }
+            - { name: eckig, label: "Eckig" }
+      - name: corners
+        label: "Feinschliff: Ecken von Kacheln und Feldern"
+        type: select
+        options:
+          values:
+            - { name: rund, label: "Rund (Standard)" }
+            - { name: weich, label: "Leicht abgerundet" }
+            - { name: eckig, label: "Eckig" }
+      - name: spacing
+        label: "Feinschliff: Abstände"
+        type: select
+        options:
+          values:
+            - { name: kompakt, label: "Kompakt – weniger Platz zwischen den Bereichen" }
+            - { name: normal, label: "Normal (Standard)" }
+            - { name: luftig, label: "Luftig – mehr Platz zwischen den Bereichen" }
+      - name: image_fade
+        label: "Feinschliff: Bilder neben Texten"
+        type: select
+        options:
+          values:
+            - { name: weich, label: "Mit weichem Verlauf (Standard)" }
+            - { name: ohne, label: "Ohne Verlauf – klare Kante" }
+
+      # ---- Eigene Farben (optional) ----
       - name: accent
-        label: Eigene Akzentfarbe (optional)
-        description: "Farbe für Buttons, Überzeilen und Symbole, z. B. #7d4a35. Leer lassen = Farbe der Palette. Farbcodes findest du auf htmlcolorcodes.com"
+        label: "Eigene Farbe: Akzentfarbe (optional)"
+        description: "Buttons, Überzeilen, Symbole, z. B. #7d4a35. Leer lassen = Farbe der Palette. Farbcodes: htmlcolorcodes.com"
         type: string
         pattern:
           regex: "^(#[0-9a-fA-F]{6})?$"
           message: "Bitte einen Farbcode mit # und 6 Zeichen eingeben, z. B. #7d4a35 – oder das Feld leer lassen."
+      - name: custom_colors
+        label: "Eigene Farben: weitere (optional, für Fortgeschrittene)"
+        description: "Jedes Feld überschreibt eine Farbe der Palette. Leer lassen = Farbe der Palette. Tipp: Hintergründe hell, Text und dunkle Bereiche dunkel wählen."
+        type: object
+        fields:
+          - name: background
+            label: "Hintergrund"
+            description: "Heller Haupt-Hintergrund, z. B. #f3ece5"
+            type: string
+            pattern:
+              regex: "^(#[0-9a-fA-F]{6})?$"
+              message: "Bitte einen Farbcode mit # und 6 Zeichen eingeben, z. B. #7d4a35 – oder das Feld leer lassen."
+          - name: background_alt
+            label: "Zweiter Hintergrund"
+            description: "Etwas dunklerer Hintergrund für abwechselnde Bereiche, z. B. #ede3da"
+            type: string
+            pattern:
+              regex: "^(#[0-9a-fA-F]{6})?$"
+              message: "Bitte einen Farbcode mit # und 6 Zeichen eingeben, z. B. #7d4a35 – oder das Feld leer lassen."
+          - name: text
+            label: "Textfarbe"
+            description: "Überschriften und Text, z. B. #2e211b"
+            type: string
+            pattern:
+              regex: "^(#[0-9a-fA-F]{6})?$"
+              message: "Bitte einen Farbcode mit # und 6 Zeichen eingeben, z. B. #7d4a35 – oder das Feld leer lassen."
+          - name: dark
+            label: "Dunkle Bereiche"
+            description: "Großer Einstieg oben, Abschluss-Bereich und Fußbereich, z. B. #2a1d17"
+            type: string
+            pattern:
+              regex: "^(#[0-9a-fA-F]{6})?$"
+              message: "Bitte einen Farbcode mit # und 6 Zeichen eingeben, z. B. #7d4a35 – oder das Feld leer lassen."
 
   # ================= FEEDBACK =================
 

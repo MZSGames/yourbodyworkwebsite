@@ -100,7 +100,7 @@ Im Editor siehst du links:
 | **Seite: Kontakt** | Text und Button der Kontaktseite |
 | **Erfahrungsberichte (Start & Sessions)** | die Zitate von Kundinnen, die auf der Startseite und der Sessions-Seite erscheinen |
 | **Abschluss-Bereich (dunkler Bereich unten)** | der Satz mit Bild unten auf den Seiten („Vielleicht ist jetzt der Moment …“) |
-| **Design (Farben & Schrift)** | Farbpalette, Schrift, eigene Akzentfarbe ([Kapitel 6](#6-farben-und-design-selbst-ändern)) |
+| **Design (Farben & Schrift)** | Farbpalette, Schrift, Feinschliff (Textgröße, Buttons, Abstände …) und eigene Farben ([Kapitel 6](#6-farben-und-design-selbst-ändern)) |
 | **Feedback-Seite** | Texte der Seite, auf der Kundinnen Feedback schreiben |
 | **Impressum** / **Datenschutzerklärung** | die rechtlichen Seiten |
 | **Einstellungen** | Name, E-Mail, Telefon, Instagram, Google-Text, Feedback-Schlüssel |
@@ -276,47 +276,78 @@ Ohne diesen Schritt fehlen auf der neuen Domain Bilder und Design.
 
 ## 6. Farben und Design selbst ändern
 
-Farben und Schrift änderst du genauso einfach wie Texte, direkt im Editor.
+Farben, Schrift und Gestaltung änderst du genauso einfach wie Texte, direkt im Editor unter **„Design (Farben & Schrift)“**.
 
-### So geht's
-1. **app.pagescms.org** öffnen → dein Repository `website` auswählen.
-2. Links auf **„Design (Farben & Schrift)“** klicken.
-3. Bei **Farbpalette** und **Schrift** auswählen, was dir gefällt.
-4. **Speichern**. Nach 1–2 Minuten hat deine ganze Website das neue Aussehen.
+**Der Ablauf ist immer gleich:** auswählen → **Speichern** → nach 1–2 Minuten hat deine ganze Website das neue Aussehen. Gefällt es dir nicht, wählst du einfach wieder die vorherige Einstellung und speicherst.
 
-Gefällt es dir nicht? Einfach wieder die vorherige Auswahl treffen und speichern.
+Die Einstellungen sind in **drei Stufen** aufgebaut. Für eine schöne Website reicht **Stufe 1** völlig aus.
 
-### Die Farbpaletten
-Jede Palette ändert **alle Farben auf einmal**: Hintergründe, Text, Buttons, Symbole und die dunklen Bereiche. Die Farben sind aufeinander abgestimmt, du kannst also nichts falsch kombinieren.
+### Stufe 1: Farbpalette und Schrift (das Wichtigste)
 
-| Erdtöne | Salbei | Rosé | Sand & Meer | Terrakotta |
-|:---:|:---:|:---:|:---:|:---:|
-| <img src="docs/vorschau/farbe-erdtoene.jpg" width="170" alt="Erdtöne"> | <img src="docs/vorschau/farbe-salbei.jpg" width="170" alt="Salbei"> | <img src="docs/vorschau/farbe-rose.jpg" width="170" alt="Rosé"> | <img src="docs/vorschau/farbe-meer.jpg" width="170" alt="Sand & Meer"> | <img src="docs/vorschau/farbe-terrakotta.jpg" width="170" alt="Terrakotta"> |
-| warmes Braun *(Standard)* | sanftes Grün | zartes Altrosa | Beige mit Blaugrau | warmes Orange-Rot |
+**Farbpalette:** Jede Palette ändert **alle Farben auf einmal**: Hintergründe, Text, Buttons, Symbole und die dunklen Bereiche. Die Farben sind aufeinander abgestimmt, du kannst also nichts falsch kombinieren.
 
-### Die Schriften
+| **Erdtöne** | **Terrakotta** | **Pfirsich** | **Rosé** |
+|:---:|:---:|:---:|:---:|
+| <img src="docs/vorschau/farbe-erdtoene.jpg" width="150" alt="Erdtöne"> | <img src="docs/vorschau/farbe-terrakotta.jpg" width="150" alt="Terrakotta"> | <img src="docs/vorschau/farbe-pfirsich.jpg" width="150" alt="Pfirsich"> | <img src="docs/vorschau/farbe-rose.jpg" width="150" alt="Rosé"> |
+| warmes Braun *(Standard)* | warmes Orange-Rot | sanftes Apricot | zartes Altrosa |
+| **Lavendel** | **Salbei** | **Olive** | **Waldgrün** |
+| <img src="docs/vorschau/farbe-lavendel.jpg" width="150" alt="Lavendel"> | <img src="docs/vorschau/farbe-salbei.jpg" width="150" alt="Salbei"> | <img src="docs/vorschau/farbe-olive.jpg" width="150" alt="Olive"> | <img src="docs/vorschau/farbe-wald.jpg" width="150" alt="Waldgrün"> |
+| helles Violett | sanftes Grün | erdiges Gelbgrün | tiefes Grün |
+| **Sand & Meer** | **Nachtblau** | **Creme & Gold** | **Stein** |
+| <img src="docs/vorschau/farbe-meer.jpg" width="150" alt="Sand & Meer"> | <img src="docs/vorschau/farbe-nachtblau.jpg" width="150" alt="Nachtblau"> | <img src="docs/vorschau/farbe-gold.jpg" width="150" alt="Creme & Gold"> | <img src="docs/vorschau/farbe-stein.jpg" width="150" alt="Stein"> |
+| Beige mit Blaugrau | kühles Blau | hell mit Goldton | schlichtes Grau |
 
-| Elegant *(Standard)* | Klassisch |
-|:---:|:---:|
-| <img src="docs/vorschau/schrift-elegant.jpg" width="300" alt="Elegant"> | <img src="docs/vorschau/schrift-klassisch.jpg" width="300" alt="Klassisch"> |
-| **Modern** | **Weich** |
-| <img src="docs/vorschau/schrift-modern.jpg" width="300" alt="Modern"> | <img src="docs/vorschau/schrift-weich.jpg" width="300" alt="Weich"> |
+**Schrift:** Jede Auswahl ist ein abgestimmtes Paar aus Überschrift und Text.
 
-### Eigene Akzentfarbe (optional)
-Die **Akzentfarbe** ist die Farbe von Buttons, kleinen Überzeilen und Symbolen. Wenn du dafür eine ganz bestimmte Farbe möchtest, z. B. deine Logo-Farbe:
+| **Elegant *(Standard)*** | **Klassisch** | **Zeitlos** | **Modern** |
+|:---:|:---:|:---:|:---:|
+| <img src="docs/vorschau/schrift-elegant.jpg" width="170" alt="Elegant"> | <img src="docs/vorschau/schrift-klassisch.jpg" width="170" alt="Klassisch"> | <img src="docs/vorschau/schrift-zeitlos.jpg" width="170" alt="Zeitlos"> | <img src="docs/vorschau/schrift-modern.jpg" width="170" alt="Modern"> |
+| **Edel** | **Weich** | **Ruhig** | **Schlicht** |
+| <img src="docs/vorschau/schrift-edel.jpg" width="170" alt="Edel"> | <img src="docs/vorschau/schrift-weich.jpg" width="170" alt="Weich"> | <img src="docs/vorschau/schrift-ruhig.jpg" width="170" alt="Ruhig"> | <img src="docs/vorschau/schrift-schlicht.jpg" width="170" alt="Schlicht"> |
+
+### Stufe 2: Feinschliff (optional)
+Alle Felder, die mit **„Feinschliff:“** beginnen. Wenn du sie nicht anfasst, gilt der Standard.
+
+| Einstellung | Auswahl |
+|---|---|
+| **Textgröße** | Klein · **Normal** · Groß (besser lesbar) |
+| **Form der Buttons** | **Rund** · Leicht abgerundet · Eckig |
+| **Ecken von Kacheln und Feldern** | **Rund** · Leicht abgerundet · Eckig |
+| **Abstände** | Kompakt · **Normal** · Luftig |
+| **Bilder neben Texten** | **Mit weichem Verlauf** · Ohne Verlauf (klare Kante) |
+
+*(fett = Standard)*
+
+Beispiel mit **eckigen Buttons und Kacheln, großer Schrift, kompakten Abständen und Bildern ohne Verlauf**:
+<img src="docs/vorschau/feinschliff-beispiel.jpg" width="440" alt="Beispiel Feinschliff">
+
+### Stufe 3: Eigene Farben (optional)
+Für eine ganz bestimmte Farbe, z. B. deine Logo-Farbe.
 
 1. Auf **https://htmlcolorcodes.com** eine Farbe anklicken und den Code kopieren. Er beginnt mit `#` und hat 6 Zeichen, z. B. `#5e6b4f`.
-2. In Pages CMS unter **Design** ins Feld **„Eigene Akzentfarbe“** einfügen.
-3. **Speichern**.
+2. Im Editor ins passende Feld einfügen und **speichern**:
 
-Feld **leer lassen** = die Akzentfarbe der gewählten Palette wird verwendet.
-Der Editor nimmt nur gültige Farbcodes an. Ein Tippfehler kann deine Website also nicht beschädigen.
+| Feld | Was sich ändert |
+|---|---|
+| **Eigene Farbe: Akzentfarbe** | Buttons, kleine Überzeilen, Symbole, Links |
+| **Eigene Farben: weitere → Hintergrund** | heller Haupt-Hintergrund |
+| **… → Zweiter Hintergrund** | etwas dunklerer Hintergrund für abwechselnde Bereiche |
+| **… → Textfarbe** | Überschriften und Text |
+| **… → Dunkle Bereiche** | großer Einstieg oben, Abschluss-Bereich und Fußbereich |
 
-💡 **Tipp:** Wähle eine Akzentfarbe, die **kräftig genug** ist. Auf Buttons steht weiße Schrift, die muss gut lesbar bleiben.
+- Jedes Feld ist **einzeln** optional. **Leer lassen** = Farbe der gewählten Palette.
+- Der Editor nimmt nur gültige Farbcodes an. Ein Tippfehler kann deine Website also nicht beschädigen.
+
+💡 **Tipps für eigene Farben:**
+- Fang mit einer **Palette** an, die deiner Wunschfarbe nahekommt, und ändere dann nur die **Akzentfarbe**. Das sieht fast immer stimmig aus.
+- Hintergründe **hell**, Text und dunkle Bereiche **dunkel** wählen, sonst ist die Schrift schlecht lesbar.
+- Auf Buttons steht weiße Schrift. Die Akzentfarbe sollte daher **kräftig genug** sein.
 
 ### Noch mehr anpassen?
-Für Änderungen, die über Palette, Schrift und Akzentfarbe hinausgehen, z. B. eine ganz eigene Farbwelt, andere Schriften oder andere Abstände, nutze [Kapitel 7](#7-größere-änderungen-mit-ki-claude). Zum Beispiel:
-> „Füge im Design eine neue Farbpalette **‚Lavendel‘** hinzu (Datei `lib/design.js` und Auswahl in `.pages.yml`).“
+Eine eigene neue Palette oder eine ganz andere Schrift baut dir Claude ein ([Kapitel 7](#7-größere-änderungen-mit-ki-claude)):
+> „Füge im Design eine neue Farbpalette **‚Lavendel dunkel‘** hinzu (Datei `lib/design.js` und Auswahl in `.pages.yml`).“
+
+> „Füge im Design ein neues Schriftpaar mit der Schrift **…** für Überschriften hinzu (über Fontsource, lokal ausgeliefert, in `lib/design.js` und `.pages.yml`).“
 
 ---
 

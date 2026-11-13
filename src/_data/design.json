@@ -1,5 +1,16 @@
 {
   "palette": "erdtoene",
   "fonts": "elegant",
-  "accent": ""
+  "accent": "",
+  "text_size": "normal",
+  "buttons": "rund",
+  "corners": "rund",
+  "spacing": "normal",
+  "image_fade": "weich",
+  "custom_colors": {
+    "background": "",
+    "background_alt": "",
+    "text": "",
+    "dark": ""
+  }
 }

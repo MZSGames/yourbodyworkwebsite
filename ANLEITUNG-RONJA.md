@@ -26,16 +26,29 @@ Am Code musst du nur dann etwas ändern, **wenn du etwas möchtest, das es noch 
 ### Einrichtung in 4 Schritten (einmalig, ca. 15 Minuten)
 | | Schritt | Wo |
 |:---:|---|---|
-| **1** | Kostenloses **GitHub-Konto** anlegen | github.com |
-| **2** | Die **Vorlage übernehmen** mit „Use this template“ | Link zur Vorlage |
+| **1** | Kostenloses **GitHub-Konto** anlegen | https://github.com/signup |
+| **2** | Die **Vorlage in dein Konto kopieren** mit „Use this template“ | https://github.com/MZSGames/yourbodyworkwebsite |
 | **3** | **Veröffentlichen einschalten**: Settings → Pages → „GitHub Actions“, danach einmal „Run workflow“ | dein Repository auf GitHub |
-| **4** | Den **Editor (Pages CMS) verbinden** | app.pagescms.org |
+| **4** | Den **Editor (Pages CMS) verbinden** | https://app.pagescms.org |
 
 Danach ist deine Website online, und du arbeitest nur noch im Editor. Die genaue Anleitung mit allen Klicks steht in [Kapitel 2](#2-einmalige-einrichtung).
 
 **Später, wenn du möchtest:**
 - Feedback-Formular aktivieren ([Kapitel 4](#4-feedback-von-kundinnen)), 2 Minuten
 - Eigene Domain verbinden ([Kapitel 5](#5-schönere-web-adresse-und-eigene-domain))
+
+### Alle Links auf einen Blick
+| Wofür? | Link |
+|---|---|
+| GitHub-Konto anlegen | https://github.com/signup |
+| Die Vorlage deiner Website | https://github.com/MZSGames/yourbodyworkwebsite |
+| Abkürzung: Vorlage sofort kopieren | [Kopie jetzt erstellen](https://github.com/new?template_name=yourbodyworkwebsite&template_owner=MZSGames) |
+| Der Editor, dein Arbeitsplatz | https://app.pagescms.org |
+| Formular-Schlüssel (Kontakt und Feedback) | https://web3forms.com |
+| Impressum: was hinein muss | https://www.wko.at/internetrecht/website-impressum |
+| Datenschutzerklärung erstellen | https://datenschutz-generator.de |
+| Konto absichern (Zwei-Faktor-Anmeldung) | https://github.com/settings/security |
+| Claude für größere Änderungen | https://claude.ai |
 
 ---
 
@@ -63,9 +76,9 @@ Deine Website besteht aus drei Teilen. Du musst nur den ersten regelmäßig benu
 
 | Was | Wofür | Wo |
 |---|---|---|
-| **Pages CMS** | Der **Editor**: Hier änderst du Texte und Bilder. | app.pagescms.org |
-| **GitHub** | Der **Speicher**: Hier liegen alle Dateien. GitHub veröffentlicht deine Website automatisch und kostenlos. | github.com |
-| **Web3Forms** | Leitet **Feedback** von Kundinnen an deine E-Mail-Adresse weiter. | web3forms.com |
+| **Pages CMS** | Der **Editor**: Hier änderst du Texte und Bilder. | https://app.pagescms.org |
+| **GitHub** | Der **Speicher**: Hier liegen alle Dateien. GitHub veröffentlicht deine Website automatisch und kostenlos. | https://github.com |
+| **Web3Forms** | Leitet Nachrichten aus dem **Kontaktformular** und **Feedback** an deine E-Mail-Adresse weiter. | https://web3forms.com |
 
 **Der Ablauf ist immer gleich:** Du änderst etwas in Pages CMS und klickst auf **Speichern**. GitHub baut die Website neu, und nach 1–2 Minuten ist die Änderung online.
 
@@ -73,24 +86,32 @@ Deine Website besteht aus drei Teilen. Du musst nur den ersten regelmäßig benu
 
 ## 2. Einmalige Einrichtung
 
-Dauer: ca. 15 Minuten. Du machst das nur ein einziges Mal.
+Dauer: ca. 15 Minuten. Du machst das nur ein einziges Mal, am besten am Computer.
+
+**Worum geht es?** Die fertige Website liegt als **Vorlage** im GitHub-Konto **MZSGames**. Du machst dir davon eine **eigene Kopie** in deinem eigenen Konto. Diese Kopie gehört nur dir. Die Vorlage bleibt unverändert, und niemand sonst kann deine Website ändern.
 
 ### Schritt 1 – GitHub-Konto anlegen
 1. Öffne **https://github.com/signup**
 2. Gib deine E-Mail-Adresse, ein Passwort und einen **Benutzernamen** ein, z. B. `ronja-sereinig`.
    💡 Der Benutzername steht in deiner kostenlosen Web-Adresse (`benutzername.github.io`). Wähle also etwas, das zu dir passt.
 3. Bestätige deine E-Mail-Adresse mit dem Code, den GitHub dir schickt.
+4. Fragt GitHub nach einem Plan? Wähle **Free** (kostenlos).
 
-### Schritt 2 – Deine eigene Kopie der Website erstellen
-1. Öffne den Link zur Vorlage, den du bekommen hast.
+### Schritt 2 – Die Vorlage in dein Konto kopieren
+0. Achte darauf, dass du bei GitHub **angemeldet** bist (oben rechts siehst du dein Profilbild).
+1. Öffne die Vorlage: **https://github.com/MZSGames/yourbodyworkwebsite**
+   💡 Abkürzung: [Kopie jetzt erstellen](https://github.com/new?template_name=yourbodyworkwebsite&template_owner=MZSGames) öffnet direkt das Fenster zum Kopieren.
 2. Klicke oben rechts auf den grünen Button **„Use this template“** → **„Create a new repository“**.
 3. Bei **Repository name** trägst du `website` ein. Wenn du gleich die schönere Adresse willst, siehe [Kapitel 5](#5-schönere-web-adresse-und-eigene-domain).
 4. **Public** ausgewählt lassen. Das ist nötig, damit das Veröffentlichen kostenlos ist.
    ⚠️ **Stell das Repository später nicht auf „Private“.** Mit dem kostenlosen GitHub-Konto geht deine Website dann sofort offline. „Public“ heißt nur, dass man die Dateien deiner Website sehen kann, also Texte, Bilder und Design, die ohnehin online stehen. **Ändern kannst nur du.** Lege dort einfach nichts Privates ab, z. B. Kundinnendaten. Feedback kommt nur per E-Mail zu dir und landet nicht im Repository. Wenn du es trotzdem privat möchtest, siehe [Kapitel 12](#12-repository-privat-stellen-optional).
-5. Klicke auf **„Create repository“**.
+5. Bei **Owner** steht schon dein Benutzername. Lass das so.
+6. Klicke auf **„Create repository“**.
+
+Deine Kopie findest du ab jetzt immer unter `https://github.com/DEIN-BENUTZERNAME/website`.
 
 ### Schritt 3 – Veröffentlichen einschalten
-1. Klicke in deinem neuen Repository oben auf **„Settings“** (Zahnrad).
+1. Klicke in deinem neuen Repository oben auf **„Settings“** (Zahnrad). Oder direkt: `https://github.com/DEIN-BENUTZERNAME/website/settings/pages`
 2. Klicke links auf **„Pages“**.
 3. Wähle bei **„Source“** den Eintrag **„GitHub Actions“**.
 4. Klicke oben auf **„Actions“**, dann links auf **„Website veröffentlichen“**, rechts auf **„Run workflow“** und dann auf den grünen Button **„Run workflow“**.
@@ -111,8 +132,10 @@ Deine Website ist jetzt online unter **`https://DEIN-BENUTZERNAME.github.io/webs
 - [ ] Eigene Fotos statt der Platzhalter hochladen
 - [ ] E-Mail-Adresse unter **Einstellungen** eintragen
 - [ ] Bei **1:1 Sessions** den Standort „[deiner Region]“ ersetzen
-- [ ] **Impressum** und **Datenschutzerklärung** vollständig ausfüllen
-- [ ] Formular-Schlüssel eintragen ([Kapitel 4](#4-feedback-von-kundinnen))
+- [ ] **Impressum** ausfüllen. Was hinein muss: https://www.wko.at/internetrecht/website-impressum
+- [ ] **Datenschutzerklärung** erstellen, z. B. mit https://datenschutz-generator.de (Kontaktformular, Web3Forms und ggf. YouTube auswählen)
+- [ ] Formular-Schlüssel auf https://web3forms.com holen und eintragen ([Kapitel 4](#4-feedback-von-kundinnen))
+- [ ] Zwei-Faktor-Anmeldung bei GitHub einschalten: https://github.com/settings/security
 - [ ] Klären, ob du „CORE®“ so auf deiner Website verwenden darfst (Markenzeichen deines Ausbildungsanbieters)
 
 ---

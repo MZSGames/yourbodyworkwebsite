@@ -1,0 +1,11 @@
+---
+layout: base.njk
+permalink: /sessions/
+navKey: sessions
+eleventyComputed:
+  title: "{{ sessions.menu_label }}"
+---
+{% include "sections/sessions.njk" %}
+{% set s = sessions %}{% include "sections/more.njk" %}
+{% include "sections/testimonials.njk" %}
+{% include "sections/cta.njk" %}

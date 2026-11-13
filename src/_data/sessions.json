@@ -1,0 +1,28 @@
+{
+  "menu_label": "1:1 Sessions",
+  "eyebrow": "1:1 Sessions",
+  "title": "Dein Raum. Dein Tempo. Dein Weg.",
+  "items": [
+    {
+      "icon": "herz",
+      "text": "Ein geschützter Raum\nnur für dich."
+    },
+    {
+      "icon": "blatt",
+      "text": "Körperorientiert &\nemotional transformierend."
+    },
+    {
+      "icon": "uhr",
+      "text": "Dauer: ca. 90 Minuten\n(individuell anpassbar)"
+    },
+    {
+      "icon": "ort",
+      "text": "Standort\nin [deiner Region]"
+    }
+  ],
+  "button_text": "Session bei Ronja anfragen",
+  "more_title": "",
+  "more_text": "",
+  "image": "/images/uploads/cta.jpg",
+  "image_alt": "Frau sitzt bei Sonnenuntergang auf einem Hügel"
+}

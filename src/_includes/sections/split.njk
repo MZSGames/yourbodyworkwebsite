@@ -1,0 +1,10 @@
+{# Bild + Text. Erwartet: s (Daten), side ("left"/"right"), btnClass #}
+<section class="split split-img-{{ side }}">
+  <div class="split-media"><img src="{{ s.image }}" alt="{{ s.image_alt }}" fetchpriority="high"></div>
+  <div class="split-text">
+    <p class="eyebrow">{{ s.eyebrow }}</p>
+    <h1 class="h2">{{ s.title | lines | safe }}</h1>
+    {{ s.text | paras | safe }}
+    {% if s.button_text %}<a class="btn {{ btnClass }}" href="{{ s.button_link or settings.contact_link }}">{{ s.button_text }} {% include "arrow.njk" %}</a>{% endif %}
+  </div>
+</section>

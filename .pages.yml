@@ -8,15 +8,16 @@ media:
   categories: [image]
 
 content:
-  # ================= STARTSEITE =================
-  - name: startseite
-    label: Startseite
+  # ================= SEITEN =================
+  - name: seite_start
+    label: "Seite: Start"
     type: file
-    path: src/_data/home.json
+    path: src/_data/start.json
     format: json
     fields:
+      - { name: menu_label, label: Name im Menü, type: string, description: "So heißt die Seite oben im Menü." }
       - name: hero
-        label: "1 · Großer Einstieg (ganz oben)"
+        label: "Großer Einstieg (ganz oben)"
         type: object
         fields:
           - { name: eyebrow, label: Kleine Überzeile, type: string }
@@ -26,109 +27,132 @@ content:
           - { name: note, label: Kursiver Satz unter dem Button, type: string }
           - { name: image, label: Bild, type: image, description: "Querformat, mind. 1800 px breit. Die Person sollte eher rechts im Bild sein – links steht der Text." }
           - { name: image_alt, label: Bildbeschreibung, type: string, description: "Kurz beschreiben, was zu sehen ist (für Google und blinde Menschen)." }
-
       - name: intro
-        label: "2 · Einleitung (Frage & Text)"
+        label: "Einleitung (Frage & Text)"
         type: object
         fields:
           - { name: title, label: Überschrift, type: text, description: "Mit Enter einen Zeilenumbruch setzen." }
           - { name: text, label: Text, type: text, description: "Leerzeile = neuer Absatz." }
           - { name: accent, label: Hervorgehobener Satz (kursiv), type: string }
 
-      - name: core
-        label: "3 · Was ist CORE®?"
-        type: object
-        fields:
-          - { name: eyebrow, label: Kleine Überzeile, type: string }
-          - { name: title, label: Überschrift, type: text }
-          - { name: text, label: Text, type: text, description: "Leerzeile = neuer Absatz." }
-          - { name: button_text, label: Button-Text, type: string, description: "Leer lassen = kein Button." }
-          - { name: button_link, label: Button-Link, type: string, description: "z. B. #sessions, #kontakt oder eine volle Web-Adresse." }
-          - { name: image, label: Bild, type: image, description: "Querformat. Das Bild läuft nach rechts weich aus." }
-          - { name: image_alt, label: Bildbeschreibung, type: string }
+  - name: seite_core
+    label: "Seite: CORE® Bodywork"
+    type: file
+    path: src/_data/core.json
+    format: json
+    fields:
+      - { name: menu_label, label: Name im Menü, type: string, description: "So heißt die Seite oben im Menü." }
+      - { name: eyebrow, label: Kleine Überzeile, type: string }
+      - { name: title, label: Überschrift, type: text }
+      - { name: text, label: Text, type: text, description: "Leerzeile = neuer Absatz." }
+      - { name: button_text, label: Button-Text, type: string, description: "Leer lassen = kein Button." }
+      - { name: button_link, label: Button-Link, type: string, description: "z. B. /sessions/, /kontakt/, /ueber-mich/ oder eine volle Web-Adresse." }
+      - { name: image, label: Bild, type: image, description: "Querformat. Das Bild läuft nach rechts weich aus. Erscheint auch als Kachel auf der Startseite." }
+      - { name: image_alt, label: Bildbeschreibung, type: string }
+      - { name: more_title, label: Zusatzbereich – Überschrift (optional), type: string, description: "Erscheint unter dem Hauptbereich. Leer lassen = kein Zusatzbereich." }
+      - { name: more_text, label: Zusatzbereich – Text (optional), type: text, description: "Für mehr Text auf dieser Seite. Leerzeile = neuer Absatz." }
 
-      - name: about
-        label: "4 · Über mich"
-        type: object
-        fields:
-          - { name: eyebrow, label: Kleine Überzeile, type: string }
-          - { name: title, label: Überschrift, type: text }
-          - { name: text, label: Text, type: text, description: "Leerzeile = neuer Absatz." }
-          - { name: button_text, label: Button-Text, type: string, description: "Leer lassen = kein Button." }
-          - { name: button_link, label: Button-Link, type: string }
-          - { name: image, label: Bild, type: image, description: "Querformat. Das Bild läuft nach links weich aus." }
-          - { name: image_alt, label: Bildbeschreibung, type: string }
+  - name: seite_about
+    label: "Seite: Über mich"
+    type: file
+    path: src/_data/about.json
+    format: json
+    fields:
+      - { name: menu_label, label: Name im Menü, type: string, description: "So heißt die Seite oben im Menü." }
+      - { name: eyebrow, label: Kleine Überzeile, type: string }
+      - { name: title, label: Überschrift, type: text }
+      - { name: text, label: Text, type: text, description: "Leerzeile = neuer Absatz." }
+      - { name: button_text, label: Button-Text, type: string, description: "Leer lassen = kein Button." }
+      - { name: button_link, label: Button-Link, type: string, description: "z. B. /kontakt/, /sessions/ oder eine volle Web-Adresse." }
+      - { name: image, label: Bild, type: image, description: "Querformat. Das Bild läuft nach links weich aus. Erscheint auch als Kachel auf der Startseite." }
+      - { name: image_alt, label: Bildbeschreibung, type: string }
+      - { name: more_title, label: Zusatzbereich – Überschrift (optional), type: string, description: "Erscheint unter dem Hauptbereich. Leer lassen = kein Zusatzbereich." }
+      - { name: more_text, label: Zusatzbereich – Text (optional), type: text, description: "Für mehr Text auf dieser Seite. Leerzeile = neuer Absatz." }
 
-      - name: sessions
-        label: "5 · 1:1 Sessions"
+  - name: seite_sessions
+    label: "Seite: 1:1 Sessions"
+    type: file
+    path: src/_data/sessions.json
+    format: json
+    fields:
+      - { name: menu_label, label: Name im Menü, type: string, description: "So heißt die Seite oben im Menü." }
+      - { name: eyebrow, label: Kleine Überzeile, type: string }
+      - { name: title, label: Überschrift, type: text }
+      - name: items
+        label: Merkmale
+        description: "Ideal sind 3–5 Einträge."
         type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{text}"
         fields:
-          - { name: eyebrow, label: Kleine Überzeile, type: string }
-          - { name: title, label: Überschrift, type: text }
-          - name: items
-            label: Merkmale
-            description: "Ideal sind 3–5 Einträge."
-            type: object
-            list:
-              collapsible:
-                collapsed: true
-                summary: "{text}"
-            fields:
-              - name: icon
-                label: Symbol
-                type: select
-                options:
-                  values:
-                    - { name: herz, label: Herz }
-                    - { name: blatt, label: Blatt }
-                    - { name: uhr, label: Uhr }
-                    - { name: ort, label: Ort / Pin }
-                    - { name: sonne, label: Sonne }
-                    - { name: hand, label: Hand mit Herz }
-                    - { name: kalender, label: Kalender }
-                    - { name: stern, label: Stern }
-              - { name: text, label: Text, type: text, description: "Mit Enter einen Zeilenumbruch setzen." }
-          - { name: button_text, label: Button-Text, type: string }
+          - name: icon
+            label: Symbol
+            type: select
+            options:
+              values:
+                - { name: herz, label: Herz }
+                - { name: blatt, label: Blatt }
+                - { name: uhr, label: Uhr }
+                - { name: ort, label: Ort / Pin }
+                - { name: sonne, label: Sonne }
+                - { name: hand, label: Hand mit Herz }
+                - { name: kalender, label: Kalender }
+                - { name: stern, label: Stern }
+          - { name: text, label: Text, type: text, description: "Mit Enter einen Zeilenumbruch setzen." }
+      - { name: button_text, label: Button-Text, type: string }
+      - { name: image, label: Bild für die Kachel auf der Startseite, type: image }
+      - { name: image_alt, label: Bildbeschreibung, type: string }
+      - { name: more_title, label: Zusatzbereich – Überschrift (optional), type: string, description: "Erscheint unter dem Hauptbereich. Leer lassen = kein Zusatzbereich." }
+      - { name: more_text, label: Zusatzbereich – Text (optional), type: text, description: "Für mehr Text auf dieser Seite. Leerzeile = neuer Absatz." }
 
-      - name: testimonials
-        label: "6 · Erfahrungen anderer Frauen"
-        type: object
-        fields:
-          - { name: eyebrow, label: Kleine Überzeile, type: string }
-          - { name: image, label: Bild (links), type: image }
-          - { name: image_alt, label: Bildbeschreibung, type: string }
-          - name: items
-            label: Erfahrungsberichte
-            description: "Ohne Einträge wird der Bereich ausgeblendet."
-            type: object
-            list:
-              collapsible:
-                collapsed: true
-                summary: "{quote}"
-            fields:
-              - { name: quote, label: Zitat (ohne Anführungszeichen), type: text }
-              - { name: name, label: Name / Initialen (optional), type: string }
-          - { name: feedback_link_text, label: Link zum Feedback-Formular, type: string, description: "Kleiner Link unter den Erfahrungsberichten. Leer lassen = kein Link." }
+  - name: seite_kontakt
+    label: "Seite: Kontakt"
+    type: file
+    path: src/_data/contact.json
+    format: json
+    fields:
+      - { name: menu_label, label: Name im Menü, type: string, description: "So heißt die Seite oben im Menü." }
+      - { name: eyebrow, label: Kleine Überzeile, type: string }
+      - { name: title, label: Überschrift, type: string }
+      - { name: text, label: Text, type: text }
+      - { name: button_text, label: Button-Text, type: string }
+      - { name: mail_subject, label: Betreff der E-Mail, type: string, description: "Wird automatisch in die E-Mail eingesetzt, wenn jemand auf den Button klickt." }
 
-      - name: cta
-        label: "7 · Abschluss (dunkler Bereich)"
+  # ================= BEREICHE AUF MEHREREN SEITEN =================
+  - name: erfahrungen
+    label: "Erfahrungsberichte (Start & Sessions)"
+    type: file
+    path: src/_data/testimonials.json
+    format: json
+    fields:
+      - { name: eyebrow, label: Kleine Überzeile, type: string }
+      - { name: image, label: Bild (links), type: image }
+      - { name: image_alt, label: Bildbeschreibung, type: string }
+      - name: items
+        label: Erfahrungsberichte
+        description: "Ohne Einträge wird der Bereich ausgeblendet."
         type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{quote}"
         fields:
-          - { name: title, label: "Satz (kursiv, groß)", type: text }
-          - { name: button_text, label: Button-Text, type: string }
-          - { name: image, label: Bild, type: image }
-          - { name: image_alt, label: Bildbeschreibung, type: string }
+          - { name: quote, label: Zitat (ohne Anführungszeichen), type: text }
+          - { name: name, label: Name / Initialen (optional), type: string }
+      - { name: feedback_link_text, label: Link zum Feedback-Formular, type: string, description: "Kleiner Link unter den Erfahrungsberichten. Leer lassen = kein Link." }
 
-      - name: contact
-        label: "8 · Kontakt"
-        type: object
-        fields:
-          - { name: show, label: Bereich anzeigen, type: boolean }
-          - { name: eyebrow, label: Kleine Überzeile, type: string }
-          - { name: title, label: Überschrift, type: string }
-          - { name: text, label: Text, type: text }
-          - { name: button_text, label: Button-Text, type: string }
-          - { name: mail_subject, label: Betreff der E-Mail, type: string, description: "Wird automatisch in die E-Mail eingesetzt, wenn jemand auf den Button klickt." }
+  - name: abschluss
+    label: "Abschluss-Bereich (dunkler Bereich unten)"
+    type: file
+    path: src/_data/cta.json
+    format: json
+    fields:
+      - { name: title, label: "Satz (kursiv, groß)", type: text }
+      - { name: button_text, label: Button-Text, type: string }
+      - { name: image, label: Bild, type: image }
+      - { name: image_alt, label: Bildbeschreibung, type: string }
 
   # ================= DESIGN =================
   - name: design
@@ -214,7 +238,7 @@ content:
       - { name: logo_name, label: Name (Logo), type: string }
       - { name: logo_subtitle, label: Untertitel (Logo), type: string }
       - { name: header_button_text, label: Button oben rechts, type: string }
-      - { name: contact_link, label: "Wohin führen die Anfrage-Buttons?", type: string, description: "#kontakt = zum Kontaktbereich. Alternativ z. B. ein Buchungslink (Calendly o. Ä.)." }
+      - { name: contact_link, label: "Wohin führen die Anfrage-Buttons?", type: string, description: "/kontakt/ = zur Kontaktseite. Alternativ z. B. ein Buchungslink (Calendly o. Ä.)." }
       - { name: contact_email, label: E-Mail-Adresse, type: string }
       - { name: phone, label: Telefon (optional), type: string, description: "Leer lassen, wenn keine Nummer angezeigt werden soll." }
       - { name: feedback_key, label: Feedback-Schlüssel (Web3Forms), type: string, description: "Kostenlos auf web3forms.com anfordern – der Schlüssel kommt per E-Mail. Hier einfügen, dann ist das Feedback-Formular aktiv." }

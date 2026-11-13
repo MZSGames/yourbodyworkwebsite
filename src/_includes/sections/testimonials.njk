@@ -1,0 +1,19 @@
+{# ---------- ERFAHRUNGEN ---------- #}
+{% if testimonials.items.length %}
+<section class="testimonials">
+  <div class="testimonials-media"><img src="{{ testimonials.image }}" alt="{{ testimonials.image_alt }}" loading="lazy"></div>
+  <div class="testimonials-body">
+    <p class="eyebrow">{{ testimonials.eyebrow }}</p>
+    <div class="quotes" tabindex="0" aria-label="Erfahrungsberichte">
+      {% for t in testimonials.items %}
+      <figure class="quote">
+        <blockquote>„{{ t.quote }}“</blockquote>
+        {% if t.name %}<figcaption>– {{ t.name }}</figcaption>{% endif %}
+      </figure>
+      {% endfor %}
+    </div>
+    <div class="dots" aria-hidden="true"></div>
+    {% if testimonials.feedback_link_text %}<p class="feedback-link"><a href="/feedback/">{{ testimonials.feedback_link_text }} {% include "arrow.njk" %}</a></p>{% endif %}
+  </div>
+</section>
+{% endif %}

@@ -17,6 +17,9 @@
 html { scroll-behavior: smooth; scroll-padding-top: 76px; }
 body {
   margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   background: var(--cream);
   color: var(--ink);
   font: 300 17px/1.65 var(--sans);
@@ -193,6 +196,28 @@ h2 { font-size: clamp(32px, 3.6vw, 50px); }
 .feedback-success h2 { font-size: 36px; }
 .feedback-not-ready { margin-top: 30px; font-style: italic; color: var(--ink-soft); }
 .hp { position: absolute; left: -9999px; }
+
+/* ---------- Unterseiten-Ergänzungen ---------- */
+main { flex: 1; display: flex; flex-direction: column; }
+main > .contact { flex: 1; }
+h1.h2 { font-size: clamp(32px, 3.6vw, 50px); }
+.more { padding: clamp(56px, 7vw, 90px) 0; background: var(--cream); }
+.more h2 { font-size: clamp(28px, 3vw, 40px); }
+.more p { color: var(--ink-soft); }
+.split + .more { border-top: 1px solid color-mix(in srgb, var(--clay) 10%, transparent); }
+
+/* Kacheln auf der Startseite */
+.teasers { padding: clamp(56px, 7vw, 90px) 0; background: var(--cream); }
+.teaser-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(20px, 3vw, 36px); }
+.teaser { display: block; text-decoration: none; color: inherit; }
+.teaser-img { aspect-ratio: 4 / 3; overflow: hidden; border-radius: 14px; margin-bottom: 18px; }
+.teaser-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+.teaser:hover .teaser-img img { transform: scale(1.04); }
+.teaser .eyebrow { margin-bottom: .6em; }
+.teaser-title { font: 400 clamp(22px, 2vw, 28px)/1.2 var(--serif); margin: 0 0 .7em; }
+.teaser-more { display: inline-flex; align-items: center; gap: .5em; font-size: 14.5px; color: var(--clay); border-bottom: 1px solid var(--line); padding-bottom: 2px; }
+.teaser:hover .teaser-more { border-color: var(--clay); }
+@media (max-width: 760px) { .teaser-grid { grid-template-columns: 1fr; gap: 40px; } }
 
 /* ---------- Unterseiten ---------- */
 .page-body { padding: clamp(60px, 8vw, 110px) 0; min-height: 60vh; }

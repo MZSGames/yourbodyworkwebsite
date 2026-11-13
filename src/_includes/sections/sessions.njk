@@ -1,0 +1,18 @@
+{# ---------- SESSIONS ---------- #}
+<section class="sessions">
+  <div class="wrap">
+    <p class="eyebrow">{{ sessions.eyebrow }}</p>
+    <h1 class="h2">{{ sessions.title | lines | safe }}</h1>
+    <div class="features">
+      {% for item in sessions.items %}
+      <div class="feature">
+        {% set name = item.icon %}{% include "icon.njk" %}
+        <p>{{ item.text | lines | safe }}</p>
+      </div>
+      {% endfor %}
+      <div class="feature feature-cta">
+        <a class="btn" href="{{ settings.contact_link }}">{{ sessions.button_text }} {% include "arrow.njk" %}</a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,11 @@
+---
+layout: base.njk
+permalink: /ueber-mich/
+navKey: about
+eleventyComputed:
+  title: "{{ about.menu_label }}"
+---
+{% set s = about %}{% set side = "right" %}{% set btnClass = "btn-outline" %}
+{% include "sections/split.njk" %}
+{% include "sections/more.njk" %}
+{% include "sections/cta.njk" %}

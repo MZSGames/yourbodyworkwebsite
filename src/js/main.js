@@ -13,25 +13,6 @@ if (toggle) {
   );
 }
 
-// Aktiven Menüpunkt beim Scrollen markieren
-const navLinks = [...document.querySelectorAll(".main-nav a:not(.btn)")];
-const sections = navLinks
-  .map((a) => document.querySelector(a.hash === "#top" ? "body" : a.hash))
-  .filter(Boolean);
-if (document.body.classList.contains("home") && sections.length) {
-  const onScroll = () => {
-    let idx = 0;
-    sections.forEach((s, i) => {
-      if (s.getBoundingClientRect().top < window.innerHeight * 0.35 && s !== document.body) idx = i;
-    });
-    navLinks.forEach((a, i) => a.classList.toggle("is-active", i === idx));
-  };
-  window.addEventListener("scroll", onScroll, { passive: true });
-  onScroll();
-} else {
-  navLinks.forEach((a) => a.classList.remove("is-active"));
-}
-
 // Erfahrungsberichte: Punkte-Navigation
 const track = document.querySelector(".quotes");
 const dotsBox = document.querySelector(".dots");

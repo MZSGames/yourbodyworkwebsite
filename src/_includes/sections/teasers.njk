@@ -1,0 +1,17 @@
+{# Kacheln auf der Startseite, die zu den Unterseiten führen #}
+<section class="teasers">
+  <div class="wrap teaser-grid">
+    {% for t in [
+      { d: core, url: "/core-bodywork/" },
+      { d: about, url: "/ueber-mich/" },
+      { d: sessions, url: "/sessions/" }
+    ] %}
+    <a class="teaser" href="{{ t.url }}">
+      <div class="teaser-img"><img src="{{ t.d.image or start.hero.image }}" alt="" loading="lazy"></div>
+      <p class="eyebrow">{{ t.d.menu_label }}</p>
+      <p class="teaser-title">{{ t.d.title | lines | safe }}</p>
+      <span class="teaser-more">Mehr erfahren {% include "arrow.njk" %}</span>
+    </a>
+    {% endfor %}
+  </div>
+</section>

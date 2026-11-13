@@ -1,0 +1,11 @@
+---
+layout: base.njk
+permalink: /core-bodywork/
+navKey: core
+eleventyComputed:
+  title: "{{ core.menu_label }}"
+---
+{% set s = core %}{% set side = "left" %}{% set btnClass = "" %}
+{% include "sections/split.njk" %}
+{% include "sections/more.njk" %}
+{% include "sections/cta.njk" %}

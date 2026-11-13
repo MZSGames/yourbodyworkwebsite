@@ -1,0 +1,9 @@
+{# Optionaler Zusatztext unter einem Bereich. Erwartet: s #}
+{% if s.more_title or s.more_text %}
+<section class="more">
+  <div class="wrap narrow">
+    {% if s.more_title %}<h2>{{ s.more_title | lines | safe }}</h2>{% endif %}
+    {{ s.more_text | paras | safe }}
+  </div>
+</section>
+{% endif %}

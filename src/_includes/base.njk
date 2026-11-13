@@ -15,7 +15,7 @@
   </style>
 </head>
 <body class="{{ bodyClass }}">
-  <header class="site-header" id="top">
+  <header class="site-header">
     <div class="wrap header-inner">
       <a class="logo" href="/">
         <span class="logo-name">{{ settings.logo_name }}</span>
@@ -23,11 +23,15 @@
       </a>
       <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false"><span></span><span></span><span></span></button>
       <nav class="main-nav" aria-label="Hauptnavigation">
-        <a href="/#top" class="is-active">Start</a>
-        <a href="/#core">CORE® Bodywork</a>
-        <a href="/#ueber-mich">Über mich</a>
-        <a href="/#sessions">1:1 Sessions</a>
-        <a href="/#kontakt">Kontakt</a>
+        {% for n in [
+          { key: "start", url: "/", label: start.menu_label },
+          { key: "core", url: "/core-bodywork/", label: core.menu_label },
+          { key: "about", url: "/ueber-mich/", label: about.menu_label },
+          { key: "sessions", url: "/sessions/", label: sessions.menu_label },
+          { key: "contact", url: "/kontakt/", label: contact.menu_label }
+        ] %}
+        <a href="{{ n.url }}"{% if navKey == n.key %} class="is-active" aria-current="page"{% endif %}>{{ n.label }}</a>
+        {% endfor %}
         <a class="btn btn-small" href="{{ settings.contact_link }}">{{ settings.header_button_text }} {% include "arrow.njk" %}</a>
       </nav>
     </div>

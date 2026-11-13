@@ -87,11 +87,19 @@ Deine Website ist jetzt online unter **`https://DEIN-BENUTZERNAME.github.io/webs
 
 So öffnest du den Editor: **app.pagescms.org** → mit GitHub anmelden → Repository `website` auswählen.
 
-Links siehst du:
+Deine Website hat **5 Seiten**, die oben im Menü stehen: **Start**, **CORE® Bodywork**, **Über mich**, **1:1 Sessions** und **Kontakt**. Dazu kommen die Feedback-Seite, das Impressum und die Datenschutzerklärung (unten im Fußbereich).
+
+Im Editor siehst du links:
 
 | Menüpunkt | Was du dort änderst |
 |---|---|
-| **Startseite** | alle 8 Bereiche der Startseite, von oben nach unten |
+| **Seite: Start** | großer Einstieg mit Bild ganz oben und Einleitung (Frage & Text) |
+| **Seite: CORE® Bodywork** | Text, Bild und Button der CORE-Seite, optional ein Zusatzbereich mit mehr Text |
+| **Seite: Über mich** | Text, Bild und Button der Über-mich-Seite, optional ein Zusatzbereich |
+| **Seite: 1:1 Sessions** | Überschrift, Merkmale mit Symbolen, Button, optional ein Zusatzbereich |
+| **Seite: Kontakt** | Text und Button der Kontaktseite |
+| **Erfahrungsberichte (Start & Sessions)** | die Zitate von Kundinnen, die auf der Startseite und der Sessions-Seite erscheinen |
+| **Abschluss-Bereich (dunkler Bereich unten)** | der Satz mit Bild unten auf den Seiten („Vielleicht ist jetzt der Moment …“) |
 | **Design (Farben & Schrift)** | Farbpalette, Schrift, eigene Akzentfarbe ([Kapitel 6](#6-farben-und-design-selbst-ändern)) |
 | **Feedback-Seite** | Texte der Seite, auf der Kundinnen Feedback schreiben |
 | **Impressum** / **Datenschutzerklärung** | die rechtlichen Seiten |
@@ -106,11 +114,17 @@ Links siehst du:
 
 💡 **Texte dürfen so lang sein, wie du möchtest.** Die Seite passt sich automatisch an, auch auf dem Handy.
 
-💡 **Einen Button ausblenden:** Den Button-Text leer lassen. Das geht bei „Was ist CORE®“ und „Über mich“.
+💡 **Name im Menü ändern:** Jede Seite hat oben das Feld **„Name im Menü“**. Was du dort einträgst, steht oben im Menü, z. B. „Über mich“ statt „Über Ronja“.
 
-💡 **Einen Bereich ausblenden:**
-- Erfahrungsberichte: alle Einträge löschen.
-- Kontakt: Häkchen bei **„Bereich anzeigen“** entfernen.
+💡 **Mehr Text auf einer Seite:** Bei **CORE® Bodywork**, **Über mich** und **1:1 Sessions** gibt es einen **Zusatzbereich** (Überschrift + Text). Er erscheint unter dem Hauptbereich, z. B. für deinen Werdegang, den Ablauf einer Session oder Preise. Felder leer lassen = kein Zusatzbereich.
+
+💡 **Einen Button ausblenden:** Den Button-Text leer lassen. Das geht bei **CORE® Bodywork** und **Über mich**.
+
+💡 **Wohin ein Button führt:** Im Feld **Button-Link** trägst du die Seite ein: `/kontakt/`, `/sessions/`, `/ueber-mich/`, `/core-bodywork/` oder eine volle Web-Adresse.
+
+💡 **Erfahrungsberichte ausblenden:** Alle Einträge löschen.
+
+💡 **Die Kacheln auf der Startseite** (unter der Einleitung) führen zu CORE® Bodywork, Über mich und 1:1 Sessions. Sie zeigen automatisch das Bild und die Überschrift der jeweiligen Seite. Das Bild für die Sessions-Kachel stellst du unter **Seite: 1:1 Sessions** ein.
 
 ### Bilder austauschen
 1. Klicke beim gewünschten Bild auf das Bild-Feld.
@@ -126,18 +140,18 @@ Links siehst du:
 | Vorher verkleinern, unter **1 MB**, z. B. mit **squoosh.app** (kostenlos, im Browser) | Die Seite lädt schneller, besonders am Handy. |
 | Warmes, natürliches Licht | Das passt zu den Farben der Seite. |
 | **Großes Bild ganz oben:** Person eher **rechts** im Bild | Links liegt der Text darüber. |
-| **„Was ist CORE®“:** Motiv eher **links** | Das Bild läuft nach rechts weich aus. |
-| **„Über mich“:** Motiv eher **rechts** | Das Bild läuft nach links weich aus. |
+| **Seite CORE® Bodywork:** Motiv eher **links** | Das Bild läuft nach rechts weich aus. |
+| **Seite Über mich:** Motiv eher **rechts** | Das Bild läuft nach links weich aus. |
 
 ### Mehr Einträge hinzufügen
-Bei **„5 · 1:1 Sessions“** (Merkmale) und **„6 · Erfahrungen anderer Frauen“** kannst du beliebig viele Einträge **hinzufügen**, **löschen** und **verschieben**. Für jedes Session-Merkmal wählst du ein passendes Symbol aus.
+Bei **Seite: 1:1 Sessions** (Merkmale) und **Erfahrungsberichte** kannst du beliebig viele Einträge **hinzufügen**, **löschen** und **verschieben**. Für jedes Session-Merkmal wählst du ein passendes Symbol aus.
 
 ### Was der Editor *nicht* kann
 Diese Dinge gehen im Editor nicht:
 - einen ganz **neuen Bereich** anlegen, z. B. „Preise“ oder eine Bildergalerie
 - **zusätzliche Bilder** an neuen Stellen einfügen
 - eine **neue Unterseite** anlegen, z. B. „Workshops“
-- die **Reihenfolge der Bereiche** ändern
+- die **Reihenfolge der Bereiche** auf einer Seite ändern
 
 Das geht ganz einfach mit KI, siehe [Kapitel 7](#7-größere-änderungen-mit-ki-claude).
 
@@ -165,7 +179,7 @@ Solange kein Schlüssel eingetragen ist, zeigt die Seite einen freundlichen Hinw
 - Schick Kundinnen nach der Session den Link: `https://DEINE-ADRESSE/feedback/`
 - Jedes Feedback kommt **per E-Mail** bei dir an. Es erscheint **nicht automatisch** auf der Website. Du entscheidest, was online geht.
 - In der E-Mail steht, ob die Kundin zustimmt: **„Veröffentlichung erlaubt: Ja“**.
-- Wenn ja und du es zeigen möchtest: In Pages CMS unter **Startseite → 6 · Erfahrungen anderer Frauen** einen neuen Eintrag hinzufügen, den Text hineinkopieren und speichern.
+- Wenn ja und du es zeigen möchtest: In Pages CMS unter **Erfahrungsberichte** einen neuen Eintrag hinzufügen, den Text hineinkopieren und speichern.
 
 💡 Kostenlos sind 250 Feedbacks pro Monat. Das reicht in der Regel völlig.
 
@@ -180,9 +194,9 @@ Bei einem Video ist die Kundin erkennbar, das Feedback ist also **nicht mehr ano
 2. Stell die Sichtbarkeit auf **„Nicht gelistet“**. Dann findet man es nicht über die YouTube-Suche, nur über deine Website.
 3. Lass Claude einmalig die Video-Funktion einbauen, mit diesem Text:
 
-> Mein GitHub-Repository **DEIN-BENUTZERNAME/website** ist eine Eleventy-Website mit Pages CMS (`.pages.yml`). Bitte ergänze bei den Erfahrungsberichten (`testimonials` in `src/_data/home.json`) ein **optionales Feld „YouTube-Link“**, das im Editor bearbeitbar ist. Wenn ein Link eingetragen ist, soll das Video im Bereich „Erfahrungen“ erscheinen, passend zum bestehenden Design. **Datenschutzfreundlich:** Zuerst nur ein Vorschaubild mit Play-Button und dem Hinweis, dass beim Abspielen YouTube geladen wird. Erst beim Klick soll das Video über **youtube-nocookie.com** geladen werden. Bitte ergänze auch die Datenschutzerklärung (`src/rechtliches/datenschutz.md`) um einen Abschnitt zu YouTube und teste den Build.
+> Mein GitHub-Repository **DEIN-BENUTZERNAME/website** ist eine Eleventy-Website mit Pages CMS (`.pages.yml`). Bitte ergänze bei den Erfahrungsberichten (`src/_data/testimonials.json`) ein **optionales Feld „YouTube-Link“**, das im Editor bearbeitbar ist. Wenn ein Link eingetragen ist, soll das Video im Bereich „Erfahrungen“ erscheinen, passend zum bestehenden Design. **Datenschutzfreundlich:** Zuerst nur ein Vorschaubild mit Play-Button und dem Hinweis, dass beim Abspielen YouTube geladen wird. Erst beim Klick soll das Video über **youtube-nocookie.com** geladen werden. Bitte ergänze auch die Datenschutzerklärung (`src/rechtliches/datenschutz.md`) um einen Abschnitt zu YouTube und teste den Build.
 
-4. Danach fügst du in Pages CMS bei **„6 · Erfahrungen anderer Frauen“** einen neuen Eintrag hinzu und trägst den **YouTube-Link** ein. Den Link findest du bei YouTube unter **„Teilen“**.
+4. Danach fügst du in Pages CMS bei **Erfahrungsberichte** einen neuen Eintrag hinzu und trägst den **YouTube-Link** ein. Den Link findest du bei YouTube unter **„Teilen“**.
 
 **Die Alternative: Video direkt auf der Website**
 Kurze Clips können auch ohne YouTube direkt auf deiner Website liegen. Dann gehen keine Daten an Google. Dafür gilt:
@@ -301,7 +315,7 @@ Für alles, was der Editor nicht kann, hilft dir eine KI wie **Claude**. Program
 ### Beispiele, die du nur noch anpassen musst
 - „Füge unter ‚1:1 Sessions‘ einen neuen Bereich **Preise** mit drei Angeboten hinzu (Titel, Preis, kurze Beschreibung).“
 - „Füge eine **Bildergalerie** mit beliebig vielen Fotos nach ‚Über mich‘ hinzu.“
-- „Lege eine neue Unterseite **Workshops** an und verlinke sie im Menü.“
+- „Lege eine neue Seite **Workshops** an, nach dem Vorbild der Seite ‚Über mich‘, mit eigenem Menüpunkt im Editor und im Menü der Website.“
 - „Füge bei ‚Über mich‘ ein **zweites Bild** hinzu.“
 - „Tausche die **Reihenfolge**: Erfahrungen sollen vor den Sessions kommen.“
 - „Füge eine weitere **Schrift-Auswahl** im Design hinzu, z. B. mit der Schrift … für Überschriften.“
@@ -345,7 +359,7 @@ GitHub speichert **jede einzelne Version** jeder Datei.
 
 ### Selbst machen (für Texte)
 1. Auf **github.com** dein Repository öffnen.
-2. Die betroffene Datei öffnen. Die Startseiten-Texte liegen in **src → _data → home.json**.
+2. Die betroffene Datei öffnen. Die Texte liegen in **src → _data**, z. B. `start.json` (Startseite), `core.json`, `about.json` (Über mich), `sessions.json`, `contact.json` (Kontakt), `testimonials.json` (Erfahrungsberichte).
 3. Rechts oben auf **„History“** klicken. Dort siehst du alle bisherigen Versionen mit Datum.
 4. Eine ältere Version anklicken. So siehst du, was sich geändert hat, und kannst den alten Text herauskopieren.
 5. Den alten Text in Pages CMS wieder einfügen und speichern.

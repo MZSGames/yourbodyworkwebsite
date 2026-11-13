@@ -31,10 +31,14 @@ npm start     # Vorschau unter http://localhost:8080
 lib/design.js                ← Farbpaletten & Schriftpaare
 docs/vorschau/               ← Vorschaubilder fürs Handbuch
 src/
-  _data/home.json            ← Inhalte der Startseite
+  _data/start.json, core.json, about.json,
+        sessions.json, contact.json ← Inhalte der einzelnen Seiten
+  _data/testimonials.json, cta.json ← Bereiche, die auf mehreren Seiten erscheinen
   _data/settings.json        ← allgemeine Einstellungen
   rechtliches/               ← Impressum & Datenschutz (Markdown)
-  index.njk                  ← Aufbau der Startseite
+  index.njk, core-bodywork.njk, ueber-mich.njk,
+        sessions.njk, kontakt.njk ← Seiten (setzen sich aus Bausteinen zusammen)
+  _includes/sections/        ← Bausteine (Hero, Einleitung, Bild+Text, Sessions, …)
   _includes/                 ← Grundgerüst, Icons, Unterseiten-Layout
   _data/design.json          ← gewählte Palette/Schrift (Editor)
   _data/theme.js             ← erzeugt Farben & Schriften aus design.json

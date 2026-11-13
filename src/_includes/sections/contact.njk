@@ -1,0 +1,13 @@
+{# ---------- KONTAKT ---------- #}
+<section class="contact">
+  <div class="wrap narrow contact-inner">
+    <p class="eyebrow">{{ contact.eyebrow }}</p>
+    <h1 class="h2">{{ contact.title | lines | safe }}</h1>
+    {{ contact.text | paras | safe }}
+    <div class="contact-actions">
+      {% if settings.contact_email %}<a class="btn" href="mailto:{{ settings.contact_email }}?subject={{ contact.mail_subject | urlencode }}">{{ contact.button_text }} {% include "arrow.njk" %}</a>{% endif %}
+      {% if settings.phone %}<a class="btn btn-outline" href="tel:{{ settings.phone | replace(' ', '') }}">{{ settings.phone }}</a>{% endif %}
+    </div>
+    {% if settings.contact_email %}<p class="contact-mail">{{ settings.contact_email }}</p>{% endif %}
+  </div>
+</section>

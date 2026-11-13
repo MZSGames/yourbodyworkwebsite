@@ -60,13 +60,16 @@
     "image_alt": "Wildblumen im Gegenlicht",
     "items": [
       {
-        "quote": "Nach der Session habe ich mich so viel leichter, klarer und wieder mehr wie ich selbst gefühlt. Es war eine tief berührende und befreiende Erfahrung."
+        "quote": "Nach der Session habe ich mich so viel leichter, klarer und wieder mehr wie ich selbst gefühlt. Es war eine tief berührende und befreiende Erfahrung.",
+        "name": ""
       },
       {
-        "quote": "Ich hätte nicht gedacht, wie viel sich in mir bewegen kann, wenn ich wirklich fühlen darf. Danke, liebe Ronja, für diesen sicheren Raum."
+        "quote": "Ich hätte nicht gedacht, wie viel sich in mir bewegen kann, wenn ich wirklich fühlen darf. Danke, liebe Ronja, für diesen sicheren Raum.",
+        "name": ""
       },
       {
-        "quote": "Ich bin mit so viel Ruhe und Vertrauen in mich selbst nach Hause gegangen. Diese Arbeit wirkt noch lange nach."
+        "quote": "Ich bin mit so viel Ruhe und Vertrauen in mich selbst nach Hause gegangen. Diese Arbeit wirkt noch lange nach.",
+        "name": ""
       }
     ],
     "feedback_link_text": "Du warst schon bei mir? Teile deine Erfahrung"
@@ -74,7 +77,7 @@
   "cta": {
     "title": "Vielleicht ist jetzt der Moment,\nan dem du beginnst, dich selbst zu wählen.",
     "button_text": "Lass uns kennenlernen",
-    "image": "/images/uploads/23a26ecc3ab3a9d5b51fdaf896df2485.jpg",
+    "image": "/images/uploads/cta.jpg",
     "image_alt": "Frau sitzt bei Sonnenuntergang auf einem Hügel"
   },
   "contact": {

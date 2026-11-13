@@ -7,6 +7,6 @@
   {% if ctaImg %}<div class="cta-media"><img src="{{ ctaImg }}" alt="{{ ctaAlt }}" style="{{ ctaFocus | focus('60% 40%') }}" loading="lazy"></div>{% endif %}
   <div class="wrap cta-content">
     <p class="cta-title">{{ cta.title | lines | safe }}</p>
-    <a class="btn" href="{{ settings.contact_link }}">{{ cta.button_text }} {% include "arrow.njk" %}</a>
+    <a class="btn" href="{{ settings.contact_link | link }}">{{ cta.button_text }} {% include "arrow.njk" %}</a>
   </div>
 </section>

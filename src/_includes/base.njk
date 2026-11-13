@@ -26,16 +26,16 @@
       <nav class="main-nav" aria-label="Hauptnavigation">
         {% for n in [
           { key: "start", url: "/", label: start.menu_label },
-          { key: "about", url: "/ueber-mich/", label: about.menu_label },
-          { key: "sessions", url: "/sessions/", label: sessions.menu_label },
-          { key: "erfahrungen", url: "/erfahrungen/", label: testimonials.menu_label },
+          { key: "about", url: "/ueber-mich/", label: about.menu_label, hide: about.show == false },
+          { key: "sessions", url: "/sessions/", label: sessions.menu_label, hide: sessions.show == false },
+          { key: "erfahrungen", url: "/erfahrungen/", label: testimonials.menu_label, hide: testimonials.show == false },
           { key: "workshops", url: "/workshops/", label: workshops.menu_label, hide: not workshops.show },
-          { key: "core", url: "/core-bodywork/", label: core.menu_label },
-          { key: "contact", url: "/kontakt/", label: contact.menu_label }
+          { key: "core", url: "/core-bodywork/", label: core.menu_label, hide: core.show == false },
+          { key: "contact", url: "/kontakt/", label: contact.menu_label, hide: contact.show == false }
         ] %}
         {% if not n.hide %}<a href="{{ n.url }}"{% if navKey == n.key %} class="is-active" aria-current="page"{% endif %}>{{ n.label }}</a>{% endif %}
         {% endfor %}
-        <a class="btn btn-small" href="{{ settings.contact_link }}">{{ settings.header_button_text }} {% include "arrow.njk" %}</a>
+        <a class="btn btn-small" href="{{ settings.contact_link | link }}">{{ settings.header_button_text }} {% include "arrow.njk" %}</a>
       </nav>
     </div>
   </header>
@@ -53,7 +53,7 @@
       <nav class="footer-nav" aria-label="Rechtliches">
         <a href="/impressum/">Impressum</a>
         <a href="/datenschutz/">Datenschutzerklärung</a>
-        <a href="/feedback/">Feedback</a>
+        {% if feedback.show != false %}<a href="/feedback/">Feedback</a>{% endif %}
       </nav>
       {% if settings.instagram_url %}
       <a class="insta" href="{{ settings.instagram_url }}" target="_blank" rel="noopener">

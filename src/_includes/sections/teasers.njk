@@ -2,10 +2,10 @@
 <section class="teasers">
   <div class="wrap teaser-grid">
     {% for t in [
-      { d: about, url: "/ueber-mich/" },
-      { d: sessions, url: "/sessions/" },
+      { d: about, url: "/ueber-mich/", hide: about.show == false },
+      { d: sessions, url: "/sessions/", hide: sessions.show == false },
       { d: workshops, url: "/workshops/", hide: not workshops.show },
-      { d: core, url: "/core-bodywork/" }
+      { d: core, url: "/core-bodywork/", hide: core.show == false }
     ] %}{% if not t.hide %}
     <a class="teaser" href="{{ t.url }}">
       {% set timg = t.d.image or start.hero.image %}

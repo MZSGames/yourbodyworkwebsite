@@ -9,7 +9,7 @@
     <p class="eyebrow">{{ start.hero.eyebrow }}</p>
     <h1>{{ start.hero.title | lines | safe }}</h1>
     <div class="lead">{{ start.hero.text | paras | safe }}</div>
-    <a class="btn" href="{{ settings.contact_link }}">{{ start.hero.button_text }} {% include "arrow.njk" %}</a>
+    <a class="btn" href="{{ settings.contact_link | link }}">{{ start.hero.button_text }} {% include "arrow.njk" %}</a>
     {% if start.hero.note %}<p class="note">{{ start.hero.note }}</p>{% endif %}
   </div>
 </section>

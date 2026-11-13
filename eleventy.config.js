@@ -69,6 +69,29 @@ export default function (eleventyConfig) {
     (Array.isArray(list) ? list : []).filter((v) => v && eleventyConfig.getFilter("youtubeId")(v.youtube))
   );
 
+  // Links auf ausgeblendete Seiten nicht ins Leere führen lassen:
+  // ausgeblendete Seite → Kontaktseite; Kontaktseite ausgeblendet → E-Mail (oder Startseite).
+  const readJson = (f) => { try { return JSON.parse(fs.readFileSync(`src/_data/${f}.json`, "utf8")); } catch { return {}; } };
+  const PAGE_FILES = { "/ueber-mich/": "about", "/sessions/": "sessions", "/erfahrungen/": "testimonials",
+    "/workshops/": "workshops", "/core-bodywork/": "core", "/kontakt/": "contact", "/feedback/": "feedback" };
+  const isHidden = (path) => {
+    const f = PAGE_FILES[path];
+    if (!f) return false;
+    const d = readJson(f);
+    return f === "workshops" ? d.show !== true : d.show === false;
+  };
+  const safeLink = (url) => {
+    const u = String(url ?? "").trim();
+    if (!u.startsWith("/")) return u;            // externe Links, mailto:, #anker unverändert
+    const path = u.split("#")[0].split("?")[0];
+    const norm = path.endsWith("/") ? path : path + "/";
+    if (!isHidden(norm)) return u;
+    if (norm !== "/kontakt/" && !isHidden("/kontakt/")) return "/kontakt/";
+    const mail = readJson("settings").contact_email;
+    return mail ? `mailto:${mail}` : "/";
+  };
+  eleventyConfig.addFilter("link", safeLink);
+
   // Text mit Leerzeilen → mehrere Absätze
   eleventyConfig.addFilter("paras", (text) =>
     String(text ?? "")

@@ -1,6 +1,5 @@
 ---
 layout: base.njk
-permalink: /erfahrungen/
 navKey: erfahrungen
 eleventyComputed:
   title: "{{ testimonials.menu_label }}"
@@ -36,7 +35,7 @@ eleventyComputed:
 {% include "sections/videos.njk" %}
 
 {# Einladung, selbst Feedback zu geben #}
-{% if testimonials.invite_title or testimonials.invite_text %}
+{% if (testimonials.invite_title or testimonials.invite_text) and feedback.show != false %}
 <section class="exp-invite">
   <div class="wrap narrow">
     {% if testimonials.invite_title %}<h2>{{ testimonials.invite_title | lines | safe }}</h2>{% endif %}

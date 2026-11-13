@@ -11,7 +11,7 @@
       </div>
       {% endfor %}
       <div class="feature feature-cta">
-        <a class="btn" href="{{ settings.contact_link }}">{{ sessions.button_text }} {% include "arrow.njk" %}</a>
+        <a class="btn" href="{{ settings.contact_link | link }}">{{ sessions.button_text }} {% include "arrow.njk" %}</a>
         {% if sessions.booking_show and sessions.booking_link %}<a class="btn btn-outline" href="{{ sessions.booking_link }}" target="_blank" rel="noopener">{{ sessions.booking_text }} {% include "arrow.njk" %}</a>{% endif %}
       </div>
     </div>

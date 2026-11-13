@@ -18,8 +18,8 @@
     </div>
     <div class="dots" aria-hidden="true"></div>
     <p class="feedback-link">
-      {% if testimonials.all_link_text %}<a href="/erfahrungen/">{{ testimonials.all_link_text }} {% include "arrow.njk" %}</a>{% endif %}
-      {% if testimonials.feedback_link_text %}<a href="/feedback/">{{ testimonials.feedback_link_text }} {% include "arrow.njk" %}</a>{% endif %}
+      {% if testimonials.all_link_text and testimonials.show != false %}<a href="/erfahrungen/">{{ testimonials.all_link_text }} {% include "arrow.njk" %}</a>{% endif %}
+      {% if testimonials.feedback_link_text and feedback.show != false %}<a href="/feedback/">{{ testimonials.feedback_link_text }} {% include "arrow.njk" %}</a>{% endif %}
     </p>
   </div>
 </section>

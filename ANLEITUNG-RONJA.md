@@ -15,6 +15,7 @@ Deine Website ist fertig aufgebaut. **Alles, was du im Alltag brauchst, machst d
 - Bildausschnitt und eigene Bilder pro Seite
 - Namen der Menüpunkte und zusätzliche Textbereiche
 - Erfahrungsberichte und Session-Merkmale
+- **Seiten per Häkchen ein- und ausblenden**
 - **Zusatzfunktionen per Häkchen ein- und ausschalten:** Preise, häufige Fragen, Online-Kalender-Button, Bildergalerie, zweites Bild, Video-Erfahrungen und die Seite Workshops
 - Farben, Schrift und Gestaltung
 - E-Mail, Telefon, Instagram und Google-Text
@@ -234,6 +235,19 @@ Eingestellt wird der Bildausschnitt **immer im Editor**. Wenn du dir unsicher bi
 
 ### Mehr Einträge hinzufügen
 Bei Listen kannst du beliebig viele Einträge **hinzufügen**, **löschen** und **verschieben**: Session-Merkmale, Erfahrungsberichte, Videos, Preise, häufige Fragen und Galerie-Fotos. Für jedes Session-Merkmal wählst du ein passendes Symbol aus.
+
+### Seiten ein- und ausblenden
+Jede Seite hat im Editor **ganz oben** das Häkchen **„Seite anzeigen“**:
+- **Angehakt:** Die Seite ist online, steht im Menü und, falls vorhanden, als Kachel auf der Startseite.
+- **Nicht angehakt:** Die Seite verschwindet von der Website. Deine Texte und Bilder bleiben gespeichert. Mit einem Häkchen ist sie jederzeit wieder da.
+
+Das geht bei: **Über mich**, **1:1 Sessions**, **Erfahrungen & Feedbacks**, **Workshops**, **CORE® Bodywork**, **Kontakt** und der **Feedback-Seite**.
+
+💡 Kein Button führt ins Leere. Führt ein Button zu einer ausgeblendeten Seite, geht er automatisch zur **Kontaktseite**. Ist auch die Kontaktseite ausgeblendet, öffnet er eine **E-Mail an dich**. Trag dafür deine E-Mail-Adresse unter **Einstellungen** ein.
+
+💡 Ist die **Feedback-Seite** ausgeblendet, verschwinden auch alle Links zum Feedback.
+
+💡 Die **Startseite** kann man nicht ausblenden, sie ist deine Website. **Impressum** und **Datenschutzerklärung** bleiben immer sichtbar, weil sie gesetzlich vorgeschrieben sind.
 
 ### Zusatzfunktionen ein- und ausschalten
 Diese Bereiche sind schon fertig eingebaut. Du schaltest sie mit einem **Häkchen** ein oder aus. Ausgeschaltet sind sie auf der Website unsichtbar, deine Texte und Bilder bleiben aber gespeichert.

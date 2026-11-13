@@ -11,7 +11,7 @@
         <p class="price-title">{{ p.title }}</p>
         <p class="price-value">{{ p.price }}</p>
         {% if p.text %}<div class="price-text">{{ p.text | paras | safe }}</div>{% endif %}
-        {% set plink = sessions.booking_link if (sessions.booking_show and sessions.booking_link) else settings.contact_link %}
+        {% set plink = sessions.booking_link if (sessions.booking_show and sessions.booking_link) else (settings.contact_link | link) %}
         <a class="price-link" href="{{ plink }}"{% if sessions.booking_show and sessions.booking_link %} target="_blank" rel="noopener"{% endif %}>Anfragen {% include "arrow.njk" %}</a>
       </div>
       {% endfor %}

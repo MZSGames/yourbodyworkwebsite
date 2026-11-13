@@ -1,0 +1,16 @@
+{
+  "name": "ronja-sereinig-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Website CORE Emotional Bodywork – Ronja Sereinig",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@fontsource/cormorant-garamond": "^5.2.5",
+    "@fontsource/jost": "^5.2.5"
+  }
+}

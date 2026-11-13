@@ -1,0 +1,90 @@
+{
+  "hero": {
+    "eyebrow": "CORE® Emotional Bodywork",
+    "title": "Du musst dich nicht\nlänger klein machen.",
+    "text": "Ein Raum für dich. Deinen Körper. Deine Gefühle. Entdecke durch CORE® Emotional Bodywork, wie es sich anfühlen kann, wieder mehr bei dir selbst anzukommen.",
+    "button_text": "1:1 Session anfragen",
+    "note": "Für Frauen, die bereit sind, sich selbst wieder mehr Raum zu geben.",
+    "image": "/images/uploads/hero.jpg",
+    "image_alt": "Frau mit geschlossenen Augen im Abendlicht am Wasser"
+  },
+  "intro": {
+    "title": "Du bist für alle da.\nAber wann warst du das\nletzte Mal wirklich für dich da?",
+    "text": "Du funktionierst. Du hältst durch. Du versuchst, es allen recht zu machen. Und irgendwo auf diesem Weg hast du begonnen, dich selbst zurückzunehmen.\n\nDoch was wäre, wenn du nicht immer stark sein müsstest? Wenn du wieder mehr spüren dürftest? Wenn du dir selbst den Raum gibst, den du so lange anderen gegeben hast?",
+    "accent": "Hier beginnt dein Weg zurück zu dir."
+  },
+  "core": {
+    "eyebrow": "CORE® Emotional Bodywork",
+    "title": "Was ist CORE®\nEmotional Bodywork?",
+    "text": "Eine körperorientierte Begleitung, die dich dabei unterstützt, unterdrückte Emotionen zu spüren, zu fühlen und auf körperlicher Ebene in Bewegung zu bringen. In einem geschützten Raum darf alles da sein, was sich zeigen möchte – ohne Druck, ohne Bewertung.",
+    "button_text": "Mehr über CORE® erfahren",
+    "button_link": "#sessions",
+    "image": "/images/uploads/core.jpg",
+    "image_alt": "Hand liegt sanft auf dem Herzen"
+  },
+  "about": {
+    "eyebrow": "Über mich",
+    "title": "Hi, ich bin Ronja.",
+    "text": "Ich begleite Frauen mit CORE® Emotional Bodywork zurück zu mehr Verbindung mit sich selbst, zu ihrem Körper und ihrer emotionalen Wahrheit.\n\nDiese Arbeit ist für mich weit mehr als eine Methode – sie ist eine tiefe Einladung, wieder ganz bei sich anzukommen, Gefühle zuzulassen und das eigene Feuer wieder zu spüren.",
+    "button_text": "Mehr über mich",
+    "button_link": "#kontakt",
+    "image": "/images/uploads/about.jpg",
+    "image_alt": "Ronja lehnt mit geschlossenen Augen an einem Baum"
+  },
+  "sessions": {
+    "eyebrow": "1:1 Sessions",
+    "title": "Dein Raum. Dein Tempo. Dein Weg.",
+    "items": [
+      {
+        "icon": "herz",
+        "text": "Ein geschützter Raum\nnur für dich."
+      },
+      {
+        "icon": "blatt",
+        "text": "Körperorientiert &\nemotional transformierend."
+      },
+      {
+        "icon": "uhr",
+        "text": "Dauer: ca. 90 Minuten\n(individuell anpassbar)"
+      },
+      {
+        "icon": "ort",
+        "text": "Standort\nin [deiner Region]"
+      }
+    ],
+    "button_text": "Session bei Ronja anfragen"
+  },
+  "testimonials": {
+    "eyebrow": "Erfahrungen anderer Frauen",
+    "image": "/images/uploads/testimonials.jpg",
+    "image_alt": "Wildblumen im Gegenlicht",
+    "items": [
+      {
+        "quote": "Nach der Session habe ich mich so viel leichter, klarer und wieder mehr wie ich selbst gefühlt. Es war eine tief berührende und befreiende Erfahrung.",
+        "name": ""
+      },
+      {
+        "quote": "Ich hätte nicht gedacht, wie viel sich in mir bewegen kann, wenn ich wirklich fühlen darf. Danke, liebe Ronja, für diesen sicheren Raum.",
+        "name": ""
+      },
+      {
+        "quote": "Ich bin mit so viel Ruhe und Vertrauen in mich selbst nach Hause gegangen. Diese Arbeit wirkt noch lange nach.",
+        "name": ""
+      }
+    ]
+  },
+  "cta": {
+    "title": "Vielleicht ist jetzt der Moment,\nan dem du beginnst, dich selbst zu wählen.",
+    "button_text": "Lass uns kennenlernen",
+    "image": "/images/uploads/cta.jpg",
+    "image_alt": "Frau sitzt bei Sonnenuntergang auf einem Hügel"
+  },
+  "contact": {
+    "show": true,
+    "eyebrow": "Kontakt",
+    "title": "Schreib mir.",
+    "text": "Erzähl mir gern ein wenig, was dich gerade bewegt. Ich melde mich innerhalb von zwei Tagen bei dir – für ein unverbindliches Kennenlernen.",
+    "button_text": "E-Mail schreiben",
+    "mail_subject": "Anfrage 1:1 Session"
+  }
+}
